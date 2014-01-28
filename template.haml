@@ -1,0 +1,32 @@
+!!!5
+%head
+	%title Title
+	%meta(charset="utf-8")
+	%meta(name="viewport" content="width=device-width, initial-scale=1")
+	%link(rel="stylesheet" type="text/css" href="css/style.css")
+	%link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
+	%link(href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css')
+
+%body
+	#header
+		#branding
+			%object(type="image/svg+xml" data="img/seal.svg" class="logo")		
+			%h1#blog_title G. Lucas Roe
+			%h2#blog_subtitle Sillyrebral Designerd
+		%nav
+			:plain
+				<a href="/about"><i class="fa fa-question-circle fa-3x"></i><p>About</p></a>
+				<a href="/projects"><i class="fa fa-briefcase fa-3x"></i><p>Projects</p></a>
+				<a href="/resume"><i class="fa fa-file-text fa-3x"></i><p>Resume<p></a>
+
+			
+	#post_body
+		%h2 Heading 1 Lorem ipsum
+		%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet molestie nunc. Aenean congue viverra interdum. Praesent eget lacus mauris. Fusce scelerisque pretium nisi vitae sagittis. Donec nunc lectus, blandit non mauris et, dictum tincidunt est. Suspendisse dapibus urna sem, non dignissim massa consectetur id. Praesent sed tellus tempor risus mattis condimentum. Aliquam sollicitudin eros sit amet nisl condimentum, eu ullamcorper nulla semper. Quisque vel cursus metus, sed molestie lectus. Mauris vehicula fringilla nisi sit amet aliquam. In mollis metus ligula, sed cursus est dapibus ac. Aenean condimentum elementum pulvinar. Morbi non magna sem. Donec luctus quis nisl a faucibus.
+
+		%h3 Heading 2 Lorem Ipsum Dolor Sit
+		Praesent vitae porta ligula, ac egestas nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tempus accumsan dui, a sagittis ante interdum molestie. Integer eleifend mi a auctor gravida. Duis sit amet elit eu velit vulputate cursus. Duis eros eros, ornare nec enim et, molestie vulputate augue. Nunc commodo eros sit amet sapien dignissim gravida. Cras sodales tempor felis non semper. Duis purus nisi, gravida vel lacinia ut, laoreet sit amet felis. Vivamus a molestie neque. Aliquam erat volutpat. Proin sit amet venenatis diam. Donec et malesuada nunc. Nullam nisl nunc, elementum in euismod et, mattis ultricies turpis. Cras rhoncus quis odio sed congue. Praesent malesuada quam a suscipit mattis.
+	#footer
+	%script(src="js/fittext-ck.js")
+	:javascript
+		window.fitText( document.getElementById("blog_title"),0.7 );
