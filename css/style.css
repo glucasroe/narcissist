@@ -1,19 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
- * v2.0 | 20110126
- * License: none (public domain) */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,9 +6,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -35,15 +18,19 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
 q:before, q:after {
-  content: "";
+  content: '';
   content: none; }
 
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*@import 'reset';*/
 /************ GLOBALS ***************/
 body {
   width: 100%;
@@ -53,21 +40,66 @@ body {
   body a {
     color: #5A94D7;
     text-decoration: none; }
+  body .clear {
+    clear: both; }
+  body .animated {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation: "transform";
+    -moz-animation: "transform";
+    animation: "transform"; }
+  body .rotated {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
   body #header {
-    width: 80%;
-    margin: 10%; }
-    body #header #branding object {
-      width: 100%; }
-    body #header #branding h1, body #header #branding h2 {
+    width: 100%;
+    background-color: #3e3e3e; }
+    body #header #branding {
+      margin: 0 10% 10% 10%;
+      padding: 10% 0 0 0; }
+      body #header #branding #logo {
+        margin: 0 auto 15px;
+        width: 30%;
+        max-width: 200px; }
+        body #header #branding #logo object {
+          width: 100%;
+          margin: 0 auto 0; }
+      body #header #branding h1, body #header #branding h2 {
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: bold; }
+      body #header #branding h1 {
+        color: #999;
+        font-size: 2em;
+        margin: 0 0 5px; }
+      body #header #branding h2 {
+        font-family: 'Noto Serif', serif;
+        color: #777;
+        font-size: 1.15em; }
+    body #header #nav_toggle {
+      width: 100%;
       text-align: center;
-      font-family: 'Noto Sans', sans-serif;
-      font-weight: bold; }
-    body #header #branding h1 {
-      color: #999; }
-    body #header #branding h2 {
-      font-family: 'Noto Serif', serif;
-      color: #525252; }
-    body #header nav a {
-      width: 33%;
-      float: left;
-      text-align: center; }
+      font-size: 2em;
+      color: #999;
+      border-top: 1px solid #444;
+      padding: 10px 0 10px; }
+    body #header nav {
+      width: 100%;
+      background-color: #333;
+      padding: 10% 0 10%; }
+      body #header nav.closed {
+        display: none; }
+      body #header nav a {
+        width: 33%;
+        float: left;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Noto Sans', sans-serif; }
+        body #header nav a i {
+          margin: 0 0 5px 0; }
+        body #header nav a p {
+          font-size: 0.8em; }
