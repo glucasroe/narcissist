@@ -1,9 +1,9 @@
 $(document).ready(function(){
-	$('nav').hide();
-	$('#nav_toggle').removeClass();
+	$('nav').addClass('shrink_hider');
 	$('#nav_toggle').click(function(){
+		$('nav:not(.animated)').addClass('animated');
 		$('#nav_toggle i').toggleClass('rotated');
-		$('nav').slideToggle(200);
+		$('nav').toggleClass('shrink_hider');
 	});
 
 });
