@@ -43,12 +43,9 @@ body {
   body .clear {
     clear: both; }
   body .animated {
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation: "transform";
-    -moz-animation: "transform";
-    animation: "transform"; }
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
   body .rotated {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -67,7 +64,8 @@ body {
         max-width: 200px; }
         body #header #branding #logo object {
           width: 100%;
-          margin: 0 auto 0; }
+          margin: 0 auto 0;
+          -webkit-font-smoothing: antialiased; }
       body #header #branding h1, body #header #branding h2 {
         text-align: center;
         font-family: 'Noto Sans', sans-serif;
@@ -86,7 +84,11 @@ body {
       font-size: 2em;
       color: #999;
       border-top: 1px solid #444;
-      padding: 10px 0 10px; }
+      padding: 10px 0 10px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
     body #header nav {
       width: 100%;
       background-color: #333;
