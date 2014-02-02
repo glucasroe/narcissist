@@ -80,8 +80,13 @@ body {
 
   /************ SPECIFICS *************/ }
   body a {
-    color: #5A94D7;
-    text-decoration: none; }
+    color: #5a94d7;
+    text-decoration: none;
+    -webkit-transition: color, 0.5s;
+    -moz-transition: color, 0.5s;
+    transition: color, 0.5s; }
+    body a:hover {
+      color: #2861a3; }
   body h1 {
     font-size: 3.6rem;
     color: #777;
@@ -187,7 +192,7 @@ body {
         display: none; }
     body #header nav {
       width: 100%;
-      background-color: #333;
+      background-color: #252525;
       max-height: 300px;
       overflow-y: hidden; }
       body #header nav.shrink_hider {
@@ -211,3 +216,29 @@ body {
     margin: 10% 5%; }
   body #post_body p {
     margin: 0 5% 0; }
+  body footer {
+    background-color: #3e3e3e;
+    color: #eee;
+    margin-top: 4rem;
+    text-align: center; }
+    body footer a {
+      color: #eee; }
+      body footer a:hover {
+        color: #5a94d7; }
+    body footer #copyright {
+      padding: 2rem;
+      border-top: 1px solid #555; }
+      body footer #copyright p {
+        color: #ccc;
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 1.6; }
+    body footer #social {
+      padding: 2rem;
+      font-size: 2rem; }
+      body footer #social h3 {
+        margin-bottom: 1rem; }
+      body footer #social p {
+        width: 100%; }
+        body footer #social p a {
+          margin: 0 1rem 0; }
