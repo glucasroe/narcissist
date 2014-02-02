@@ -83,48 +83,30 @@ body{
 	}
 
 	.animated{
-		@include transition(all .2s);
+		@include transition(all .25s);
 		@include animation-fill-mode(both);
 	}
+
 	.rotated{
 		@include transform( rotate(90deg) );
+		@include animation-delay(1s);
 	}
 
-	.animate-in{
+	@include keyframes (animate-in) {
+	  0% {
+	    opacity: 0;
+	    @include transform(translateY(-20px));
+	  }
+
+	  100% {
+	    opacity: 1;
+	    @include transform(translateY(0));
+	  }
+	}
+
+	.animate-in {
 		@include animation-name(animate-in);
-		@include animation-iteration-count(once);
-		@include animation-timing-function(ease-in-out);
-		@include animation-duration(10s);
 	}
-
-	@include keyframes(animate-in){
-		0%{
-			opacity: 0;
-			@include transform(translateY(-20px));
-		}
-
-		100%{
-			opacity: 100;
-			@include transform(translateY(0));
-		}
-	}
-/*
-@keyframes fadeOutUp {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-}
-*/
 /************ SPECIFICS *************/
 	#header{
 		width:100%;
@@ -221,4 +203,5 @@ body{
 		code
 		{}
 	}
+	#footer{}
 }
