@@ -73,14 +73,11 @@ body {
     transform: rotate(90deg); }
   body #header {
     width: 100%;
-    background-color: #3e3e3e;
-    position: relative; }
+    background-color: #3e3e3e; }
     body #header #branding {
       margin: 0 10% 10% 10%;
       padding: 10% 0 0 0;
-      position: relative;
-      background-color: #3e3e3e;
-      z-index: 10; }
+      background-color: #3e3e3e; }
       body #header #branding #logo {
         margin: 0 auto 15px;
         width: 30%;
@@ -112,17 +109,14 @@ body {
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
-      user-select: none;
-      z-index: 10;
-      position: relative; }
+      user-select: none; }
     body #header nav {
       width: 100%;
       background-color: #333;
       max-height: 300px;
       overflow-y: hidden; }
       body #header nav.shrink_hider {
-        position: relative;
-        top: -100px; }
+        max-height: 0px; }
       body #header nav #navigation {
         padding: 10% 0 10%; }
         body #header nav #navigation a {

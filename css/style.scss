@@ -59,13 +59,10 @@ body{
 	#header{
 		width:100%;
 		background-color: $header-color;
-		position:relative;
 		#branding{
 			margin: 0 10% 10% 10%;
 			padding:10% 0 0 0;
-			position:relative;
 			background-color: $header-color;
-			z-index: 10;
 			#logo{
 				margin:0 auto 15px;
 				width:30%;
@@ -101,8 +98,7 @@ body{
 			border-top: 1px solid #444;
 			padding:10px 0 10px;
 			@include user-select(none);
-			z-index: 10;
-			position:relative;
+
 		}
 		nav{
 			width:100%;
@@ -110,8 +106,7 @@ body{
 			max-height: 300px;
 			overflow-y:hidden;
 			&.shrink_hider{
-				position:relative;
-				top: -100px;
+				max-height: 0px;
 			}
 			&.animated{
 			}
