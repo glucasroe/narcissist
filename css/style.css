@@ -110,6 +110,8 @@ body {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none; }
+      body #header #nav_toggle.no-js {
+        display: none; }
     body #header nav {
       width: 100%;
       background-color: #333;

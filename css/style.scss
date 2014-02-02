@@ -98,6 +98,10 @@ body{
 			border-top: 1px solid #444;
 			padding:10px 0 10px;
 			@include user-select(none);
+			&.no-js{
+				display: none;
+			}
+
 
 		}
 		nav{
