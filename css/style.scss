@@ -1,17 +1,19 @@
 @import 'bourbon';
+@import 'animate.css';
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline; }article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }body {line-height: 1; }ol, ul {list-style: none; }blockquote, q {quotes: none; }blockquote {&:before, &:after {content: '';content: none; } }q {&:before, &:after {content: '';content: none; } }table {border-collapse: collapse;border-spacing: 0; }
 /*@import 'reset';*/
 
 /************ VARS *************/
 $header-color:#3e3e3e;
-
+$sans:'Noto Sans', 'Myriad Pro', Helvetica, Arial, sans-serif;
+$serif:'Noto Serif', Baskerville, 'Palatino Linotype', Georgia, serif;
 /************ GLOBALS ***************/
 html{
 	font-size: 62.5%;
 }
 body{
 	width:100%;
-	font-family:'Noto Serif',serif;
+	font-family:$serif;
 	color:#333;
 
 	a{
@@ -22,6 +24,7 @@ body{
 	h1{
 		font-size: 3.6rem;
 		color:#777;
+		font-family: $sans;
 	}
 
 	h2{
@@ -43,18 +46,61 @@ body{
 		color:#555;
 	}
 
-/*********** CLASSES ***************/	
+	code{
+		font-family: monaco, monospace;
+		width:100%;
+		color:#777;
+		white-space: pre;
+	}
+
+/*********** CLASSES & ANIMATIONS ***************/	
 	.clear{
 		clear:both;
 	}
 
 	.animated{
 		@include transition(all .2s);
+		@include animation-fill-mode(both);
 	}
 	.rotated{
 		@include transform( rotate(90deg) );
 	}
 
+	.animate-in{
+		@include animation-name(animate-in);
+		@include animation-iteration-count(once);
+		@include animation-timing-function(ease-in-out);
+		@include animation-duration(10s);
+	}
+
+	@include keyframes(animate-in){
+		0%{
+			opacity: 0;
+			@include transform(translateY(-20px));
+		}
+
+		100%{
+			opacity: 100;
+			@include transform(translateY(0));
+		}
+	}
+/*
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+*/
 /************ SPECIFICS *************/
 	#header{
 		width:100%;
@@ -137,5 +183,17 @@ body{
 				}
 			}
 		}
+	}
+	#post_body{
+		img{
+			max-width: 100%;
+		}
+		h2,h3{
+			margin:10% 5%;
+		}
+		p{
+			margin:0 5% 0;
+		}
+		code{}
 	}
 }

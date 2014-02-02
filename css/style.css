@@ -1,3 +1,4 @@
+@import url(animate.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -38,16 +39,70 @@ html {
 
 body {
   width: 100%;
-  font-family: 'Noto Serif',serif;
+  font-family: "Noto Serif", Baskerville, "Palatino Linotype", Georgia, serif;
   color: #333;
-  /*********** CLASSES ***************/
+  /*********** CLASSES & ANIMATIONS ***************/
+  @-webkit-keyframes animate-in {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px); }
+
+    100% {
+      opacity: 100;
+      -webkit-transform: translateY(0); } }
+
+  @-moz-keyframes animate-in {
+    0% {
+      opacity: 0;
+      -moz-transform: translateY(-20px); }
+
+    100% {
+      opacity: 100;
+      -moz-transform: translateY(0); } }
+
+  @-o-keyframes animate-in {
+    0% {
+      opacity: 0;
+      -o-transform: translateY(-20px); }
+
+    100% {
+      opacity: 100;
+      -o-transform: translateY(0); } }
+
+  @keyframes animate-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); }
+
+    100% {
+      opacity: 100;
+      transform: translateY(0); } }
+
+  /*
+  @keyframes fadeOutUp {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  }
+  */
   /************ SPECIFICS *************/ }
   body a {
     color: #5A94D7;
     text-decoration: none; }
   body h1 {
     font-size: 3.6rem;
-    color: #777; }
+    color: #777;
+    font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
   body h2 {
     font-size: 3rem;
     color: #888; }
@@ -59,18 +114,39 @@ body {
     font-size: 1.5rem;
     line-height: 1.4;
     color: #555; }
+  body code {
+    font-family: monaco, monospace;
+    width: 100%;
+    color: #777;
+    white-space: pre; }
   body .clear {
     clear: both; }
   body .animated {
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both; }
   body .rotated {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg); }
+  body .animate-in {
+    -webkit-animation-name: animate-in;
+    -moz-animation-name: animate-in;
+    animation-name: animate-in;
+    -webkit-animation-iteration-count: once;
+    -moz-animation-iteration-count: once;
+    animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    animation-duration: 10s; }
   body #header {
     width: 100%;
     background-color: #3e3e3e; }
@@ -132,3 +208,9 @@ body {
             margin: 0 0 5px 0; }
           body #header nav #navigation a p {
             font-size: 1.3rem; }
+  body #post_body img {
+    max-width: 100%; }
+  body #post_body h2, body #post_body h3 {
+    margin: 10% 5%; }
+  body #post_body p {
+    margin: 0 5% 0; }
