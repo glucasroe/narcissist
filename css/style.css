@@ -73,10 +73,14 @@ body {
     transform: rotate(90deg); }
   body #header {
     width: 100%;
-    background-color: #3e3e3e; }
+    background-color: #3e3e3e;
+    position: relative; }
     body #header #branding {
       margin: 0 10% 10% 10%;
-      padding: 10% 0 0 0; }
+      padding: 10% 0 0 0;
+      position: relative;
+      background-color: #3e3e3e;
+      z-index: 10; }
       body #header #branding #logo {
         margin: 0 auto 15px;
         width: 30%;
@@ -102,23 +106,23 @@ body {
       text-align: center;
       font-size: 3rem;
       color: #999;
+      background-color: #3e3e3e;
       border-top: 1px solid #444;
       padding: 10px 0 10px;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
-      user-select: none; }
+      user-select: none;
+      z-index: 10;
+      position: relative; }
     body #header nav {
       width: 100%;
       background-color: #333;
       max-height: 300px;
       overflow-y: hidden; }
       body #header nav.shrink_hider {
-        max-height: 0px; }
-      body #header nav.animated {
-        -webkit-transition-duration: 0.25s;
-        -moz-transition-duration: 0.25s;
-        transition-duration: 0.25s; }
+        position: relative;
+        top: -100px; }
       body #header nav #navigation {
         padding: 10% 0 10%; }
         body #header nav #navigation a {
