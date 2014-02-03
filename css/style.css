@@ -141,10 +141,7 @@ body {
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s; }
+    transform: rotate(90deg); }
   body .animate-in {
     -webkit-animation-name: animate-in;
     -moz-animation-name: animate-in;
@@ -212,33 +209,41 @@ body {
             font-size: 1.3rem; }
   body #post_body img {
     max-width: 100%; }
+  body #post_body caption {
+    font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+    font-size: 2rem; }
   body #post_body h2, body #post_body h3 {
     margin: 10% 5%; }
+  body #post_body h4 {
+    font-size: 1.1rem;
+    color: #999;
+    margin: 1rem 0 2rem;
+    text-align: center; }
   body #post_body p {
     margin: 0 5% 0; }
-  body footer {
+  body #post_body footer {
     background-color: #3e3e3e;
     color: #eee;
     margin-top: 4rem;
     text-align: center; }
-    body footer a {
+    body #post_body footer a {
       color: #eee; }
-      body footer a:hover {
+      body #post_body footer a:hover {
         color: #5a94d7; }
-    body footer #copyright {
+    body #post_body footer #copyright {
       padding: 2rem;
       border-top: 1px solid #555; }
-      body footer #copyright p {
+      body #post_body footer #copyright p {
         color: #ccc;
         font-size: 1.2rem;
         text-align: left;
         line-height: 1.6; }
-    body footer #social {
+    body #post_body footer #social {
       padding: 2rem;
       font-size: 2rem; }
-      body footer #social h3 {
+      body #post_body footer #social h3 {
         margin-bottom: 1rem; }
-      body footer #social p {
+      body #post_body footer #social p {
         width: 100%; }
-        body footer #social p a {
+        body #post_body footer #social p a {
           margin: 0 1rem 0; }

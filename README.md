@@ -15,4 +15,5 @@ This is meant to be a theme for Ghost, but that may change as I figure out the c
 ##After Launch:
 * Figure out a better way to make the drop down menu. Right now, I don't care.
 * Resume Page?
+* My fade in animation is broken again? :(
 
