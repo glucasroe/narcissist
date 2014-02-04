@@ -116,6 +116,8 @@ body{
 
 	.animate-in {
 		@include animation-name(animate-in);
+		animation-duration: 1s;
+		animation-fill-mode: both;
 	}
 /************ SPECIFICS *************/
 	#header{
@@ -231,16 +233,6 @@ body{
 				color:$link-color;
 			}
 		}
-		#copyright{
-			padding:2rem;
-			border-top:1px solid #555;
-			p{
-				color:#ccc;
-				font-size: 1.2rem;
-				text-align: left;
-				line-height: 1.6;
-			}
-		}
 		#social{
 			padding: 2rem;
 			font-size: 2rem;
@@ -254,5 +246,20 @@ body{
 				}
 			}
 		}
+		#copyright{
+			padding:2rem;
+			border-top:1px solid #555;
+			p{
+				color:#ccc;
+				font-size: 1.2rem;
+				text-align: left;
+				line-height: 1.6;
+			}
+		}	
+	}
+}
+@media all and (min-width:600px){
+	body{
+		background-color:#333;
 	}
 }

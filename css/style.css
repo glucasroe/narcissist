@@ -151,7 +151,9 @@ body {
   body .animate-in {
     -webkit-animation-name: animate-in;
     -moz-animation-name: animate-in;
-    animation-name: animate-in; }
+    animation-name: animate-in;
+    animation-duration: 1s;
+    animation-fill-mode: both; }
   body #header {
     width: 100%;
     background-color: #3e3e3e; }
@@ -236,14 +238,6 @@ body {
       color: #eee; }
       body footer a:hover {
         color: #5a94d7; }
-    body footer #copyright {
-      padding: 2rem;
-      border-top: 1px solid #555; }
-      body footer #copyright p {
-        color: #ccc;
-        font-size: 1.2rem;
-        text-align: left;
-        line-height: 1.6; }
     body footer #social {
       padding: 2rem;
       font-size: 2rem; }
@@ -253,3 +247,15 @@ body {
         width: 100%; }
         body footer #social p a {
           margin: 0 1rem 0; }
+    body footer #copyright {
+      padding: 2rem;
+      border-top: 1px solid #555; }
+      body footer #copyright p {
+        color: #ccc;
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 1.6; }
+
+@media all and (min-width: 600px) {
+  body {
+    background-color: #333; } }

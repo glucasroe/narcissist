@@ -7,14 +7,15 @@
 	%link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
 	%link(href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css')
 
-%body.animated.animate-in
+%body.animating-in
 
 	#header
-		#branding
-			#logo
-				%object(type="image/svg+xml" data="img/seal.svg" class="logo")		
-			%h1#blog_title G. Lucas Roe
-			%h2#blog_subtitle Sillyrebral Designerd
+		%a(href="www.glucasroe.com")
+			#branding			
+				#logo
+					%img(src="img/seal.svg" class="logo")
+				%h1#blog_title G. Lucas Roe
+				%h2#blog_subtitle Sillyrebral Designerd
 		#nav_toggle.no-js
 			%i(class="fa fa-bars animated")
 		%nav
@@ -26,7 +27,7 @@
 				.clear
 				#search
 			
-	#post_body
+	#post_body.animate-in
 		:plain
 			<img src="http://placekitten.com/1200/500" />
 			<h2>Heading 2 Lorem ipsum</h2>
@@ -70,6 +71,7 @@
 					<a href="www.linkedin.com/in/glucasroe/"><i class="fa fa-linkedin-square fa-2x"></i></a>
 					<a href="https://github.com/glucasroe"><i class="fa fa-github-square fa-2x"></i></a>
 					<a href="https://twitter.com/glucasroe"><i class="fa fa-twitter-square fa-2x"></i></a>
+					<a href="/rss"><i class="fa fa-rss-square fa-2x"></i></a>
 				</p>
 		#copyright
 			:plain
