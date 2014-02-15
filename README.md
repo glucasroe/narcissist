@@ -10,7 +10,7 @@ This is meant to be a theme for Ghost, but that may change as I figure out the c
 * Implement search with [GhostHunter](https://github.com/i11ume/ghostHunter)
 * Make a posts page.
 * Find if there can be a category page?
-* Add a code colorizer
+* Add a code colorizer, probably [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/)
 
 ##After Launch:
 * Figure out a better way to make the drop down menu. Right now, I don't care.

@@ -158,13 +158,13 @@ body {
     width: 100%;
     background-color: #3e3e3e; }
     body #header #branding {
-      margin: 0 10% 10% 10%;
-      padding: 10% 0 0 0;
+      margin: 0 auto 4rem;
+      padding: 4rem 0 0 0;
       background-color: #3e3e3e; }
       body #header #branding #logo {
-        margin: 0 auto 15px;
-        width: 30%;
-        max-width: 200px; }
+        margin: 0 auto 2rem;
+        width: 25%;
+        max-width: 10rem; }
         body #header #branding #logo object {
           width: 100%;
           margin: 0 auto 0;
@@ -176,7 +176,7 @@ body {
       body #header #branding h1 {
         color: #999;
         font-size: 3rem;
-        margin: 0 0 5px; }
+        margin: 0 0 0.5rem; }
       body #header #branding h2 {
         font-family: 'Noto Serif', serif;
         color: #777;
@@ -198,12 +198,12 @@ body {
     body #header nav {
       width: 100%;
       background-color: #252525;
-      max-height: 300px;
+      max-height: 30rem;
       overflow-y: hidden; }
       body #header nav.shrink_hider {
         max-height: 0px; }
       body #header nav #navigation {
-        padding: 10% 0 10%; }
+        padding: 3rem 0 3rem; }
         body #header nav #navigation a {
           width: 33%;
           float: left;
@@ -221,14 +221,14 @@ body {
     font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
     font-size: 2rem; }
   body #post_body h2, body #post_body h3 {
-    margin: 10% 5%; }
+    margin: 3rem 1.5rem; }
   body #post_body h4 {
     font-size: 1.1rem;
     color: #999;
     margin: 1rem 0 2rem;
     text-align: center; }
   body #post_body p {
-    margin: 0 5% 0; }
+    margin: 0 1.5rem 0; }
   body footer {
     background-color: #3e3e3e;
     color: #eee;
@@ -255,7 +255,3 @@ body {
         font-size: 1.2rem;
         text-align: left;
         line-height: 1.6; }
-
-@media all and (min-width: 600px) {
-  body {
-    background-color: #333; } }
