@@ -1,0 +1,92 @@
+!!!5
+%html
+	%head
+		%title Title
+		%meta(charset="utf-8")
+		%meta(name="viewport" content="width=device-width, initial-scale=1")
+		%link(rel="stylesheet" type="text/css" href="assets/css/style.css")
+		%link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
+		%link(href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css')
+
+	%body.animating-in
+
+		#header
+			#nav_toggle.no-js
+				%i(class="fa fa-bars animated") 
+				%p MENU
+				.clear
+			%nav
+				#navigation
+					%a(href="/about")
+						%i.fa.fa-question-circle.fa-3x
+							%p About
+					%a(href="/portfolio")
+						%i.fa.fa-briefcase.fa-3x
+							%p Portfolio
+					%a(href="/resume")
+						%i.fa.fa-file-text.fa-3x
+							%p Resume
+					.clear
+					#search
+			%a(href="www.glucasroe.com")
+				#branding			
+					#logo
+						%img(src="assets/img/seal.svg" class="logo")
+					#headlines
+						%h1#blog_title G. Lucas Roe
+						%h2#blog_subtitle Sillyrebral Designerd
+					.clear
+		#post_body.animate-in
+			:plain
+				<img src="http://placekitten.com/1200/500" />
+				<h2>Heading 2 Lorem ipsum</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet molestie nunc. Aenean congue viverra interdum. Praesent eget lacus mauris. Fusce scelerisque pretium nisi vitae sagittis. Donec nunc lectus, blandit non mauris et, dictum tincidunt est. Suspendisse dapibus urna sem, non dignissim massa consectetur id. Praesent sed tellus tempor risus mattis condimentum. Aliquam sollicitudin eros sit amet nisl condimentum, eu ullamcorper nulla semper. Quisque vel cursus metus, sed molestie lectus. Mauris vehicula fringilla nisi sit amet aliquam. In mollis metus ligula, sed cursus est dapibus ac. Aenean condimentum elementum pulvinar. Morbi non magna sem. Donec luctus quis nisl a faucibus.
+				</p>
+				<h3>Heading 2 Lorem Ipsum Dolor Sit</h3>
+				<img src="http://placekitten.com/800/800" />
+
+				<h4>This is an adorable Kitten</h4>
+				
+				<p>Praesent vitae porta ligula, ac egestas nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tempus accumsan dui, a sagittis ante interdum molestie. Integer eleifend mi a auctor gravida. Duis sit amet elit eu velit vulputate cursus. Duis eros eros, ornare nec enim et, molestie vulputate augue. Nunc commodo eros sit amet sapien dignissim gravida. Cras sodales tempor felis non semper. Duis purus nisi, gravida vel lacinia ut, laoreet sit amet felis. Vivamus a molestie neque. Aliquam erat volutpat. Proin sit amet venenatis diam. Donec et malesuada nunc. Nullam nisl nunc, elementum in euismod et, mattis ultricies turpis. Cras rhoncus quis odio sed congue. Praesent malesuada quam a suscipit mattis.</p>
+				<code>
+					nav{
+						width:100%;
+						background-color: #333;	
+						max-height: 300px;
+						overflow-y:hidden;
+						&.shrink_hider{
+							max-height: 0px;
+						}
+						&.animated{
+						}
+					#navigation{
+						padding:10% 0 10%;
+					}
+				</code>
+				<h2>Here is some more writing</h2>
+				<blockquote>How do you feel about some of this madness, hmm?
+				<aside>Sir John Smiff</aside></blockquote>
+
+				<p>Praesent vitae porta ligula, ac egestas nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tempus accumsan dui, a sagittis ante interdum molestie. </p>
+
+
+		%footer
+			#social
+				%h3 Me on the Interweb$
+				%a(href="https://plus.google.com/+GLucasRoe/posts")
+					%i.fa.fa-google-plus-square.fa-2x
+				%a(href="www.linkedin.com/in/glucasroe/")
+					%i.fa.fa-linkedin-square.fa-2x
+				%a(href="https://github.com/glucasroe")
+					%i.fa.fa-github-square.fa-2x
+				%a(href="https://twitter.com/glucasroe")
+					%i.fa.fa-twitter-square.fa-2x
+				%a(href="/rss")
+					%i.fa.fa-rss-square.fa-2x
+			#copyright
+				:plain
+					<p>Content is &copy; G. Lucas Roe, and shouldn't be used without at least asking nicely. I can't stop you, but some wicked bad karma will come your way.</p>
+
+		%script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+		%script(type="text/javascript" src="assets/js/functional-ck.js")
