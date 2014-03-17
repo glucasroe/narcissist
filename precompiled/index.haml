@@ -11,23 +11,6 @@
 	%body.animating-in
 
 		#header
-			#nav_toggle.no-js
-				%i(class="fa fa-bars animated") 
-				%p MENU
-				.clear
-			%nav
-				#navigation
-					%a(href="/about")
-						%i.fa.fa-question-circle.fa-3x
-							%p About
-					%a(href="/portfolio")
-						%i.fa.fa-briefcase.fa-3x
-							%p Portfolio
-					%a(href="/resume")
-						%i.fa.fa-file-text.fa-3x
-							%p Resume
-					.clear
-					#search
 			%a(href="www.glucasroe.com")
 				#branding			
 					#logo
@@ -35,7 +18,25 @@
 					#headlines
 						%h1#blog_title G. Lucas Roe
 						%h2#blog_subtitle Sillyrebral Designerd
+			#nav_wrap
+				#nav_toggle.no-js
+					%i(class="fa fa-bars animated") 
+					%p MENU
 					.clear
+				%nav
+					#navigation
+						%a(href="/about")
+							%i.fa.fa-question-circle.fa-3x
+								%p About
+						%a(href="/portfolio")
+							%i.fa.fa-briefcase.fa-3x
+								%p Portfolio
+						%a(href="/resume")
+							%i.fa.fa-file-text.fa-3x
+								%p Resume
+						.clear
+						#search
+			.clear
 		#post_body.animate-in
 			:plain
 				<img src="http://placekitten.com/1200/500" />
@@ -89,4 +90,5 @@
 					<p>Content is &copy; G. Lucas Roe, and shouldn't be used without at least asking nicely. I can't stop you, but some wicked bad karma will come your way.</p>
 
 		%script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+		%script(type="text/javascript" src="assets/js/modernizr-full.js")
 		%script(type="text/javascript" src="assets/js/functional-ck.js")

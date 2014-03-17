@@ -115,12 +115,71 @@ body{
 /************ SPECIFICS *************/
 	#header{
 		width:100%;
-		background-color: $header-color;
-		
+		background-color: $header-color;		
+		#nav_wrap{
+			position:absolute;
+			top:0;
+			width:100%;
+			#nav_toggle{
+				width:100%;
+				text-align: left;
+				font-size: 3rem;
+				color:#999;
+				background-color:$header-color;
+				border-bottom: 1px solid #444;
+				padding:10px;
+				@include user-select(none);
+				cursor: pointer;
+				&.no-js{
+					display: none;
+				}
+				i{
+					float:left;
+					margin-right:1rem;
+				}
+				p{
+					line-height: 2.8rem;
+					font-family: $sans;
+					color:#999;
+				}
+			}
+			nav{
+				width:100%;
+				background-color: darken($header-color, 10%);	
+				max-height: 30rem;
+				overflow-y:hidden;
+				&.shrink_hider{
+					max-height: 0px;
+				}
+				&.animated{
+				}
+
+				#navigation{
+					padding:3rem 0 3rem;
+					a{
+						width:33%;
+						float:left;
+						text-align: center;
+						text-transform: uppercase;
+						font-family: 'Noto Sans', sans-serif;
+						font-size: 1.2rem;
+						&:hover{
+						}
+						i{
+							margin:0 0 5px 0;
+						}
+						p{
+							font-size: 1.3rem;
+						}
+					}
+				}
+			}
+		}
 		#branding{
-		margin: 2rem auto 0;
-		padding-bottom:6rem;
-		background-color: $header-color;
+			position: relative;
+			margin: 2rem auto 0;
+			padding-bottom:6rem;
+			background-color: $header-color;
 			#logo{
 				margin:0 auto 2rem;
 				width:25%;
@@ -147,61 +206,34 @@ body{
 				color:#777;
 				font-size: 2rem;
 			}
-		}	
-		#nav_toggle{
-			width:100%;
-			text-align: left;
-			font-size: 3rem;
-			color:#999;
-			background-color:$header-color;
-			border-bottom: 1px solid #444;
-			padding:10px;
-			@include user-select(none);
-			cursor: pointer;
-			&.no-js{
-				display: none;
-			}
-			i{
-				float:left;
-				margin-right:1rem;
-			}
-			p{
-				line-height: 2.8rem;
-				font-family: $sans;
-				color:#999;
-			}
 		}
-		nav{
-			width:100%;
-			background-color: darken($header-color, 10%);	
-			max-height: 30rem;
-			overflow-y:hidden;
-			&.shrink_hider{
-				max-height: 0px;
-			}
-			&.animated{
-			}
-
-			#navigation{
-				padding:3rem 0 3rem;
-				a{
-					width:33%;
-					float:left;
-					text-align: center;
-					text-transform: uppercase;
-					font-family: 'Noto Sans', sans-serif;
-					font-size: 1.2rem;
-					&:hover{
-					}
-					i{
-						margin:0 0 5px 0;
-					}
-					p{
-						font-size: 1.3rem;
+		@media all and (min-width:800px){
+			&{
+				display:table;
+			#nav_wrap{
+				width:50%;
+				display: table-cell;
+				vertical-align: middle;
+				min-height:100%;
+				#nav_toggle{
+					display:none;
+				}
+				nav{
+					background-color:transparent;
+					&.shrink_hider{
+						max-height:100%;
 					}
 				}
 			}
+			#branding{
+				display: table-cell;
+				vertical-align: middle;
+				width:50%;
+				margin-top:0;
+				padding-top:3rem;
+			}
 		}
+		}	
 	}
 	#post_body{
 		img{
