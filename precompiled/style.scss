@@ -7,6 +7,7 @@ $sans:'Noto Sans', 'Myriad Pro', Helvetica, Arial, sans-serif;
 $serif:'Noto Serif', Baskerville, 'Palatino Linotype', Georgia, serif;
 $link-color:#5A94D7;
 $header-color:#3e3e3e;
+$light-green: #cffece;
 
 /************ GLOBALS ***************/
 html{
@@ -124,8 +125,8 @@ body{
 				font-size: 3rem;
 				color:#999;
 				background-color:$header-color;
-				border-top: 1px solid #444;
-				padding:10px;
+				border-top: 1px solid #555;
+				padding:10px 0 10px;
 				@include user-select(none);
 				cursor: pointer;
 				&.no-js{
@@ -163,13 +164,15 @@ body{
 						text-transform: uppercase;
 						font-family: 'Noto Sans', sans-serif;
 						font-size: 1.2rem;
+						color:$light-green;
 						&:hover{
 						}
 						i{
-							margin:0 0 5px 0;
+							padding:0 0 5px 0;
 						}
 						p{
 							font-size: 1.3rem;
+							color:#999;
 						}
 					}
 				}
