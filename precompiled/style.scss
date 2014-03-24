@@ -46,6 +46,12 @@ body{
 		font-size: 1.8rem;
 	}
 
+	h2,h3,h4{
+		margin:3rem auto;
+		padding:0 1.5rem;
+		max-width: 90rem;
+	}
+
 	p{
 		font-size: 1.5rem;
 		line-height: 1.4;
@@ -54,7 +60,6 @@ body{
 
 	code{
 		font-family: monaco, monospace;
-		width:100%;
 		color:#777;
 		white-space: pre;
 		&:before,&:after{
@@ -67,8 +72,8 @@ body{
 	}
 
 	blockquote{
-		width:80%;
-		padding:10%;
+		display:block;
+		padding:4rem;
 		background-color:#868686;
 		color:#fff;
 		font: 1.5rem $serif;
@@ -80,6 +85,11 @@ body{
 		font-size: 0.8rem;
 		color:#eee;
 		margin-top:1.5rem;
+	}
+	p,code,aside{
+		margin:0 auto 0;
+		padding: 0 1.5rem 0;
+		max-width: 90rem;
 	}
 
 /*********** CLASSES & ANIMATIONS ***************/	
@@ -116,16 +126,16 @@ body{
 /************ SPECIFICS *************/
 	#header{
 		width:100%;
-		background-color: #FFF;		
+		background-color: $header-color;		
 		#nav_wrap{
 			width:100%;
 			#nav_toggle{
 				width:100%;
-				text-align: center;
+				text-align: left;
 				font-size: 3rem;
 				color:#999;
 				background-color:$header-color;
-				border-top: 1px solid #555;
+				border-bottom: 1px solid #555;
 				padding:10px 0 10px;
 				@include user-select(none);
 				cursor: pointer;
@@ -133,7 +143,7 @@ body{
 					display: none;
 				}
 				i{
-					margin-right:1rem;
+					margin:0 1rem;
 					display: inline-block;
 				}
 				p{
@@ -212,29 +222,49 @@ body{
 		@media all and (min-width:800px){
 			&{
 				display:table;
-			#nav_wrap{
-				width:50%;
-				display: table-cell;
-				vertical-align: middle;
-				min-height:100%;
-				#nav_toggle{
-					display:none;
+				#nav_wrap{
+					float:right;
+					width:30%;
+					#nav_toggle{
+						display:none;
+					}
+					nav{
+						background-color:transparent;
+						&.shrink_hider{
+							max-height:100%;
+						}
+						#navigation{
+							a{
+								width:60%;
+								position:relative;
+								float:right;
+								clear:both;
+								padding: 15px 0;
+								text-align: left;
+								i{
+									font-size: 2em;
+									vertical-align: middle;
+								}
+								p{
+									display:inline-block;
+									vertical-align: middle;
+									padding-left:1rem;
+								}
+							}
+						}
+					}
 				}
-				nav{
-					background-color:transparent;
-					&.shrink_hider{
-						max-height:100%;
+				#branding{
+					width:45%;
+					float:left;
+					margin-top:0;
+					padding-left: 25%;
+					padding-top:3rem;
+					&>*{
+						margin:0 auto 0;
 					}
 				}
 			}
-			#branding{
-				display: table-cell;
-				vertical-align: middle;
-				width:50%;
-				margin-top:0;
-				padding-top:3rem;
-			}
-		}
 		}	
 	}
 	#post_body{
@@ -246,7 +276,9 @@ body{
 			font-size: 2rem; 
 		}
 		h2,h3{
-			margin:3rem 1.5rem;
+			margin:3rem auto;
+			padding:0 1.5rem;
+			max-width: 90rem;
 		}
 		h4{
 			font-size: 1.1rem;
@@ -255,7 +287,9 @@ body{
 			text-align: center;
 		}
 		p{
-			margin:0 1.5rem 0;
+			margin:0 auto 0;
+			padding: 0 1.5rem 0;
+			max-width: 90rem;
 		}
 	}
 	footer{

@@ -1,9 +1,20 @@
 @import url(animate.css);
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -12,7 +23,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -24,12 +36,9 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
+blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none; }
 
 table {
@@ -67,13 +76,16 @@ body {
     color: #888; }
   body h4 {
     font-size: 1.8rem; }
+  body h2, body h3, body h4 {
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    max-width: 90rem; }
   body p {
     font-size: 1.5rem;
     line-height: 1.4;
     color: #555; }
   body code {
     font-family: monaco, monospace;
-    width: 100%;
     color: #777;
     white-space: pre; }
     body code:before, body code:after {
@@ -83,8 +95,8 @@ body {
       display: block;
       margin-top: 2rem; }
   body blockquote {
-    width: 80%;
-    padding: 10%;
+    display: block;
+    padding: 4rem;
     background-color: #868686;
     color: #fff;
     font: 1.5rem "Noto Serif", Baskerville, "Palatino Linotype", Georgia, serif;
@@ -95,6 +107,10 @@ body {
     font-size: 0.8rem;
     color: #eee;
     margin-top: 1.5rem; }
+  body p, body code, body aside {
+    margin: 0 auto 0;
+    padding: 0 1.5rem 0;
+    max-width: 90rem; }
   body .clear {
     clear: both; }
   body .animated {
@@ -139,16 +155,16 @@ body {
     animation-fill-mode: both; }
   body #header {
     width: 100%;
-    background-color: #FFF; }
+    background-color: #3e3e3e; }
     body #header #nav_wrap {
       width: 100%; }
       body #header #nav_wrap #nav_toggle {
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-size: 3rem;
         color: #999;
         background-color: #3e3e3e;
-        border-top: 1px solid #555;
+        border-bottom: 1px solid #555;
         padding: 10px 0 10px;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -158,7 +174,7 @@ body {
         body #header #nav_wrap #nav_toggle.no-js {
           display: none; }
         body #header #nav_wrap #nav_toggle i {
-          margin-right: 1rem;
+          margin: 0 1rem;
           display: inline-block; }
         body #header #nav_wrap #nav_toggle p {
           display: inline-block;
@@ -216,36 +232,54 @@ body {
       body #header {
         display: table; }
         body #header #nav_wrap {
-          width: 50%;
-          display: table-cell;
-          vertical-align: middle;
-          min-height: 100%; }
+          float: right;
+          width: 30%; }
           body #header #nav_wrap #nav_toggle {
             display: none; }
           body #header #nav_wrap nav {
             background-color: transparent; }
             body #header #nav_wrap nav.shrink_hider {
               max-height: 100%; }
+            body #header #nav_wrap nav #navigation a {
+              width: 60%;
+              position: relative;
+              float: right;
+              clear: both;
+              padding: 15px 0;
+              text-align: left; }
+              body #header #nav_wrap nav #navigation a i {
+                font-size: 2em;
+                vertical-align: middle; }
+              body #header #nav_wrap nav #navigation a p {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 1rem; }
         body #header #branding {
-          display: table-cell;
-          vertical-align: middle;
-          width: 50%;
+          width: 45%;
+          float: left;
           margin-top: 0;
-          padding-top: 3rem; } }
+          padding-left: 25%;
+          padding-top: 3rem; }
+          body #header #branding > * {
+            margin: 0 auto 0; } }
   body #post_body img {
     max-width: 100%; }
   body #post_body caption {
     font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
     font-size: 2rem; }
   body #post_body h2, body #post_body h3 {
-    margin: 3rem 1.5rem; }
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    max-width: 90rem; }
   body #post_body h4 {
     font-size: 1.1rem;
     color: #999;
     margin: 1rem 0 2rem;
     text-align: center; }
   body #post_body p {
-    margin: 0 1.5rem 0; }
+    margin: 0 auto 0;
+    padding: 0 1.5rem 0;
+    max-width: 90rem; }
   body footer {
     background-color: #3e3e3e;
     color: #eee;

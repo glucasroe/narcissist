@@ -4,7 +4,6 @@
 This is meant to be a theme for Ghost, but that may change as I figure out the complexities of theming it.
 
 ##To Do:
-* Captions for photos
 * Annotations?
 * Convert to an actual template, obvi.
 * Implement search with [GhostHunter](https://github.com/i11ume/ghostHunter)

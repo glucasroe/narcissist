@@ -5,22 +5,12 @@
     <meta charset='utf-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <link href='assets/css/style.css' rel='stylesheet' type='text/css'>
-    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <!-- /%link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet") -->
+    <link href='/assets/css/font-awesome.min.css' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
   </head>
   <body class='animating-in'>
     <div id='header'>
-      <a href='www.glucasroe.com'>
-        <div id='branding'>
-          <div id='logo'>
-            <img class='logo' src='assets/img/seal.svg'>
-          </div>
-          <div id='headlines'>
-            <h1 id='blog_title'>G. Lucas Roe</h1>
-            <h2 id='blog_subtitle'>Sillyrebral Designerd</h2>
-          </div>
-        </div>
-      </a>
       <div id='nav_wrap'>
         <div class='no-js' id='nav_toggle'>
           <i class='fa fa-bars animated'></i>
@@ -49,16 +39,27 @@
           </div>
         </nav>
       </div>
+      <a href='www.glucasroe.com'>
+        <div id='branding'>
+          <div id='logo'>
+            <img class='logo' src='assets/img/seal.svg'>
+          </div>
+          <div id='headlines'>
+            <h1 id='blog_title'>G. Lucas Roe</h1>
+            <h2 id='blog_subtitle'>Sillyrebral Designerd</h2>
+          </div>
+        </div>
+      </a>
       <div class='clear'></div>
     </div>
     <div class='animate-in' id='post_body'>
-      <img src="http://placekitten.com/1200/500" />
+      <img src="assets/img/examplebanner.jpg" />
       <h2>Heading 2 Lorem ipsum</h2>
       
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet molestie nunc. Aenean congue viverra interdum. Praesent eget lacus mauris. Fusce scelerisque pretium nisi vitae sagittis. Donec nunc lectus, blandit non mauris et, dictum tincidunt est. Suspendisse dapibus urna sem, non dignissim massa consectetur id. Praesent sed tellus tempor risus mattis condimentum. Aliquam sollicitudin eros sit amet nisl condimentum, eu ullamcorper nulla semper. Quisque vel cursus metus, sed molestie lectus. Mauris vehicula fringilla nisi sit amet aliquam. In mollis metus ligula, sed cursus est dapibus ac. Aenean condimentum elementum pulvinar. Morbi non magna sem. Donec luctus quis nisl a faucibus.
       </p>
       <h3>Heading 2 Lorem Ipsum Dolor Sit</h3>
-      <img src="http://placekitten.com/800/800" />
+      <img src="assets/img/examplephoto.jpg" />
       
       <h4>This is an adorable Kitten</h4>
       
@@ -74,19 +75,19 @@
       <div id='social'>
         <h3>Me on the Interweb$</h3>
         <a href='https://plus.google.com/+GLucasRoe/posts'>
-          <i class='fa fa-google-plus-square fa-2x'></i>
+          <i class='fa fa-google-plus-square'></i>
         </a>
         <a href='www.linkedin.com/in/glucasroe/'>
-          <i class='fa fa-linkedin-square fa-2x'></i>
+          <i class='fa fa-linkedin-square'></i>
         </a>
         <a href='https://github.com/glucasroe'>
-          <i class='fa fa-github-square fa-2x'></i>
+          <i class='fa fa-github-square'></i>
         </a>
         <a href='https://twitter.com/glucasroe'>
-          <i class='fa fa-twitter-square fa-2x'></i>
+          <i class='fa fa-twitter-square'></i>
         </a>
         <a href='/rss'>
-          <i class='fa fa-rss-square fa-2x'></i>
+          <i class='fa fa-rss-square'></i>
         </a>
       </div>
       <div id='copyright'>
@@ -94,6 +95,10 @@
       </div>
     </footer>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script>
+       window.jQuery || document.write('<script src="assets/js/jquery"><\/script>')
+    </script>
+    <script src='assets/js/jquery-1.11.0.min.js' type='text/javascript'></script>
     <script src='assets/js/modernizr-full.js' type='text/javascript'></script>
     <script src='assets/js/functional-ck.js' type='text/javascript'></script>
   </body>
