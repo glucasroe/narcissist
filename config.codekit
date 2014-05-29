@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16844",
+"creatorBuild": "16895",
 "files": {
 	"\/assets\/css\/animate.css": {
 		"fileType": 16,
@@ -8,6 +8,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/css\/animate.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/assets\/css\/font-awesome.min.css": {
@@ -16,6 +17,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/css\/font-awesome.min.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/assets\/css\/style.css": {
@@ -24,6 +26,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/css\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/assets\/img\/examplebanner.jpg": {
@@ -33,6 +36,7 @@
 		"initialSize": 145436,
 		"inputAbbreviatedPath": "\/assets\/img\/examplebanner.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/examplebanner.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -43,6 +47,7 @@
 		"initialSize": 248902,
 		"inputAbbreviatedPath": "\/assets\/img\/examplephoto.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/examplephoto.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -53,6 +58,7 @@
 		"initialSize": 17476,
 		"inputAbbreviatedPath": "\/assets\/img\/glucasroeseal.png",
 		"outputAbbreviatedPath": "\/assets\/img\/glucasroeseal.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -62,6 +68,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/functional-ck.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/functional-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -72,6 +79,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery-1.11.0.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery-1.11.0.min-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -82,6 +90,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/modernizr-full.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/modernizr-full-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -92,6 +101,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/precompiled\/functional.js": {
@@ -100,6 +110,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/precompiled\/functional.js",
 		"outputAbbreviatedPath": "\/assets\/js\/functional-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -113,6 +124,7 @@
 		"noEscapeInAttributes": 0,
 		"outputAbbreviatedPath": "\/index.html",
 		"outputFormat": 2,
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"useCDATA": 0,
@@ -128,6 +140,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/precompiled\/style.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/style.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -140,6 +153,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
@@ -151,6 +165,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		}
 	},
