@@ -31,7 +31,7 @@ body{
 		color:#777;
 		font-family: $sans;
 	}
-	
+
 	h2{
 		font-size: 3rem;
 		color:#888;
@@ -39,7 +39,7 @@ body{
 
 	h3{
 		font-size: 2.4rem;
-		color:#888; 
+		color:#888;
 	}
 
 	h4{
@@ -91,8 +91,11 @@ body{
 		padding: 0 1.5rem 0;
 		max-width: 90rem;
 	}
+	::selection{
+		background-color: $light-green;
+	}
 
-/*********** CLASSES & ANIMATIONS ***************/	
+/*********** CLASSES & ANIMATIONS ***************/
 	.clear{
 		clear:both;
 	}
@@ -126,7 +129,7 @@ body{
 /************ SPECIFICS *************/
 	#header{
 		width:100%;
-		background-color: $header-color;		
+		background-color: $header-color;
 		#nav_wrap{
 			width:100%;
 			#nav_toggle{
@@ -156,7 +159,7 @@ body{
 			}
 			nav{
 				width:100%;
-				background-color: darken($header-color, 10%);	
+				background-color: darken($header-color, 10%);
 				max-height: 30rem;
 				overflow-y:hidden;
 				&.shrink_hider{
@@ -166,9 +169,10 @@ body{
 				}
 
 				#navigation{
-					padding:3rem 0 3rem;
+					padding:0;
 					a{
 						width:33%;
+						padding:3rem 0 3rem;
 						float:left;
 						text-align: center;
 						text-transform: uppercase;
@@ -176,6 +180,7 @@ body{
 						font-size: 1.2rem;
 						color:$light-green;
 						&:hover{
+							background-color: darken($header-color, 20%);
 						}
 						i{
 							padding:0 0 5px 0;
@@ -193,7 +198,7 @@ body{
 			padding:3rem 0 3rem;
 			background-color: $header-color;
 			#logo{
-				margin:0 auto 2rem;
+				margin:0 auto 1rem;
 				width:25%;
 				max-width: 10rem;
 				object{
@@ -265,7 +270,7 @@ body{
 					}
 				}
 			}
-		}	
+		}
 	}
 	#post_body{
 		img{
@@ -273,7 +278,7 @@ body{
 		}
 		caption{
 			font-family: $sans;
-			font-size: 2rem; 
+			font-size: 2rem;
 		}
 		h2,h3{
 			margin:3rem auto;
@@ -325,7 +330,7 @@ body{
 				text-align: left;
 				line-height: 1.6;
 			}
-		}	
+		}
 	}
 }
 @media all and (min-width:30rem){
