@@ -8,6 +8,11 @@ $serif:'Noto Serif', Baskerville, 'Palatino Linotype', Georgia, serif;
 $link-color:#5A94D7;
 $header-color:#3e3e3e;
 $light-green: #cffece;
+$red: #CC6947;
+$tan: #FFD1B2;
+$light-blue:#73D3FF;
+$cool-grey:#7A7F99;
+$peri-peri:#475DCC;
 
 /************ GLOBALS ***************/
 html{
@@ -224,7 +229,7 @@ body{
 				font-size: 2rem;
 			}
 		}
-		@media all and (min-width:800px){
+		/*@media all and (min-width:800px){
 			&{
 				display:table;
 				#nav_wrap{
@@ -270,7 +275,7 @@ body{
 					}
 				}
 			}
-		}
+		}*/
 	}
 	#post_body{
 		img{
