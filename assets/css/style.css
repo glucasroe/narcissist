@@ -242,8 +242,10 @@ body {
       body #header #nav_wrap nav {
         width: 100%;
         background-color: #333333;
-        max-height: 30rem;
-        overflow-y: hidden; }
+        overflow-y: hidden;
+        height: auto;
+        max-height: 1000px;
+        /*not sure why this doesn't animate otherwise :(*/ }
         body #header #nav_wrap nav.shrink_hider {
           max-height: 0px; }
         body #header #nav_wrap nav #navigation {
@@ -258,22 +260,38 @@ body {
             font-size: 1.2rem;
             color: #fff; }
             body #header #nav_wrap nav #navigation a:hover {
-              opacity: 0.9; }
+              opacity: 0.8; }
             body #header #nav_wrap nav #navigation a#home {
-              background-color: #ffd1b2; }
+              background-color: #7a7f99; }
             body #header #nav_wrap nav #navigation a#about {
               background-color: #cc6947; }
             body #header #nav_wrap nav #navigation a#projects {
               background-color: #73d3ff; }
             body #header #nav_wrap nav #navigation a#resume {
-              background-color: #7a7f99; }
+              background-color: #475dcc; }
             body #header #nav_wrap nav #navigation a i {
-              padding: 0 0 5px 0; }
-            body #header #nav_wrap nav #navigation a p {
-              font-size: 1.3rem;
+              padding: 0 0 5px 0;
+              text-align: center;
+              font-size: 2rem;
               font-weight: bold;
               letter-spacing: 1px;
-              color: #fff; }
+              color: #fff;
+              font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
+              body #header #nav_wrap nav #navigation a i:before {
+                margin-right: 2rem;
+                font-weight: normal;
+                font-family: 'FontAwesome'; }
+          @media only screen and (min-width: 450px) {
+            body #header #nav_wrap nav #navigation a {
+              width: 50%; } }
+          @media only screen and (min-width: 1024px) {
+            body #header #nav_wrap nav #navigation a {
+              width: 25%; }
+              body #header #nav_wrap nav #navigation a i:before {
+                display: block;
+                font-size: 5rem;
+                text-align: center;
+                margin: 0 auto 1rem; } }
     body #header #branding {
       margin: 0 auto 0;
       padding: 3rem 0 3rem;
@@ -299,7 +317,7 @@ body {
         color: #777;
         font-size: 2rem; }
   body #post_body img {
-    max-width: 100%; }
+    width: 100%; }
   body #post_body caption {
     font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
     font-size: 2rem; }
@@ -316,6 +334,13 @@ body {
     margin: 0 auto 0;
     padding: 0 1.5rem 0;
     max-width: 90rem; }
+  @media screen and (min-width: 1000px) {
+    body #post_body {
+      width: 80%;
+      margin-left: 20%; }
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p {
+        text-align: left;
+        max-width: 60rem; } }
   body footer {
     background-color: white;
     color: #eee;

@@ -165,8 +165,9 @@ body{
 			nav{
 				width:100%;
 				background-color: darken($header-color, 80%);
-				max-height: 30rem;
 				overflow-y:hidden;
+				height:auto;
+				max-height:1000px;/*not sure why this doesn't animate otherwise :(*/
 				&.shrink_hider{
 					max-height: 0px;
 				}
@@ -185,10 +186,10 @@ body{
 						font-size: 1.2rem;
 						color:#fff;
 						&:hover{
-							opacity:0.9;
+							opacity:0.8;
 						}
 						&#home{
-							background-color:$tan;
+							background-color:$cool-grey;
 						}
 						&#about{
 							background-color: $red;
@@ -197,16 +198,37 @@ body{
 							background-color: $light-blue;
 						}
 						&#resume{
-							background-color: $cool-grey;
+							background-color: $peri-peri;
 						}
 						i{
 							padding:0 0 5px 0;
-						}
-						p{
-							font-size: 1.3rem;
+							text-align: center;
+							font-size: 2rem;
 							font-weight: bold;
 							letter-spacing: 1px;
 							color:#fff;
+							font-family: $sans;
+							&:before{
+								margin-right: 2rem;
+								font-weight: normal;
+								font-family: 'FontAwesome';
+							}
+						}
+					}
+					@media only screen and (min-width:450px){
+						a{width:50%;}
+					}
+					@media only screen and (min-width:1024px){
+						a{
+							width:25%;
+							i{
+								&:before{
+									display:block;
+									font-size: 5rem;
+									text-align: center;
+									margin:0 auto 1rem;
+								}
+							}
 						}
 					}
 				}
@@ -293,7 +315,7 @@ body{
 	}
 	#post_body{
 		img{
-			max-width: 100%;
+			width: 100%;
 		}
 		caption{
 			font-family: $sans;
@@ -314,6 +336,16 @@ body{
 			margin:0 auto 0;
 			padding: 0 1.5rem 0;
 			max-width: 90rem;
+		}
+		@media screen and (min-width:1000px){
+			width: 80%;
+			margin-left:20%;
+			&{	
+				h1,h2,h3,h4,h5,h6,p{
+					text-align: left;
+					max-width: 60rem;
+				}
+			}
 		}
 	}
 	footer{

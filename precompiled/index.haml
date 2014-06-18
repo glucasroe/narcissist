@@ -13,20 +13,20 @@
 		#header
 			#nav_wrap
 				#nav_toggle.no-js
-					%i(class="fa fa-bars animated")
+					%i.fa.fa-bars.animated
 					%p MENU
 					.clear
 					#search
 				%nav
 					#navigation
 						%a#home(href="/home")
-							%p Home
+							%i.fa.fa-home Home
 						%a#projects(href="/projects")
-							%p Projects
+							%i.fa.fa-briefcase Projects
 						%a#about(href="/about")
-							%p About
+							%i.fa.fa-question-circle About
 						%a#resume(href="/resume")
-							%p Resume
+							%i.fa.fa-file-text Resume
 						.clear
 			%a(href="www.glucasroe.com")
 				#branding
@@ -88,8 +88,10 @@
 					<p>Content is &copy; G. Lucas Roe, and shouldn't be used without at least asking nicely. I can't stop you, but some wicked bad karma will come your way.</p>
 
 		%script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-		:javascript
-			 window.jQuery || document.write('<script src="assets/js/jquery.js"></script>')
+		:plain
+			<script type="text/javascript">
+			 	window.jQuery || document.write(<script src='assets/js/jquery.js'>\x3C/script>")
+			</script>
 		%script(type="text/javascript" src="assets/js/jquery-1.11.0.min.js")
 		%script(type="text/javascript" src="assets/js/modernizr-full.js")
 		%script(type="text/javascript" src="assets/js/functional-ck.js")
