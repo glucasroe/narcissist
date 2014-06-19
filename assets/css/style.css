@@ -317,7 +317,15 @@ body {
         color: #777;
         font-size: 2rem; }
   body #post_body img {
-    width: 100%; }
+    width: 100%;
+    margin: 0; }
+    @media screen and (min-width: 1000px) {
+      body #post_body img {
+        width: 80%;
+        margin-left: 20%; } }
+  body #post_body img.featured {
+    width: 100%;
+    margin: 0; }
   body #post_body caption {
     font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
     font-size: 2rem; }
@@ -336,11 +344,12 @@ body {
     max-width: 90rem; }
   @media screen and (min-width: 1000px) {
     body #post_body {
-      width: 80%;
-      margin-left: 20%; }
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p {
+      /*width: 80%;
+      margin-left:20%;*/ }
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain {
         text-align: left;
-        max-width: 60rem; } }
+        width: 60%;
+        margin: inherit 20%; } }
   body footer {
     background-color: white;
     color: #eee;
