@@ -16,7 +16,7 @@ $peri-peri:#475DCC;
 
 /************ GLOBALS ***************/
 html{
-	font-size: 62.5%;
+	font-size: 100%;
 }
 body{
 	width:100%;
@@ -51,7 +51,7 @@ body{
 		font-size: 1.8rem;
 	}
 
-	h2,h3,h4{
+	h1,h2,h3,h4{
 		margin:3rem auto;
 		padding:0 1.5rem;
 		max-width: 90rem;
@@ -140,7 +140,7 @@ body{
 			#nav_toggle{
 				width:100%;
 				text-align: left;
-				font-size: 3rem;
+				font-size: 1.5rem;
 				color:#999;
 				background-color:$header-color;
 				border-bottom: 1px solid #ddd;
@@ -156,10 +156,12 @@ body{
 				}
 				p{
 					display:inline-block;
+					font-size: 1rem;
 					font-family: $sans;
 					color:#999;
 					position:relative;
-					top:-.5rem;
+					top:-.25rem;
+					padding-left: 0;
 				}
 			}
 			nav{
@@ -178,12 +180,12 @@ body{
 					padding:0;
 					a{
 						width:100%;
-						padding:3rem 0 3rem;
+						padding:2rem 0 2rem;
 						float:left;
 						text-align: center;
 						text-transform: uppercase;
 						font-family: $sans;
-						font-size: 1.2rem;
+						font-size: 1rem;
 						color:#fff;
 						&:hover{
 							opacity:0.8;
