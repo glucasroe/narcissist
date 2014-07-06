@@ -52,22 +52,27 @@ html {
 
 body {
   width: 100%;
-  font-family: "Noto Serif", Baskerville, "Palatino Linotype", Georgia, serif;
+  font-family: "Noto Serif", "Baskerville", "Palatino Linotype", Georgia, serif;
   color: #333;
   /*********** CLASSES & ANIMATIONS ***************/
   /************ SPECIFICS *************/ }
   body a {
-    color: #5a94d7;
+    color: #475dcc;
     text-decoration: none;
     -webkit-transition: color, 0.5s;
     -moz-transition: color, 0.5s;
     transition: color, 0.5s; }
     body a:hover {
-      color: #2861a3; }
+      color: #263687; }
   body h1 {
     font-size: 3.6rem;
     color: #777;
-    font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
+    font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+    margin: 2rem auto;
+    padding: 0 1rem; }
+  body h2, body h3, body h4 {
+    margin: 1.5rem auto;
+    padding: 0 1.5rem; }
   body h2 {
     font-size: 3rem;
     color: #888; }
@@ -75,42 +80,52 @@ body {
     font-size: 2.4rem;
     color: #888; }
   body h4 {
-    font-size: 1.8rem; }
-  body h1, body h2, body h3, body h4 {
-    margin: 3rem auto;
-    padding: 0 1.5rem;
-    max-width: 90rem; }
+    font-size: 1.1rem;
+    color: #999;
+    margin: 1rem 0 2rem;
+    text-align: left;
+    font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
   body p {
-    font-size: 1.5rem;
-    line-height: 1.4;
-    color: #555; }
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: #555;
+    margin-bottom: 1.5rem; }
   body code {
     font-family: monaco, monospace;
     color: #777;
-    white-space: pre; }
+    white-space: pre;
+    line-height: 1.25;
+    width: 100%; }
     body code:before, body code:after {
       width: 100%;
       content: '\00a0';
       border-top: 1px solid #ddd;
       display: block;
       margin-top: 2rem; }
+  body aside {
+    color: #cc6947;
+    width: 60%;
+    margin: 2rem auto; }
   body blockquote {
     display: block;
     padding: 4rem;
     background-color: #868686;
     color: #fff;
-    font: 1.5rem "Noto Serif", Baskerville, "Palatino Linotype", Georgia, serif;
+    font: 1.5rem "Noto Serif", "Baskerville", "Palatino Linotype", Georgia, serif;
     margin: 0 0 2rem; }
-  body aside {
-    text-align: right;
-    font-style: italic;
-    font-size: 0.8rem;
-    color: #eee;
-    margin-top: 1.5rem; }
-  body p, body code, body aside {
+    body blockquote h4 {
+      text-align: left;
+      font-style: italic;
+      color: #bbb;
+      margin-top: 1rem;
+      padding-left: 1.5rem; }
+  body p, body code {
     margin: 0 auto 0;
-    padding: 0 1.5rem 0;
-    max-width: 90rem; }
+    padding: 0 1.5rem 0; }
+  body strong {
+    font-weight: bold; }
+  body em {
+    font-style: italic; }
   body ::selection {
     background-color: #cffece; }
   body .clear {
@@ -165,54 +180,7 @@ body {
     animation-fill-mode: both; }
   body #header {
     width: 100%;
-    background-color: white;
-    /*@media all and (min-width:800px){
-    	&{
-    		display:table;
-    		#nav_wrap{
-    			float:right;
-    			width:30%;
-    			#nav_toggle{
-    				display:none;
-    			}
-    			nav{
-    				background-color:transparent;
-    				&.shrink_hider{
-    					max-height:100%;
-    				}
-    				#navigation{
-    					a{
-    						width:60%;
-    						position:relative;
-    						float:right;
-    						clear:both;
-    						padding: 15px 0;
-    						text-align: left;
-    						i{
-    							font-size: 2em;
-    							vertical-align: middle;
-    						}
-    						p{
-    							display:inline-block;
-    							vertical-align: middle;
-    							padding-left:1rem;
-    						}
-    					}
-    				}
-    			}
-    		}
-    		#branding{
-    			width:45%;
-    			float:left;
-    			margin-top:0;
-    			padding-left: 25%;
-    			padding-top:3rem;
-    			&>*{
-    				margin:0 auto 0;
-    			}
-    		}
-    	}
-    }*/ }
+    background-color: white; }
     body #header #nav_wrap {
       width: 100%; }
       body #header #nav_wrap #nav_toggle {
@@ -239,7 +207,7 @@ body {
           font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
           color: #999;
           position: relative;
-          top: -.25rem;
+          top: -.2rem;
           padding-left: 0; }
       body #header #nav_wrap nav {
         width: 100%;
@@ -259,7 +227,7 @@ body {
             text-align: center;
             text-transform: uppercase;
             font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
-            font-size: 1rem;
+            font-size: 0.7rem;
             color: #fff; }
             body #header #nav_wrap nav #navigation a:hover {
               opacity: 0.8; }
@@ -274,13 +242,13 @@ body {
             body #header #nav_wrap nav #navigation a i {
               padding: 0 0 5px 0;
               text-align: center;
-              font-size: 2rem;
+              font-size: 1.5rem;
               font-weight: bold;
               letter-spacing: 1px;
               color: #fff;
               font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
               body #header #nav_wrap nav #navigation a i:before {
-                margin-right: 2rem;
+                margin-right: 1rem;
                 font-weight: normal;
                 font-family: 'FontAwesome'; }
           @media only screen and (min-width: 450px) {
@@ -291,7 +259,7 @@ body {
               width: 25%; }
               body #header #nav_wrap nav #navigation a i:before {
                 display: block;
-                font-size: 5rem;
+                font-size: 4rem;
                 text-align: center;
                 margin: 0 auto 1rem; } }
     body #header #branding {
@@ -301,7 +269,7 @@ body {
       body #header #branding #logo {
         margin: 0 auto 1rem;
         width: 25%;
-        max-width: 10rem; }
+        max-width: 7rem; }
         body #header #branding #logo object {
           width: 100%;
           margin: 0 auto 0;
@@ -318,49 +286,63 @@ body {
         font-family: 'Noto Serif', serif;
         color: #777;
         font-size: 2rem; }
-  body #post_body img {
-    width: 100%;
-    margin: 0; }
+  body #post_body {
+    /*h4{
+    	font-size: 1.1rem;
+    	color:#999;
+    	margin:1rem 0 2rem;
+    	text-align: left;
+    	font-family: $sans;
+    }*/ }
+    body #post_body img {
+      width: 100%;
+      margin: 0; }
+      @media screen and (min-width: 1000px) {
+        body #post_body img {
+          width: 80%;
+          margin-left: 20%; } }
+    body #post_body img.featured {
+      width: 100%;
+      margin: 0; }
+    body #post_body img.contain {
+      padding: 0 1.5rem 0; }
+    body #post_body .unknown {
+      font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+      font-size: 2rem; }
+    body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body p, body #post_body aside, body #post_body img.contain {
+      max-width: 50rem;
+      text-align: left; }
+    body #post_body p {
+      margin: 0 auto 0;
+      padding: 0 1.5rem 1.5rem; }
+    body #post_body .top-margin {
+      margin-top: 1rem; }
+    @media screen and (min-width: 600px) {
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code {
+        width: 90%;
+        margin-left: 5%; } }
     @media screen and (min-width: 1000px) {
-      body #post_body img {
-        width: 80%;
-        margin-left: 20%; } }
-  body #post_body img.featured {
-    width: 100%;
-    margin: 0; }
-  body #post_body caption {
-    font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
-    font-size: 2rem; }
-  body #post_body h2, body #post_body h3 {
-    margin: 3rem auto;
-    padding: 0 1.5rem;
-    max-width: 90rem; }
-  body #post_body h4 {
-    font-size: 1.1rem;
-    color: #999;
-    margin: 1rem 0 2rem;
-    text-align: center; }
-  body #post_body p {
-    margin: 0 auto 0;
-    padding: 0 1.5rem 0;
-    max-width: 90rem; }
-  @media screen and (min-width: 1000px) {
-    body #post_body {
-      /*width: 80%;
-      margin-left:20%;*/ }
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain {
-        text-align: left;
-        width: 60%;
-        margin: inherit 20%; } }
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code {
+        margin-left: 20%; }
+      body #post_body aside {
+        float: left;
+        width: 15%;
+        margin: 0 2.5%;
+        text-align: right;
+        line-height: 1.7; }
+      body #post_body blockquote {
+        padding-left: 10%; }
+        body #post_body blockquote caption {
+          text-align: left; } }
   body footer {
     background-color: white;
     color: #eee;
     margin-top: 4rem;
     text-align: center; }
     body footer a {
-      color: #eee; }
+      color: #bbb; }
       body footer a:hover {
-        color: #5a94d7; }
+        color: #475dcc; }
     body footer #social {
       padding: 2rem;
       font-size: 2rem; }
@@ -378,13 +360,3 @@ body {
         font-size: 1.2rem;
         text-align: left;
         line-height: 1.6; }
-
-@media all and (min-width: 30rem) {
-  /*body{
-  	#header{
-  		#nav_toggle{
-  		}
-  		nav{
-  		}
-  	}
-  }*/ }

@@ -4,8 +4,8 @@
 
 /************ VARS *************/
 $sans:'Noto Sans', 'Myriad Pro', Helvetica, Arial, sans-serif;
-$serif:'Noto Serif', Baskerville, 'Palatino Linotype', Georgia, serif;
-$link-color:#5A94D7;
+$serif:'Noto Serif', 'Baskerville', 'Palatino Linotype', Georgia, serif;
+$link-color:#475DCC;
 $header-color:#fff;
 $light-green: #cffece;
 $red: #CC6947;
@@ -35,6 +35,13 @@ body{
 		font-size: 3.6rem;
 		color:#777;
 		font-family: $sans;
+		margin:2rem auto;
+		padding:0 1rem;
+	}
+
+	h2,h3,h4{
+		margin:1.5rem auto;
+		padding:0 1.5rem;
 	}
 
 	h2{
@@ -48,25 +55,27 @@ body{
 	}
 
 	h4{
-		font-size: 1.8rem;
-	}
-
-	h1,h2,h3,h4{
-		margin:3rem auto;
-		padding:0 1.5rem;
-		max-width: 90rem;
+		font-size: 1.1rem;
+		color:#999;
+		margin:1rem 0 2rem;
+		text-align: left;
+		font-family: $sans;
 	}
 
 	p{
-		font-size: 1.5rem;
-		line-height: 1.4;
+		font-size: 1.1rem;
+		line-height: 1.75;
 		color:#555;
+		margin-bottom: 1.5rem;
 	}
 
 	code{
 		font-family: monaco, monospace;
 		color:#777;
 		white-space: pre;
+		line-height:1.25;
+		width:100%;
+		
 		&:before,&:after{
 			width:100%;
 			content:'\00a0';
@@ -75,7 +84,12 @@ body{
 			margin-top: 2rem;
 		}
 	}
+	aside{
+		color:$red;
+		width:60%;
+		margin:2rem auto;
 
+	}
 	blockquote{
 		display:block;
 		padding:4rem;
@@ -83,18 +97,24 @@ body{
 		color:#fff;
 		font: 1.5rem $serif;
 		margin: 0 0 2rem;
+	
+		h4{
+			text-align:left;
+			font-style: italic;
+			color:#bbb;
+			margin-top:1rem;
+			padding-left:1.5rem;
+		}
 	}
-	aside{
-		text-align:right;
-		font-style: italic;
-		font-size: 0.8rem;
-		color:#eee;
-		margin-top:1.5rem;
-	}
-	p,code,aside{
+	p,code{
 		margin:0 auto 0;
 		padding: 0 1.5rem 0;
-		max-width: 90rem;
+	}
+	strong{
+		font-weight: bold;
+	}
+	em{
+		font-style: italic;
 	}
 	::selection{
 		background-color: $light-green;
@@ -111,7 +131,7 @@ body{
 	}
 
 	.rotated{
-		@include transform( rotate(90deg) );
+		@include transform(rotate(90deg) );
 	}
 
 	@include keyframes (animate-in) {
@@ -160,7 +180,7 @@ body{
 					font-family: $sans;
 					color:#999;
 					position:relative;
-					top:-.25rem;
+					top:-.2rem;
 					padding-left: 0;
 				}
 			}
@@ -185,7 +205,7 @@ body{
 						text-align: center;
 						text-transform: uppercase;
 						font-family: $sans;
-						font-size: 1rem;
+						font-size: 0.7rem;
 						color:#fff;
 						&:hover{
 							opacity:0.8;
@@ -205,13 +225,13 @@ body{
 						i{
 							padding:0 0 5px 0;
 							text-align: center;
-							font-size: 2rem;
+							font-size: 1.5rem;
 							font-weight: bold;
 							letter-spacing: 1px;
 							color:#fff;
 							font-family: $sans;
 							&:before{
-								margin-right: 2rem;
+								margin-right: 1rem;
 								font-weight: normal;
 								font-family: 'FontAwesome';
 							}
@@ -226,7 +246,7 @@ body{
 							i{
 								&:before{
 									display:block;
-									font-size: 5rem;
+									font-size: 4rem;
 									text-align: center;
 									margin:0 auto 1rem;
 								}
@@ -243,7 +263,7 @@ body{
 			#logo{
 				margin:0 auto 1rem;
 				width:25%;
-				max-width: 10rem;
+				max-width: 7rem;
 				object{
 					width:100%;
 					margin:0 auto 0;
@@ -267,53 +287,6 @@ body{
 				font-size: 2rem;
 			}
 		}
-		/*@media all and (min-width:800px){
-			&{
-				display:table;
-				#nav_wrap{
-					float:right;
-					width:30%;
-					#nav_toggle{
-						display:none;
-					}
-					nav{
-						background-color:transparent;
-						&.shrink_hider{
-							max-height:100%;
-						}
-						#navigation{
-							a{
-								width:60%;
-								position:relative;
-								float:right;
-								clear:both;
-								padding: 15px 0;
-								text-align: left;
-								i{
-									font-size: 2em;
-									vertical-align: middle;
-								}
-								p{
-									display:inline-block;
-									vertical-align: middle;
-									padding-left:1rem;
-								}
-							}
-						}
-					}
-				}
-				#branding{
-					width:45%;
-					float:left;
-					margin-top:0;
-					padding-left: 25%;
-					padding-top:3rem;
-					&>*{
-						margin:0 auto 0;
-					}
-				}
-			}
-		}*/
 	}
 	#post_body{
 		img{
@@ -328,37 +301,60 @@ body{
 			width: 100%;
 			margin:0;
 		}
-		caption{
+		img.contain{
+			padding:0 1.5rem 0;
+		}
+		.unknown{
 			font-family: $sans;
 			font-size: 2rem;
 		}
-		h2,h3{
-			margin:3rem auto;
-			padding:0 1.5rem;
-			max-width: 90rem;
+		h1,h2,h3,h4,h5,p,aside,img.contain{
+			max-width: 50rem;
+			text-align: left;
 		}
-		h4{
+		/*h4{
 			font-size: 1.1rem;
 			color:#999;
 			margin:1rem 0 2rem;
-			text-align: center;
-		}
+			text-align: left;
+			font-family: $sans;
+		}*/
 		p{
 			margin:0 auto 0;
-			padding: 0 1.5rem 0;
-			max-width: 90rem;
+			padding: 0 1.5rem 1.5rem;
 		}
-		@media screen and (min-width:1000px){
-			/*width: 80%;
-			margin-left:20%;*/
+		.top-margin{
+			margin-top: 1rem;
+		}
+		@media screen and (min-width:600px){
 			&{	
-				h1,h2,h3,h4,h5,h6,p,img.contain{
-					text-align: left;
-					width: 60%;
-					margin:inherit 20%;
+				h1,h2,h3,h4,h5,h6,p,img.contain,code{
+					width: 90%;
+					margin-left: 5%;
 				}
 			}
-		}
+		}	
+		@media screen and (min-width:1000px){
+			&{	
+				h1,h2,h3,h4,h5,h6,p,img.contain,code{
+					margin-left: 20%;
+				}
+				aside{
+					float:left;
+					width:15%;
+					margin:0 2.5%;
+					text-align: right;
+					line-height: 1.7;
+				}
+				blockquote{
+					padding-left:10%;
+					caption{
+						text-align: left;
+
+					}
+				}
+			}
+		}		
 	}
 	footer{
 		background-color: $header-color;
@@ -366,7 +362,7 @@ body{
 		margin-top: 4rem;
 		text-align: center;
 		a{
-			color:#eee;
+			color:#bbb;
 			&:hover{
 				color:$link-color;
 			}
@@ -395,14 +391,4 @@ body{
 			}
 		}
 	}
-}
-@media all and (min-width:30rem){
-	/*body{
-		#header{
-			#nav_toggle{
-			}
-			nav{
-			}
-		}
-	}*/
 }
