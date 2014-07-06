@@ -77,7 +77,10 @@ body{
 		float:right;
 		margin:0 2.5%;
 		width:95%;
-		border:1px solid #555;
+		border:1px solid #eee;
+		border-radius:10px;
+		padding:1.5rem;
+		margin:1.5rem;
 	}
 	aside{
 		color:$red;
@@ -102,8 +105,10 @@ body{
 		}
 	}
 	p,code{
-		margin:0 auto 0;
-		padding: 0 1.5rem 0;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left:1.5rem;
+		padding-right:1.5rem;
 	}
 	strong{
 		font-weight: bold;
