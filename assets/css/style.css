@@ -95,13 +95,10 @@ body {
     color: #777;
     white-space: pre;
     line-height: 1.25;
-    width: 100%; }
-    body code:before, body code:after {
-      width: 100%;
-      content: '\00a0';
-      border-top: 1px solid #ddd;
-      display: block;
-      margin-top: 2rem; }
+    float: right;
+    margin: 0 2.5%;
+    width: 95%;
+    border: 1px solid #555; }
   body aside {
     color: #cc6947;
     width: 60%;
@@ -324,6 +321,9 @@ body {
     @media screen and (min-width: 1000px) {
       body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code {
         margin-left: 20%; }
+      body #post_body code {
+        margin-left: 20%;
+        width: 80%; }
       body #post_body aside {
         float: left;
         width: 15%;

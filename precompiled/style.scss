@@ -74,15 +74,10 @@ body{
 		color:#777;
 		white-space: pre;
 		line-height:1.25;
-		width:100%;
-		
-		&:before,&:after{
-			width:100%;
-			content:'\00a0';
-			border-top:1px solid #ddd;
-			display:block;
-			margin-top: 2rem;
-		}
+		float:right;
+		margin:0 2.5%;
+		width:95%;
+		border:1px solid #555;
 	}
 	aside{
 		color:$red;
@@ -338,6 +333,10 @@ body{
 			&{	
 				h1,h2,h3,h4,h5,h6,p,img.contain,code{
 					margin-left: 20%;
+				}
+				code{
+					margin-left: 20%;
+					width:80%;
 				}
 				aside{
 					float:left;
