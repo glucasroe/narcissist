@@ -33,7 +33,7 @@ body{
 
 	h1{
 		font-size: 3.6rem;
-		color:#777;
+		color:$cool-grey;
 		font-family: $sans;
 		margin:2rem auto;
 		padding:0 1rem;
@@ -46,17 +46,17 @@ body{
 
 	h2{
 		font-size: 3rem;
-		color:#888;
+		color:$cool-grey;
 	}
 
 	h3{
 		font-size: 2.4rem;
-		color:#888;
+		color:$cool-grey;
 	}
 
 	h4{
-		font-size: 1.1rem;
-		color:#999;
+		font-size: 1rem;
+		color:$peri-peri;
 		margin:1rem 0 2rem;
 		text-align: left;
 		font-family: $sans;
@@ -72,26 +72,27 @@ body{
 	code{
 		font-family: monaco, monospace;
 		color:#777;
+		background-color:#efefef;
 		white-space: pre;
 		line-height:1.25;
 		float:right;
 		margin:0 2.5%;
 		width:95%;
-		border:1px solid #eee;
 		border-radius:10px;
 		padding:1.5rem;
 		margin:1.5rem;
+		overflow:auto;
 	}
 	aside{
 		color:$red;
 		width:60%;
 		margin:2rem auto;
-
+		font-family: $sans;
 	}
 	blockquote{
 		display:block;
 		padding:4rem;
-		background-color:#868686;
+		background-color:$cool-grey;
 		color:#fff;
 		font: 1.5rem $serif;
 		margin: 0 0 2rem;
@@ -110,6 +111,15 @@ body{
 		padding-left:1.5rem;
 		padding-right:1.5rem;
 	}
+	q{
+		width: 100%;
+		display: block;
+		color:lighten($cool-grey,20%);
+		text-align: center;
+		font-style: italic;
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
 	strong{
 		font-weight: bold;
 	}
@@ -117,7 +127,8 @@ body{
 		font-style: italic;
 	}
 	::selection{
-		background-color: $light-green;
+		background-color: $red;
+		color:white;
 	}
 
 /*********** CLASSES & ANIMATIONS ***************/
@@ -182,6 +193,8 @@ body{
 					position:relative;
 					top:-.2rem;
 					padding-left: 0;
+					margin-bottom: 0;
+					line-height: 1;
 				}
 			}
 			nav{
@@ -341,34 +354,38 @@ body{
 				}
 				code{
 					margin-left: 20%;
-					width:80%;
+					margin-right: 10%;
+					width:70%;
 				}
 				aside{
 					float:left;
 					width:15%;
 					margin:0 2.5%;
 					text-align: right;
+					font-size: 1.1rem;
 					line-height: 1.7;
 				}
 				blockquote{
-					padding-left:10%;
-					caption{
+					padding-left:20%;
+					padding-right:20%;
+					padding-bottom:1.5rem;
+					h4{
 						text-align: left;
-
+						margin-left: 0;
 					}
 				}
 			}
 		}		
 	}
 	footer{
-		background-color: $header-color;
+		background-color: $cool-grey;
 		color:#eee;
 		margin-top: 4rem;
 		text-align: center;
 		a{
 			color:#bbb;
 			&:hover{
-				color:$link-color;
+				color:#fff;
 			}
 		}
 		#social{
@@ -376,6 +393,7 @@ body{
 			font-size: 2rem;
 			h3{
 				margin-bottom: 1rem;
+				color:#fff;
 			}
 			p{
 				width:100%;
@@ -385,13 +403,15 @@ body{
 			}
 		}
 		#copyright{
-			padding:2rem;
-			border-top:1px solid #555;
+			padding:1rem;
+			background-color:#333;
 			p{
 				color:#ccc;
-				font-size: 1.2rem;
-				text-align: left;
+				font-size: 0.8rem;
+				font-family: $sans;
+				text-align: center;
 				line-height: 1.6;
+				margin:0 auto 0;
 			}
 		}
 	}

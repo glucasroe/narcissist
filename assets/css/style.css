@@ -66,7 +66,7 @@ body {
       color: #263687; }
   body h1 {
     font-size: 3.6rem;
-    color: #777;
+    color: #7a7f99;
     font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
     margin: 2rem auto;
     padding: 0 1rem; }
@@ -75,13 +75,13 @@ body {
     padding: 0 1.5rem; }
   body h2 {
     font-size: 3rem;
-    color: #888; }
+    color: #7a7f99; }
   body h3 {
     font-size: 2.4rem;
-    color: #888; }
+    color: #7a7f99; }
   body h4 {
-    font-size: 1.1rem;
-    color: #999;
+    font-size: 1rem;
+    color: #475dcc;
     margin: 1rem 0 2rem;
     text-align: left;
     font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
@@ -93,23 +93,25 @@ body {
   body code {
     font-family: monaco, monospace;
     color: #777;
+    background-color: #efefef;
     white-space: pre;
     line-height: 1.25;
     float: right;
     margin: 0 2.5%;
     width: 95%;
-    border: 1px solid #eee;
     border-radius: 10px;
     padding: 1.5rem;
-    margin: 1.5rem; }
+    margin: 1.5rem;
+    overflow: auto; }
   body aside {
     color: #cc6947;
     width: 60%;
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
   body blockquote {
     display: block;
     padding: 4rem;
-    background-color: #868686;
+    background-color: #7a7f99;
     color: #fff;
     font: 1.5rem "Noto Serif", "Baskerville", "Palatino Linotype", Georgia, serif;
     margin: 0 0 2rem; }
@@ -124,12 +126,21 @@ body {
     margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
+  body q {
+    width: 100%;
+    display: block;
+    color: #b4b7c5;
+    text-align: center;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem; }
   body strong {
     font-weight: bold; }
   body em {
     font-style: italic; }
   body ::selection {
-    background-color: #cffece; }
+    background-color: #cc6947;
+    color: white; }
   body .clear {
     clear: both; }
   body .animated {
@@ -210,7 +221,9 @@ body {
           color: #999;
           position: relative;
           top: -.2rem;
-          padding-left: 0; }
+          padding-left: 0;
+          margin-bottom: 0;
+          line-height: 1; }
       body #header #nav_wrap nav {
         width: 100%;
         background-color: #333333;
@@ -328,40 +341,48 @@ body {
         margin-left: 20%; }
       body #post_body code {
         margin-left: 20%;
-        width: 80%; }
+        margin-right: 10%;
+        width: 70%; }
       body #post_body aside {
         float: left;
         width: 15%;
         margin: 0 2.5%;
         text-align: right;
+        font-size: 1.1rem;
         line-height: 1.7; }
       body #post_body blockquote {
-        padding-left: 10%; }
-        body #post_body blockquote caption {
-          text-align: left; } }
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 1.5rem; }
+        body #post_body blockquote h4 {
+          text-align: left;
+          margin-left: 0; } }
   body footer {
-    background-color: white;
+    background-color: #7a7f99;
     color: #eee;
     margin-top: 4rem;
     text-align: center; }
     body footer a {
       color: #bbb; }
       body footer a:hover {
-        color: #475dcc; }
+        color: #fff; }
     body footer #social {
       padding: 2rem;
       font-size: 2rem; }
       body footer #social h3 {
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        color: #fff; }
       body footer #social p {
         width: 100%; }
         body footer #social p a {
           margin: 0 1rem 0; }
     body footer #copyright {
-      padding: 2rem;
-      border-top: 1px solid #555; }
+      padding: 1rem;
+      background-color: #333; }
       body footer #copyright p {
         color: #ccc;
-        font-size: 1.2rem;
-        text-align: left;
-        line-height: 1.6; }
+        font-size: 0.8rem;
+        font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+        text-align: center;
+        line-height: 1.6;
+        margin: 0 auto 0; }
