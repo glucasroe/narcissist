@@ -1,14 +1,20 @@
 !!!5
 %html
 	%head
-		%title G. Lucas Roe
+		%title {{meta_title}}
 		%meta(charset="utf-8")
-		%meta(name="viewport" content="width=device-width, initial-scale=1")
+		%meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		%meta(name="description" content="{{meta_description}}")
+		%meta(name="HandheldFriendly" content="true")
+		%meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
 		%link(rel="stylesheet" type="text/css" href="assets/css/style.css")
 		//%link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
 		%link(href="/assets/css/font-awesome.min.css" rel="stylesheet")
 		%link(href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css')
-
+		:plain
+			<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+			{{ghost_head}}
 	%body.animating-in
 		#header
 			#nav_wrap

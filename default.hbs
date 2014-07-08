@@ -7,7 +7,7 @@
     <meta content='{{meta_description}}' name='description'>
     <meta content='true' name='HandheldFriendly'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <link href='assets/css/style.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{asset"css/style.css"}}"/ >
     <!-- /%link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet") -->
     <link href='/assets/css/font-awesome.min.css' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -50,31 +50,7 @@
       <div class='clear'></div>
     </div>
     <div class='animate-in' id='post_body'>
-      <img src="assets/img/examplebanner.jpg" class="featured" />
-      <h1>Post Title 1 Lorem ipsum</h2>
-      
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit <strong>amet</strong> molestie nunc. Aenean congue viverra interdum. Praesent eget lacus mauris. Fusce scelerisque pretium nisi vitae sagittis. Donec nunc lectus, blandit non mauris et, dictum tincidunt est. Suspendisse dapibus urna sem, non dignissim massa consectetur id. <a href="#">Praesent sed tellus</a> tempor risus mattis condimentum.</p> 
-      
-      <aside>Hello, I am an aside, hopefully this will work correctly.</aside> 
-      
-      <p>
-      Aliquam sollicitudin eros sit amet nisl condimentum, eu ullamcorper nulla semper. Quisque vel cursus metus, sed molestie lectus. Mauris vehicula fringilla nisi sit amet aliquam. In mollis metus ligula, sed cursus est dapibus ac. Aenean condimentum elementum pulvinar. Morbi non magna sem. Donec luctus quis nisl a faucibus.
-      </p>
-      <h3>Heading 2 Lorem Ipsum Dolor Sit</h3>
-      <img src="assets/img/examplephoto.jpg" />
-      
-      <h4>This is an adorable Kitten</h4>
-      
-      <p>Praesent vitae porta ligula, ac egestas nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tempus accumsan dui, a sagittis ante interdum molestie. Integer eleifend mi a auctor gravida. Duis sit amet elit eu velit vulputate cursus. Duis eros eros, ornare nec enim et, molestie vulputate augue.</p>
-      <q>How do you feel about some of this madness, hmm?</q>
-      <p>Nunc commodo eros sit amet sapien dignissim gravida. Cras sodales tempor felis non semper. Duis purus nisi, gravida vel lacinia ut, laoreet sit amet felis. Vivamus a molestie neque. Aliquam erat volutpat. Proin sit amet venenatis diam. Donec et malesuada nunc. Nullam nisl nunc, elementum in euismod et, mattis ultricies turpis. Cras rhoncus quis odio sed congue. Praesent malesuada quam a suscipit mattis.</p>
-      <img src="assets/img/examplebanner.jpg" class="contain top-margin" />
-      <code>nav{&#x000A;    width:100%;&#x000A;    background-color: #333;&#x000A;    max-height: 300px;&#x000A;    overflow-y:hidden;&#x000A;    &#x000A;    &.shrink_hider{&#x000A;      max-height: 0px;&#x000A;    }&#x000A;    &#x000A;    &.animated{&#x000A;    }&#x000A;    &#x000A;    #navigation{&#x000A;      padding:10% 0 10%;&#x000A;    }</code>
-      <h2>Here is some more writing</h2>
-      <blockquote>How do you feel about some of this madness, hmm? Praesent vitae porta ligula, ac egestas nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tempus accumsan dui, a sagittis ante interdum molestie. 
-      <h4>Sir John Smiff</h4></blockquote>
-      
-      <p>Praesent vitae porta ligula, ac egestas nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tempus accumsan dui, a sagittis ante interdum molestie. </p>
+      {{{body}}}
     </div>
     <footer>
       <div id='social'>
@@ -103,6 +79,7 @@
     <script type="text/javascript">
      	window.jQuery || document.write(<script src='assets/js/jquery.js'>\x3C/script>")
     </script>
+    {{ghost_foot}}
     <script src='assets/js/jquery-1.11.0.min.js' type='text/javascript'></script>
     <script src='assets/js/modernizr-full.js' type='text/javascript'></script>
     <script src='assets/js/functional-ck.js' type='text/javascript'></script>
