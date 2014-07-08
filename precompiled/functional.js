@@ -6,6 +6,8 @@ $(document).ready(function(){
 		$('nav:not(.animated)').addClass('animated');
 		$('#nav_toggle i').toggleClass('rotated');
 		$('nav').toggleClass('shrink_hider');
+	}).children().not('i,p').click(function(e){
+		return false;
 	});
-
 });
+

@@ -196,6 +196,20 @@ body{
 					margin-bottom: 0;
 					line-height: 1;
 				}
+				#search{
+					float:right;
+					form{
+						input#search_field{
+							@include appearance(none);
+							border:none;
+							font-family: $sans;
+							background-color:lighten($light-blue,20%);
+						}
+						input#submit_btn{
+							display:none;
+						}
+					}
+				}
 			}
 			nav{
 				width:100%;
