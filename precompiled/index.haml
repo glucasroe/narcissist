@@ -15,10 +15,12 @@
 				#nav_toggle.no-js
 					%i.fa.fa-bars.animated
 					%p MENU
-					#search
-						%form
-							%input#search_field
-							%input(type="submit" value="search" id="submit_btn")
+					-#				
+						#search
+							%form
+								%input#search_field(placeholder="Search" maxlength="25")
+								%input(type="submit" value="search" id="submit_btn")
+								%i#search_icon.fa.fa-search
 					.clear
 				%nav.shrink_hider
 					#navigation
@@ -31,9 +33,9 @@
 						%a#resume(href="/resume")
 							%i.fa.fa-file-text Resume
 						.clear
-			%a(href="www.glucasroe.com")
-				#branding
-					#logo
+			#branding
+				#logo
+					%a(href="www.glucasroe.com")
 						%img(src="assets/img/seal.svg" class="logo" alt="G. Lucas Roe")
 			.clear
 		#post_body.animate-in

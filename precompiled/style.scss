@@ -175,14 +175,13 @@ body{
 				color:#999;
 				background-color:$header-color;
 				border-bottom: 1px solid #ddd;
-				padding:10px 0 10px;
 				@include user-select(none);
 				cursor: pointer;
 				&.no-js{
 					display: none;
 				}
 				i{
-					margin:0 1rem;
+					margin: 0.75rem 1rem;
 					display: inline-block;
 				}
 				p{
@@ -198,15 +197,41 @@ body{
 				}
 				#search{
 					float:right;
+					width:50%;
+					@media screen and (min-width:900px){
+						width:25%;
+					}
 					form{
 						input#search_field{
 							@include appearance(none);
+							@include transition(all 0.25s);
 							border:none;
 							font-family: $sans;
-							background-color:lighten($light-blue,20%);
+							background-color:lighten($light-blue,25%);
+							height:3rem;
+							width:100%;
+							margin:0;
+							padding:0 20px;
+							font-size: 1rem;
+							text-transform: uppercase;
+							@include placeholder{color:#999;}
+							overflow-x:auto;
+							&:focus{
+								outline:none;
+								background-color:lighten($light-blue,20%);
+								@include placeholder{color:#666;};
+								color:#333;
+							}
 						}
 						input#submit_btn{
 							display:none;
+						}
+						#search_icon{
+							position:absolute;
+							top:0;
+							right:0;
+							font-size: 1rem;
+							padding-top:0.25rem;
 						}
 					}
 				}
