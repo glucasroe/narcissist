@@ -5,6 +5,8 @@ This is meant to be a theme for Ghost, but that may change as I figure out the c
 
 ##To Do:
 * **DID I ACTUALLY FORGET TO DO LISTS?!?**
+* Code Nested in pre vs code inline
+* Underline links A. La. [Medium](https://medium.com/designing-medium/crafting-link-underlines-on-medium-7c03a9274f9)
 * Implement search with [GhostHunter](https://github.com/i11ume/ghostHunter)
 * Make a posts page.
 * Find if there can be a category page?

@@ -1,20 +1,9 @@
 @import url(animate.css);
-/* http://meyerweb.com/eric/tools/css/reset/
- * v2.0 | 20110126
- * License: none (public domain) */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,8 +12,7 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -36,9 +24,12 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
 q:before, q:after {
-  content: "";
+  content: '';
   content: none; }
 
 table {
@@ -173,17 +164,9 @@ body {
 @keyframes animate-in {
   body 0%  {
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    -o-transform: translateY(-20px);
     transform: translateY(-20px); }
   body 100%  {
     opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
     transform: translateY(0); } }
   body .animate-in {
     -webkit-animation-name: animate-in;
@@ -361,6 +344,14 @@ body {
     	text-align: left;
     	font-family: $sans;
     }*/ }
+    body #post_body .post-meta {
+      padding-left: 1.5rem;
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #bbb; }
+      body #post_body .post-meta time {
+        color: #bbb; }
     body #post_body img {
       width: 100%;
       margin: 0; }
@@ -385,11 +376,11 @@ body {
     body #post_body .top-margin {
       margin-top: 1rem; }
     @media screen and (min-width: 600px) {
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code {
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code, body #post_body .post-meta {
         width: 90%;
         margin-left: 5%; } }
     @media screen and (min-width: 1000px) {
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code {
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code, body #post_body .post-meta {
         margin-left: 20%; }
       body #post_body code {
         margin-left: 20%;
