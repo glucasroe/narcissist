@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(animate.css);
 /* http://meyerweb.com/eric/tools/css/reset/
  * v2.0 | 20110126
@@ -95,12 +96,15 @@ body {
     font-family: monaco, monospace;
     color: #777;
     background-color: #efefef;
+    border-radius: 10px;
+    padding: 2px 5px;
+    margin: 0 2px; }
+  body pre code {
     white-space: pre;
     line-height: 1.25;
     float: right;
     margin: 0 2.5%;
     width: 95%;
-    border-radius: 10px;
     padding: 1.5rem;
     margin: 1.5rem;
     overflow: auto; }
@@ -116,13 +120,15 @@ body {
     color: #fff;
     font: 1.5rem "Noto Serif", "Baskerville", "Palatino Linotype", Georgia, serif;
     margin: 0 0 2rem; }
+    body blockquote > * {
+      color: #fff; }
     body blockquote h4 {
       text-align: left;
       font-style: italic;
       color: #bbb;
       margin-top: 1rem;
       padding-left: 1.5rem; }
-  body p, body code {
+  body p, body pre code {
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5rem;
@@ -135,6 +141,34 @@ body {
     font-style: italic;
     font-size: 2.5rem;
     margin-bottom: 1.5rem; }
+  body ol, body ul {
+    padding-left: 4rem;
+    list-style-position: outside;
+    margin-bottom: 1.5rem; }
+  body ol {
+    list-style-type: lower-roman; }
+  body ul {
+    list-style-type: none; }
+  body ul li:before {
+    font-family: sans-serif;
+    content: '•';
+    color: #73d3ff;
+    position: relative;
+    left: -.5rem; }
+  body ul ul, body ol ol, body ul ol, body ol ul {
+    margin-left: 2rem;
+    padding-left: 0; }
+  body li {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem; }
+  body hr {
+    /*border: 1px solid #eee;*/
+    border: none;
+    height: 1px;
+    display: block;
+    background-color: #73d3ff;
+    background-image: -webkit-linear-gradient(left, #73d3ff, #475dcc);
+    background-image: linear-gradient(to right,#73d3ff, #475dcc); }
   body strong {
     font-weight: bold; }
   body em {
@@ -148,6 +182,9 @@ body {
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
     /*Lifted directly from this brilliance http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html*/ }
+  body .no-margin {
+    margin-top: 0;
+    margin-bottom: 0; }
   body .clear {
     clear: both; }
   body .animated {
@@ -400,16 +437,15 @@ body {
     body #post_body .top-margin {
       margin-top: 1rem; }
     @media screen and (min-width: 600px) {
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code, body #post_body ul, body #post_body ol, body #post_body .post-meta {
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body pre code, body #post_body ul, body #post_body ol, body #post_body .post-meta {
         width: 90%;
         margin-left: 5%; } }
     @media screen and (min-width: 1000px) {
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code, body #post_body ul, body #post_body ol, body #post_body .post-meta {
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body pre code, body #post_body ul, body #post_body ol, body #post_body .post-meta {
         margin-left: 20%; }
       body #post_body ul ul, body #post_body ol ol, body #post_body ul ol, body #post_body ol ul {
         margin-left: 2.5rem; }
-      body #post_body code {
-        margin-left: 20%;
+      body #post_body pre code {
         margin-right: 10%;
         width: 70%; }
       body #post_body aside {

@@ -73,12 +73,16 @@ body{
 		font-family: monaco, monospace;
 		color:#777;
 		background-color:#efefef;
+		border-radius:10px;
+		padding: 2px 5px;
+		margin:0 2px;
+	}
+	pre code{
 		white-space: pre;
 		line-height:1.25;
 		float:right;
 		margin:0 2.5%;
 		width:95%;
-		border-radius:10px;
 		padding:1.5rem;
 		margin:1.5rem;
 		overflow:auto;
@@ -96,7 +100,7 @@ body{
 		color:#fff;
 		font: 1.5rem $serif;
 		margin: 0 0 2rem;
-	
+		&>*{color:#fff;}
 		h4{
 			text-align:left;
 			font-style: italic;
@@ -105,7 +109,7 @@ body{
 			padding-left:1.5rem;
 		}
 	}
-	p,code{
+	p,pre code{
 		margin-left: auto;
 		margin-right: auto;
 		padding-left:1.5rem;
@@ -121,13 +125,37 @@ body{
 		margin-bottom: 1.5rem;
 	}
 	ol,ul{
-
+		padding-left:4rem;
+		list-style-position: outside;
+		margin-bottom: 1.5rem;
 	}
 	ol{
-
+		list-style-type: lower-roman;
 	}
 	ul{
-
+		list-style-type: none;
+	}
+	ul li:before{
+		font-family: sans-serif;
+		content: '•';
+		color: $light-blue;
+		position: relative;
+		left:-.5rem;
+	}
+	ul ul, ol ol, ul ol, ol ul{
+		margin-left: 2rem;
+		padding-left: 0;
+	}
+	li{
+		margin-top:0.75rem;
+		margin-bottom: 0.75rem;
+	}
+	hr{
+		/*border: 1px solid #eee;*/
+		border:none;
+		height:1px;
+		display:block;
+		@include linear-gradient(left,$light-blue, $peri-peri);
 	}
 	strong{
 		font-weight: bold;
@@ -145,6 +173,10 @@ body{
  		background: -o-linear-gradient(transparent, transparent);
  		-webkit-background-clip: text;
  		/*Lifted directly from this brilliance http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html*/
+	}
+	.no-margin{
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 /*********** CLASSES & ANIMATIONS ***************/
 	.clear{
@@ -408,7 +440,7 @@ body{
 		}
 		@media screen and (min-width:600px){
 			&{	
-				h1,h2,h3,h4,h5,h6,p,img.contain,code,ul,ol,.post-meta{
+				h1,h2,h3,h4,h5,h6,p,img.contain,pre code,ul,ol,.post-meta{
 					width: 90%;
 					margin-left: 5%;
 				}
@@ -416,14 +448,13 @@ body{
 		}	
 		@media screen and (min-width:1000px){
 			&{	
-				h1,h2,h3,h4,h5,h6,p,img.contain,code,ul,ol,.post-meta{
+				h1,h2,h3,h4,h5,h6,p,img.contain,pre code,ul,ol,.post-meta{
 					margin-left: 20%;
 				}
 				ul ul, ol ol, ul ol, ol ul{
 					margin-left: 2.5rem;
 				}
-				code{
-					margin-left: 20%;
+				pre code{
 					margin-right: 10%;
 					width:70%;
 				}
