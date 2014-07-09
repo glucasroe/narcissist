@@ -120,6 +120,15 @@ body{
 		font-size: 2.5rem;
 		margin-bottom: 1.5rem;
 	}
+	ol,ul{
+
+	}
+	ol{
+
+	}
+	ul{
+
+	}
 	strong{
 		font-weight: bold;
 	}
@@ -130,7 +139,13 @@ body{
 		background-color: $red;
 		color:white;
 	}
-
+	.fabulous{
+		-webkit-text-fill-color: transparent;
+ 		background: -webkit-linear-gradient(100deg, $peri-peri, $light-blue);
+ 		background: -o-linear-gradient(transparent, transparent);
+ 		-webkit-background-clip: text;
+ 		/*Lifted directly from this brilliance http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html*/
+	}
 /*********** CLASSES & ANIMATIONS ***************/
 	.clear{
 		clear:both;
@@ -393,7 +408,7 @@ body{
 		}
 		@media screen and (min-width:600px){
 			&{	
-				h1,h2,h3,h4,h5,h6,p,img.contain,code,.post-meta{
+				h1,h2,h3,h4,h5,h6,p,img.contain,code,ul,ol,.post-meta{
 					width: 90%;
 					margin-left: 5%;
 				}
@@ -401,8 +416,11 @@ body{
 		}	
 		@media screen and (min-width:1000px){
 			&{	
-				h1,h2,h3,h4,h5,h6,p,img.contain,code,.post-meta{
+				h1,h2,h3,h4,h5,h6,p,img.contain,code,ul,ol,.post-meta{
 					margin-left: 20%;
+				}
+				ul ul, ol ol, ul ol, ol ul{
+					margin-left: 2.5rem;
 				}
 				code{
 					margin-left: 20%;

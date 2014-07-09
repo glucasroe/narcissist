@@ -142,6 +142,12 @@ body {
   body ::selection {
     background-color: #cc6947;
     color: white; }
+  body .fabulous {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(100deg, #475dcc, #73d3ff);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    /*Lifted directly from this brilliance http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html*/ }
   body .clear {
     clear: both; }
   body .animated {
@@ -394,12 +400,14 @@ body {
     body #post_body .top-margin {
       margin-top: 1rem; }
     @media screen and (min-width: 600px) {
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code, body #post_body .post-meta {
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code, body #post_body ul, body #post_body ol, body #post_body .post-meta {
         width: 90%;
         margin-left: 5%; } }
     @media screen and (min-width: 1000px) {
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code, body #post_body .post-meta {
+      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body code, body #post_body ul, body #post_body ol, body #post_body .post-meta {
         margin-left: 20%; }
+      body #post_body ul ul, body #post_body ol ol, body #post_body ul ol, body #post_body ol ul {
+        margin-left: 2.5rem; }
       body #post_body code {
         margin-left: 20%;
         margin-right: 10%;
