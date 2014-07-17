@@ -185,6 +185,10 @@ body {
   body .no-margin {
     margin-top: 0;
     margin-bottom: 0; }
+  body .images-fix {
+    margin: 0;
+    width: 100%;
+    max-width: 100%; }
   body .clear {
     clear: both; }
   body .animated {
@@ -462,6 +466,10 @@ body {
         body #post_body blockquote h4 {
           text-align: left;
           margin-left: 0; } }
+    body #post_body .images-fix {
+      margin: 0;
+      width: 100%;
+      max-width: 100%; }
   body footer {
     background-color: #7a7f99;
     color: #eee;

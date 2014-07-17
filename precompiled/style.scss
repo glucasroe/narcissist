@@ -178,6 +178,11 @@ body{
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+	.images-fix{
+		margin:0;
+		width:100%;
+		max-width: 100%;
+	}
 /*********** CLASSES & ANIMATIONS ***************/
 	.clear{
 		clear:both;
@@ -476,6 +481,11 @@ body{
 					}
 				}
 			}
+		}
+		.images-fix{
+			margin:0;
+			width:100%;
+			max-width: 100%;
 		}		
 	}
 	footer{

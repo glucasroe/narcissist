@@ -12,5 +12,11 @@ $(document).ready(function(){
 	$('#search_icon').click(function(){
 		$('#search_field').focus();
 	});
+	var $p = $('p img');
+	var	index = $p.index();
+
+		if (index ===0){
+			$p.parent().addClass('images-fix');
+		}
 });
 
