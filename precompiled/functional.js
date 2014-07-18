@@ -12,7 +12,11 @@ $(document).ready(function(){
 	$('#search_icon').click(function(){
 		$('#search_field').focus();
 	});
-	$('p img:only-child').parent().addClass('images-fix');
+	var $eles = $('p').filter(function() {
+    	return $(this).text().length == 0;
+	});
+	$eles.addClass("images-fix");
+	//$('p img:only-child').parent().addClass('images-fix');
 	//var $p = $('p img');
 	//var	index = $p.index();
 
