@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$('body').css('opacity','0').delay(100).animate({"opacity": "1"}, 300);
-	$('nav').addClass('shrink_hider');
+	$('nav').not('.pagination').addClass('shrink_hider');
 	$('#nav_toggle').removeClass('no-js').click(function(){
 		$('nav:not(.animated)').addClass('animated');
 		$('#nav_toggle i').not('#search_icon').toggleClass('rotated');
@@ -16,12 +16,6 @@ $(document).ready(function(){
     	return $(this).text().length == 0;
 	});
 	$eles.addClass("images-fix");
-	//$('p img:only-child').parent().addClass('images-fix');
-	//var $p = $('p img');
-	//var	index = $p.index();
 
-	//	if (index ===0){
-	//		$p.parent().addClass('images-fix');
-	//	}
 });
 
