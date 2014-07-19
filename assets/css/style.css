@@ -188,7 +188,8 @@ body {
   body .images-fix {
     margin: 0;
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    padding: 0; }
   body .clear {
     clear: both; }
   body .animated {
