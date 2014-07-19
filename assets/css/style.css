@@ -159,7 +159,8 @@ body {
     margin-left: 2rem;
     padding-left: 0; }
   body li {
-    margin-bottom: 1.25rem; }
+    margin-bottom: 1.25rem;
+    line-height: 1.2; }
   body hr {
     /*border: 1px solid #eee;*/
     border: none;
