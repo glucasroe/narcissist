@@ -14,8 +14,8 @@ $(document).ready(function(){
 	});
 	var $eles = $('p').filter(function() {
     	return $(this).text().length == 0;
-	});
-	$eles.addClass("images-fix");
+	});	
+	$eles.has('img').addClass("images-fix");
 
 });
 
