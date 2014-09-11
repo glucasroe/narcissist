@@ -484,7 +484,7 @@ body{
 		margin-top: 4rem;
 		text-align: center;
 		a{
-			color:#bbb;
+			color:lighten($cool-grey,20%);
 			&:hover{
 				color:#fff;
 			}
