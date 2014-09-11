@@ -1,0 +1,24 @@
+{{!< default}}
+<section class="error-content error-404 js-error-container">
+    <section class="error-details">
+      <video autoplay poster="'{{asset '/img/404d.png'}}'" id="404vid">
+        <source src='{{asset '/video/404d.webm'}}' type='video.webm'>
+        <source src='{{asset '/video/404d.mp4'}}' type='video.mp4'>
+      </video>
+    </section>
+</section>
+{{#if stack}}
+    <section class="error-stack">
+        <h3>Stack Trace</h3>
+        <p><strong>{{message}}</strong></p>
+        <ul class="error-stack-list">
+            {{#foreach stack}}
+                <li>
+                    at
+                    {{#if function}}<em class="error-stack-function">{{function}}</em>{{/if}}
+                    <span class="error-stack-file">({{at}})</span>
+                </li>
+            {{/foreach}}
+        </ul>
+    </section>
+{{/if}}
