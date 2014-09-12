@@ -1,1 +1,6 @@
 readme.html
+.DS_Store
+bower_components
+index1.html
+precompiled/.DS_Store
+precompiled/.sass-cache

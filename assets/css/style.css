@@ -213,9 +213,17 @@ body {
 @keyframes animate-in {
   body 0%  {
     opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
     transform: translateY(-20px); }
   body 100%  {
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
     transform: translateY(0); } }
   body .animate-in {
     -webkit-animation-name: animate-in;
@@ -401,11 +409,11 @@ body {
       color: #bbb; }
       body #post_body .post-meta time {
         color: #bbb; }
-    body #post_body img {
+    body #post_body img, body #post_body video {
       width: 100%;
       margin: 0; }
       @media screen and (min-width: 1000px) {
-        body #post_body img {
+        body #post_body img, body #post_body video {
           width: 80%;
           margin-left: 20%; } }
     body #post_body img.featured {
