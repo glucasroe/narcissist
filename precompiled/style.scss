@@ -8,7 +8,8 @@ $serif:'Noto Serif', 'Baskerville', 'Palatino Linotype', Georgia, serif;
 $link-color:#475DCC;
 $header-color:#fff;
 $light-green: #cffece;
-$red: #CC6947;
+$red: rgba(204, 105, 71, 1);
+$dark-red: darken($red,20%);
 $tan: #FFD1B2;
 $light-blue:#73D3FF;
 $cool-grey:#7A7F99;
@@ -23,11 +24,12 @@ body{
 	font-family:$serif;
 	color:#333;
 	a{
-		color:$link-color;
+		color:$red;
 		text-decoration:none;
 		@include transition(color,.5s);
 		&:hover{
-			color:darken($link-color,20%)
+			color: $dark-red;
+			text-shadow: 1px 1px 0px #fff,2px 2px 0px fade-out($dark-red,0.6);
 		}
 	}
 
@@ -35,12 +37,13 @@ body{
 		font-size: 3.6rem;
 		color:$cool-grey;
 		font-family: $sans;
-		margin:0 auto 2rem;
+		line-height:1.1;
+		margin: 1.25rem 0 1.25rem;
 		padding:0 1rem;
 	}
 
 	h2,h3,h4,h5{
-		margin:0 auto 2rem;
+		margin:1.25rem auto 1rem;
 		padding:0 1.5rem;
 	}
 
@@ -56,7 +59,7 @@ body{
 
 	h4{
 		font-size: 1rem;
-		color:$peri-peri;
+		color:$red;
 		margin:0 2rem;
 		text-align: left;
 		font-family: $sans;
@@ -64,7 +67,7 @@ body{
 
 	p{
 		font-size: 1.1rem;
-		line-height: 1.75;
+		line-height: 1.8;
 		color:#555;
 		margin-bottom: 1.5rem;
 	}
@@ -88,7 +91,7 @@ body{
 		overflow:auto;
 	}
 	aside{
-		color:$red;
+		color:$dark-red;
 		width:60%;
 		margin:0 auto 2rem;
 		font-family: $sans;
@@ -96,7 +99,7 @@ body{
 	blockquote{
 		display:block;
 		padding:4rem;
-		background-color:$cool-grey;
+		background-color:$red;
 		color:#fff;
 		font: 1.5rem $serif;
 		margin: 0 0 2rem;
@@ -138,7 +141,7 @@ body{
 	ul li:before{
 		font-family: sans-serif;
 		content: '•';
-		color: $light-blue;
+		color: $red;
 		position: relative;
 		left:-.5rem;
 	}
@@ -155,7 +158,7 @@ body{
 		border:none;
 		height:1px;
 		display:block;
-		@include linear-gradient(left,$light-blue, $peri-peri);
+		@include linear-gradient(left, $red, $dark-red);
 	}
 	strong{
 		font-weight: bold;
@@ -169,7 +172,7 @@ body{
 	}
 	.fabulous{
 		-webkit-text-fill-color: transparent;
- 		background: -webkit-linear-gradient(100deg, $peri-peri, $light-blue);
+ 		background: -webkit-linear-gradient(100deg, $red, $cool-grey);
  		background: -o-linear-gradient(transparent, transparent);
  		-webkit-background-clip: text;
  		/*Lifted directly from this brilliance http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html*/
@@ -303,6 +306,7 @@ body{
 
 				#navigation{
 					padding:0;
+					position:relative;
 					a{
 						width:100%;
 						padding:2rem 0 2rem;
@@ -312,21 +316,23 @@ body{
 						font-family: $sans;
 						font-size: 0.7rem;
 						color:#fff;
+						background-color:$red;
+						//border-right:1px solid #fff;
 						&:hover{
-							opacity:0.8;
+							text-shadow:none;
+							background-color:$dark-red;
 						}
-						&#home{
-							background-color:$cool-grey;
+						&+a::after{
+							height:80%;
+							width:1px;
+							display:block;
+							position:absolute;
+							top:10%;;
+							content:'';
+							@include linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.3), rgba(255,255,255,0))
+
 						}
-						&#about{
-							background-color: $red;
-						}
-						&#projects{
-							background-color: $light-blue;
-						}
-						&#resume{
-							background-color: $peri-peri;
-						}
+
 						i{
 							padding:0 0 5px 0;
 							text-align: center;
@@ -499,6 +505,7 @@ body{
 			color:lighten($cool-grey,20%);
 			&:hover{
 				color:#fff;
+				text-shadow: 1px 1px 0px $cool-grey,2px 2px 0px fade-out(#fff,0.6);
 			}
 		}
 		#social{
