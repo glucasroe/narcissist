@@ -258,12 +258,12 @@ body {
     animation-name: animate-in;
     animation-duration: 1s;
     animation-fill-mode: both; }
-  body #header {
+  body .header {
     width: 100%;
     background-color: white; }
-    body #header #nav_wrap {
+    body .header .nav_wrap {
       width: 100%; }
-      body #header #nav_wrap #nav_toggle {
+      body .header .nav_wrap .nav_toggle {
         width: 100%;
         text-align: left;
         font-size: 1.5rem;
@@ -275,12 +275,12 @@ body {
         -ms-user-select: none;
         user-select: none;
         cursor: pointer; }
-        body #header #nav_wrap #nav_toggle.no-js {
+        body .header .nav_wrap .nav_toggle.no-js {
           display: none; }
-        body #header #nav_wrap #nav_toggle i {
+        body .header .nav_wrap .nav_toggle i {
           margin: 0.75rem 1rem;
           display: inline-block; }
-        body #header #nav_wrap #nav_toggle p {
+        body .header .nav_wrap .nav_toggle p {
           display: inline-block;
           font-size: 1rem;
           font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
@@ -290,13 +290,13 @@ body {
           padding-left: 0;
           margin-bottom: 0;
           line-height: 1; }
-        body #header #nav_wrap #nav_toggle #search {
+        body .header .nav_wrap .nav_toggle .search {
           float: right;
           width: 50%; }
           @media screen and (min-width: 900px) {
-            body #header #nav_wrap #nav_toggle #search {
+            body .header .nav_wrap .nav_toggle .search {
               width: 25%; } }
-          body #header #nav_wrap #nav_toggle #search form input#search_field {
+          body .header .nav_wrap .nav_toggle .search form input.search_field {
             -webkit-appearance: none;
             -moz-appearance: none;
             -ms-appearance: none;
@@ -315,47 +315,47 @@ body {
             font-size: 1rem;
             text-transform: uppercase;
             overflow-x: auto; }
-            body #header #nav_wrap #nav_toggle #search form input#search_field::-webkit-input-placeholder {
+            body .header .nav_wrap .nav_toggle .search form input.search_field::-webkit-input-placeholder {
               color: #999; }
-            body #header #nav_wrap #nav_toggle #search form input#search_field::-moz-placeholder {
+            body .header .nav_wrap .nav_toggle .search form input.search_field::-moz-placeholder {
               color: #999; }
-            body #header #nav_wrap #nav_toggle #search form input#search_field:-moz-placeholder {
+            body .header .nav_wrap .nav_toggle .search form input.search_field:-moz-placeholder {
               color: #999; }
-            body #header #nav_wrap #nav_toggle #search form input#search_field:-ms-input-placeholder {
+            body .header .nav_wrap .nav_toggle .search form input.search_field:-ms-input-placeholder {
               color: #999; }
-            body #header #nav_wrap #nav_toggle #search form input#search_field:focus {
+            body .header .nav_wrap .nav_toggle .search form input.search_field:focus {
               outline: none;
               background-color: #d9f3ff;
               color: #333; }
-              body #header #nav_wrap #nav_toggle #search form input#search_field:focus::-webkit-input-placeholder {
+              body .header .nav_wrap .nav_toggle .search form input.search_field:focus::-webkit-input-placeholder {
                 color: #666; }
-              body #header #nav_wrap #nav_toggle #search form input#search_field:focus::-moz-placeholder {
+              body .header .nav_wrap .nav_toggle .search form input.search_field:focus::-moz-placeholder {
                 color: #666; }
-              body #header #nav_wrap #nav_toggle #search form input#search_field:focus:-moz-placeholder {
+              body .header .nav_wrap .nav_toggle .search form input.search_field:focus:-moz-placeholder {
                 color: #666; }
-              body #header #nav_wrap #nav_toggle #search form input#search_field:focus:-ms-input-placeholder {
+              body .header .nav_wrap .nav_toggle .search form input.search_field:focus:-ms-input-placeholder {
                 color: #666; }
-          body #header #nav_wrap #nav_toggle #search form input#submit_btn {
+          body .header .nav_wrap .nav_toggle .search form input.submit_btn {
             display: none; }
-          body #header #nav_wrap #nav_toggle #search form #search_icon {
+          body .header .nav_wrap .nav_toggle .search form .search_icon {
             position: absolute;
             top: 0;
             right: 0;
             font-size: 1rem;
             padding-top: 0.25rem; }
-      body #header #nav_wrap nav {
+      body .header .nav_wrap nav {
         width: 100%;
         background-color: #333333;
         overflow-y: hidden;
         height: auto;
         max-height: 1000px;
         /*not sure why this doesn't animate otherwise :(*/ }
-        body #header #nav_wrap nav.shrink_hider {
+        body .header .nav_wrap nav.shrink_hider {
           max-height: 0px; }
-        body #header #nav_wrap nav #navigation {
+        body .header .nav_wrap nav .navigation {
           padding: 0;
           position: relative; }
-          body #header #nav_wrap nav #navigation a {
+          body .header .nav_wrap nav .navigation a {
             width: 100%;
             padding: 2rem 0 2rem;
             float: left;
@@ -365,10 +365,10 @@ body {
             font-size: 0.7rem;
             color: #fff;
             background-color: #cc6947; }
-            body #header #nav_wrap nav #navigation a:hover {
+            body .header .nav_wrap nav .navigation a:hover {
               text-shadow: none;
               background-color: #873f26; }
-            body #header #nav_wrap nav #navigation a + a::after {
+            body .header .nav_wrap nav .navigation a + a::after {
               height: 80%;
               width: 1px;
               display: block;
@@ -378,7 +378,7 @@ body {
               background-color: rgba(255, 255, 255, 0);
               background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
               background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }
-            body #header #nav_wrap nav #navigation a i {
+            body .header .nav_wrap nav .navigation a i {
               padding: 0 0 5px 0;
               text-align: center;
               font-size: 1.5rem;
@@ -386,139 +386,148 @@ body {
               letter-spacing: 1px;
               color: #fff;
               font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
-              body #header #nav_wrap nav #navigation a i:before {
+              body .header .nav_wrap nav .navigation a i:before {
                 margin-right: 1rem;
                 font-weight: normal;
                 font-family: 'FontAwesome'; }
           @media only screen and (min-width: 450px) {
-            body #header #nav_wrap nav #navigation a {
+            body .header .nav_wrap nav .navigation a {
               width: 50%; } }
           @media only screen and (min-width: 1024px) {
-            body #header #nav_wrap nav #navigation a {
+            body .header .nav_wrap nav .navigation a {
               width: 25%; }
-              body #header #nav_wrap nav #navigation a i:before {
+              body .header .nav_wrap nav .navigation a i:before {
                 display: block;
                 font-size: 4rem;
                 text-align: center;
                 margin: 0 auto 1rem; } }
-    body #header #branding {
+    body .header .branding {
       margin: 0 auto 0;
       padding: 3rem 0 3rem;
       background-color: white; }
-      body #header #branding #logo {
+      body .header .branding .logo {
         margin: 0 auto 1rem;
         width: 25%;
         max-width: 7rem; }
-        body #header #branding #logo object {
+        body .header .branding .logo object {
           width: 100%;
           margin: 0 auto 0;
           -webkit-font-smoothing: antialiased; }
-      body #header #branding h1, body #header #branding h2 {
+      body .header .branding h1, body .header .branding h2 {
         text-align: center;
         font-family: 'Noto Sans', sans-serif;
         font-weight: bold; }
-      body #header #branding h1 {
+      body .header .branding h1 {
         color: #999;
         font-size: 3rem;
         margin: 0 0 0.5rem; }
-      body #header #branding h2 {
+      body .header .branding h2 {
         font-family: 'Noto Serif', serif;
         color: #777;
         font-size: 2rem; }
-  body #post_body {
+  body .post_body {
     /*h4{
     	font-size: 1.1rem;
     	color:#999;
     	margin:1rem 0 2rem;
     	text-align: left;
     	font-family: $sans;
-    }*/ }
-    body #post_body .post-meta {
+    }*/
+    /***********GFYCAT FIXES***********/ }
+    body .post_body .post-meta {
       padding-left: 1.5rem;
       text-transform: uppercase;
       font-style: italic;
       font-size: 0.9rem;
       color: #bbb; }
-      body #post_body .post-meta time {
+      body .post_body .post-meta time {
         color: #bbb; }
-    body #post_body img, body #post_body video {
+    body .post_body img, body .post_body video {
       width: 100%;
       margin: 0; }
       @media screen and (min-width: 1000px) {
-        body #post_body img, body #post_body video {
+        body .post_body img, body .post_body video {
           width: 80%;
-          margin-left: 20%; } }
-    body #post_body img.featured {
+          margin-left: 20%; }
+          body .post_body img.gfyVid, body .post_body video.gfyVid {
+            width: 100%;
+            margin-left: 0; } }
+    body .post_body img.featured {
       width: 100%;
       margin: 0; }
-    body #post_body img.contain {
-      padding: 0 1.5rem 0; }
-    body #post_body .unknown {
+    body .post_body p img {
+      width: 100%;
+      padding: 0;
+      margin-left: 0; }
+    body .post_body .unknown {
       font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
       font-size: 2rem; }
-    body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body p, body #post_body aside, body #post_body img.contain {
+    body .post_body h1, body .post_body h2, body .post_body h3, body .post_body h4, body .post_body h5, body .post_body p, body .post_body aside, body .post_body img.contain {
       max-width: 50rem;
       text-align: left; }
-    body #post_body p {
+    body .post_body p {
       margin: 0 auto 0;
       padding: 0 1.5rem 1.5rem; }
-    body #post_body .top-margin {
+    body .post_body .top-margin {
       margin-top: 1rem; }
     @media screen and (min-width: 600px) {
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body pre code, body #post_body ul, body #post_body ol, body #post_body .post-meta {
+      body .post_body h1, body .post_body h2, body .post_body h3, body .post_body h4, body .post_body h5, body .post_body h6, body .post_body p, body .post_body pre code, body .post_body ul, body .post_body ol, body .post_body .post-meta, body .post_body div.gfyitem {
         width: 90%;
         margin-left: 5%; } }
     @media screen and (min-width: 1000px) {
-      body #post_body h1, body #post_body h2, body #post_body h3, body #post_body h4, body #post_body h5, body #post_body h6, body #post_body p, body #post_body img.contain, body #post_body pre code, body #post_body ul, body #post_body ol, body #post_body .post-meta {
+      body .post_body h1, body .post_body h2, body .post_body h3, body .post_body h4, body .post_body h5, body .post_body h6, body .post_body p, body .post_body pre code, body .post_body ul, body .post_body ol, body .post_body .post-meta, body .post_body div.gfyitem {
         margin-left: 20%;
         width: 70%; }
-      body #post_body ul ul, body #post_body ol ol, body #post_body ul ol, body #post_body ol ul {
+      body .post_body ul ul, body .post_body ol ol, body .post_body ul ol, body .post_body ol ul {
         margin-left: 2.5rem; }
-      body #post_body pre code {
+      body .post_body pre code {
         margin-right: 10%;
         width: 70%; }
-      body #post_body aside {
+      body .post_body aside {
         float: left;
         width: 15%;
         margin: 0 2.5%;
         text-align: right;
         font-size: 1.1rem;
         line-height: 1.7; }
-      body #post_body blockquote {
+      body .post_body blockquote {
         padding-left: 20%;
         padding-right: 20%;
         padding-bottom: 1.5rem; }
-        body #post_body blockquote h4 {
+        body .post_body blockquote h4 {
           text-align: left;
           margin-left: 0; } }
-    body #post_body .images-fix {
+    body .post_body .images-fix {
       margin: 0;
       width: 100%;
       max-width: 100%; }
+    body .post_body .gfyCtrlPause, body .post_body .gfyCtrlReverse, body .post_body .gfyCtrlSlower, body .post_body .gfyCtrlFaster {
+      width: 15px;
+      height: 15px; }
   body footer {
-    background-color: #7a7f99;
+    background-color: #cc6947;
     color: #eee;
     margin-top: 4rem;
     text-align: center; }
     body footer a {
-      color: #b4b7c5; }
+      color: #fff; }
       body footer a:hover {
         color: #fff;
-        text-shadow: 1px 1px 0px #7a7f99, 2px 2px 0px rgba(255, 255, 255, 0.4); }
-    body footer #social {
+        text-shadow: 1px 1px 0px #cc6947, 2px 2px 0px rgba(255, 255, 255, 0.4); }
+    body footer .social {
       padding: 2rem;
       font-size: 2rem; }
-      body footer #social h3 {
+      body footer .social h3 {
         margin-bottom: 1rem;
         color: #fff; }
-      body footer #social p {
+      body footer .social p {
         width: 100%; }
-        body footer #social p a {
+        body footer .social p a {
           margin: 0 1rem 0; }
-    body footer #copyright {
+    body footer .copyright {
       padding: 1rem;
       background-color: #333; }
-      body footer #copyright p {
+      body footer .copyright p {
         color: #ccc;
         font-size: 0.8rem;
         font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;

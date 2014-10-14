@@ -238,12 +238,12 @@ body{
 		animation-fill-mode: both;
 	}
 /************ SPECIFICS *************/
-	#header{
+	.header{
 		width:100%;
 		background-color: $header-color;
-		#nav_wrap{
+		.nav_wrap{
 			width:100%;
-			#nav_toggle{
+			.nav_toggle{
 				width:100%;
 				text-align: left;
 				font-size: 1.5rem;
@@ -270,14 +270,14 @@ body{
 					margin-bottom: 0;
 					line-height: 1;
 				}
-				#search{
+				.search{
 					float:right;
 					width:50%;
 					@media screen and (min-width:900px){
 						width:25%;
 					}
 					form{
-						input#search_field{
+						input.search_field{
 							@include appearance(none);
 							@include transition(all 0.25s);
 							border:none;
@@ -298,10 +298,10 @@ body{
 								color:#333;
 							}
 						}
-						input#submit_btn{
+						input.submit_btn{
 							display:none;
 						}
-						#search_icon{
+						.search_icon{
 							position:absolute;
 							top:0;
 							right:0;
@@ -323,7 +323,7 @@ body{
 				&.animated{
 				}
 
-				#navigation{
+				.navigation{
 					padding:0;
 					position:relative;
 					a{
@@ -386,11 +386,11 @@ body{
 				}
 			}
 		}
-		#branding{
+		.branding{
 			margin:0 auto 0;
 			padding:3rem 0 3rem;
 			background-color: $header-color;
-			#logo{
+			.logo{
 				margin:0 auto 1rem;
 				width:25%;
 				max-width: 7rem;
@@ -418,7 +418,7 @@ body{
 			}
 		}
 	}
-	#post_body{
+	.post_body{
 		.post-meta{
 			padding-left:1.5rem;
 			text-transform: uppercase;
@@ -438,14 +438,20 @@ body{
 			@media screen and (min-width:1000px){
 				width:80%;
 				margin-left: 20%;
+				&.gfyVid{
+					width:100%;
+					margin-left: 0;
+				}
 			}
 		}
 		img.featured{
 			width: 100%;
 			margin:0;
 		}
-		img.contain{
-			padding:0 1.5rem 0;
+		p img{
+			width:100%;
+			padding:0;
+			margin-left:0;
 		}
 		.unknown{
 			font-family: $sans;
@@ -471,7 +477,7 @@ body{
 		}
 		@media screen and (min-width:600px){
 			&{	
-				h1,h2,h3,h4,h5,h6,p,img.contain,pre code,ul,ol,.post-meta{
+				h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,div.gfyitem{
 					width: 90%;
 					margin-left: 5%;
 				}
@@ -479,7 +485,7 @@ body{
 		}	
 		@media screen and (min-width:1000px){
 			&{	
-				h1,h2,h3,h4,h5,h6,p,img.contain,pre code,ul,ol,.post-meta{
+				h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,div.gfyitem{
 					margin-left: 20%;
 					width:70%;
 				}
@@ -513,21 +519,26 @@ body{
 			margin:0;
 			width:100%;
 			max-width: 100%;
-		}		
+		}
+		/***********GFYCAT FIXES***********/
+		.gfyCtrlPause,.gfyCtrlReverse,.gfyCtrlSlower,.gfyCtrlFaster{
+			width:15px;
+			height:15px;
+		}	
 	}
 	footer{
-		background-color: $cool-grey;
+		background-color: $red;
 		color:#eee;
 		margin-top: 4rem;
 		text-align: center;
 		a{
-			color:lighten($cool-grey,20%);
+			color:#fff;
 			&:hover{
 				color:#fff;
-				text-shadow: 1px 1px 0px $cool-grey,2px 2px 0px fade-out(#fff,0.6);
+				text-shadow: 1px 1px 0px $red,2px 2px 0px fade-out(#fff,0.6);
 			}
 		}
-		#social{
+		.social{
 			padding: 2rem;
 			font-size: 2rem;
 			h3{
@@ -541,7 +552,7 @@ body{
 				}
 			}
 		}
-		#copyright{
+		.copyright{
 			padding:1rem;
 			background-color:#333;
 			p{
