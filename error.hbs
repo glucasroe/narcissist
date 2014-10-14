@@ -1,10 +1,6 @@
 {{!< default}}
 <section class="error-content error-404 js-error-container">
     <section class="error-details">
-      <video autoplay poster="'{{asset '/img/404d.png'}}'" id="404vid">
-        <source src='{{asset '/video/404d.webm'}}' type='video.webm'>
-        <source src='{{asset '/video/404d.mp4'}}' type='video.mp4'>
-      </video>
       <h1>OH NOES YOU BROKE IT</h1>
         <p>Sorry, this page doesn't exist. I can think of a few reasons why this might be so.</p>
         <ol>
@@ -15,6 +11,10 @@
         </ol>
         <p>By way of a solution, you can go <a href="http://glucasroe.com">home</a> or you can tweet at me grumpily <a href="https://www.twitter.com/glucasroe">@glucasroe</a>.</p>
     </section>
+    <video autoplay poster="'{{asset '/img/404d.png'}}'" id="404vid">
+        <source src='{{asset '/video/404d.webm'}}' type='video.webm'>
+        <source src='{{asset '/video/404d.mp4'}}' type='video.mp4'>
+    </video>
 </section>
 {{#if stack}}
     <section class="error-stack">
