@@ -6,11 +6,10 @@ This is meant to be a theme for Ghost, but that may change as I figure out the c
 ##To Do:
 * Make the favicon not look like a square pile of asses.
 * Code Nested in pre vs code inline
-* Underline links A. La. [Medium](https://medium.com/designing-medium/crafting-link-underlines-on-medium-7c03a9274f9)
 * Add a code colorizer, probably [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/)
 * My fade in animation is broken again? :(
 * Implement search with [GhostHunter](https://github.com/i11ume/ghostHunter)
-
+* ~Underline links A. La. [Medium](https://medium.com/designing-medium/crafting-link-underlines-on-medium-7c03a9274f9)~
 * ~~Find if there can be a category page?~~
 * ~~Make a posts page.~~
 * ~~**DID I ACTUALLY FORGET TO DO LISTS?!?**~~
