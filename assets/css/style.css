@@ -56,7 +56,8 @@ body {
   font-family: "Noto Serif", "Baskerville", "Palatino Linotype", Georgia, serif;
   color: #333; }
   body * + * {
-    margin: 1em auto 0; }
+    margin: 1em auto 0;
+    font-size: 1rem; }
 
 a {
   color: #cc6947;
@@ -466,7 +467,14 @@ figure {
     font-size: 0.8rem;
     color: #bbb; }
     .post-body .post-meta time {
-      color: #bbb; }
+      color: #777;
+      margin: 0 0.5rem; }
+    .post-body .post-meta a {
+      font-size: 0.8rem; }
+      .post-body .post-meta a:first-child {
+        padding-left: 0.5rem; }
+  .post-body .post-title {
+    margin-top: 1rem; }
   .post-body img, .post-body video {
     width: 100%;
     margin: 0; }

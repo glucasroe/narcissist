@@ -25,6 +25,7 @@ body{
 	color:#333;
 	* + *{
 		margin:1em auto 0;
+		font-size: 1rem;
 	}
 }
 
@@ -426,11 +427,18 @@ figure{
 		font-size: 0.8rem;
 		color:#bbb;
 		time{
-			color:#bbb;
+			color:#777;
+			margin:0 0.5rem;
 		}
 		a{
-
+			font-size: 0.8rem;
+			&:first-child{
+				padding-left: 0.5rem;
+			}
 		}
+	}
+	.post-title{
+		margin-top: 1rem;
 	}
 	img,video{
 		width:100%;
