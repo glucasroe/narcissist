@@ -155,7 +155,8 @@ q {
 ol, ul {
   padding-left: 4rem;
   list-style-position: outside;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 1rem; }
 
 ol {
   list-style-type: lower-roman; }
@@ -310,7 +311,7 @@ figure {
         margin: 0.75rem 1rem;
         display: inline-block; }
       .header .nav-wrap .nav-toggle p {
-        width: 90%;
+        width: auto;
         margin-left: 0;
         display: inline-block;
         font-size: 1rem;
@@ -422,25 +423,28 @@ figure {
             text-align: center;
             margin: 0 auto 1rem; } }
   .header .branding {
-    padding: 3rem 0 3rem;
+    padding: 3rem 0 3rem 1.5rem;
     background-color: #fff; }
-    .header .branding .logo {
+    .header .branding img {
       margin: 0 auto 1rem;
-      display: inline-block; }
-      .header .branding .logo img {
-        width: 25%;
-        max-width: 7rem;
-        margin: 0 auto 0;
-        -webkit-font-smoothing: antialiased; }
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      max-width: 6rem;
+      margin: 0 auto 0;
+      -webkit-font-smoothing: antialiased; }
     .header .branding h1, .header .branding h2 {
       text-align: left;
       font-family: 'Noto Sans', sans-serif;
       font-weight: bold; }
     .header .branding h1 {
       display: inline-block;
-      color: #999;
+      vertical-align: middle;
+      width: auto;
+      color: #aaa;
       font-size: 2rem;
-      margin: 0 0 0.5rem; }
+      margin-left: 0.75rem;
+      margin-top: 0; }
     .header .branding h2 {
       font-family: 'Noto Serif', serif;
       color: #777;
