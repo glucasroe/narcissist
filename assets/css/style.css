@@ -553,34 +553,31 @@ figure {
       margin-left: 0; } }
 footer {
   background-color: #cc6947;
-  color: #eee;
+  color: #fff;
   margin-top: 4rem;
-  text-align: center; }
+  text-align: center;
+  padding: 2rem 1rem; }
   footer a {
-    color: #fff; }
+    color: #fff;
+    font-size: 2rem; }
     footer a:hover {
       color: #fff;
       text-shadow: 1px 1px 0px #cc6947, 2px 2px 0px rgba(255, 255, 255, 0.4); }
-  footer .social {
-    padding: 1rem;
-    font-size: 2rem; }
-    footer .social h3 {
-      margin-bottom: 1rem;
-      color: #fff; }
-    footer .social p {
-      width: 100%; }
-      footer .social p a {
-        margin: 0 1rem 0; }
-  footer .copyright {
-    padding: 1rem;
-    background-color: #333; }
-    footer .copyright p {
-      color: #ccc;
-      font-size: 0.8rem;
-      font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
-      text-align: center;
-      line-height: 1.6;
-      margin: 0 auto 0; }
+  footer p {
+    color: #fff;
+    margin: 0 0 0 1rem;
+    font-size: 1rem;
+    padding: 0;
+    max-width: 60rem; }
+  @media screen and (min-width: 1000px) {
+    footer .copyright {
+      width: 70%;
+      text-align: left;
+      float: left; }
+    footer .social {
+      text-align: right;
+      float: right;
+      width: 20%; } }
 
 /************ POSTS PAGE ************/
 article {
