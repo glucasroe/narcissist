@@ -489,7 +489,7 @@ figure {
   .post-body img.featured {
     width: 100%;
     margin: 0; }
-  .post-body p img {
+  .post-body p img:not(.contain) {
     width: 100%;
     padding: 0;
     margin-left: 0; }
