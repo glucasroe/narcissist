@@ -8,8 +8,7 @@
     <meta content='true' name='HandheldFriendly'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}"/ >
-    <!-- /%link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet") -->
-    <link href='/assets/css/font-awesome.min.css' rel='stylesheet'>
+    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="{{asset "img/favicon.ico"}}">
      <script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.src = 'http://assets.gfycat.com/js/gfyajax-0.517d.js';s.parentNode.insertBefore(g, s);}(document, 'script'));</script>
@@ -27,45 +26,42 @@
   </head>
   <body class='animating-in'>
     <div class='header'>
-      <div class='nav_wrap'>
-        <div class='no-js nav_toggle'>
+      <div class='nav-wrap'>
+        <div class='no-js nav-toggle'>
           <i class='fa fa-bars animated'></i>
           <p>MENU</p>
           <div class='clear'></div>
         </div>
-        <nav class='shrink_hider'>
-          <div class='navigation'>
-            <a href='/' class='home'>
-              <i class='fa fa-home'>Home</i>
-            </a>
-            <a href='/projects' class='projects'>
-              <i class='fa fa-briefcase'>Projects</i>
-            </a>
-            <a href='/about' class='about'>
-              <i class='fa fa-question-circle'>About</i>
-            </a>
-            <a href='/resume' class='resume'>
-              <i class='fa fa-file-text'>Resume</i>
-            </a>
-            <div class='clear'></div>
-          </div>
+        <nav class='shrink-hider'>
+          <a href='/' class='home'>
+            <i class='fa fa-home'>Home</i>
+          </a>
+          <a href='/projects' class='projects'>
+            <i class='fa fa-briefcase'>Projects</i>
+          </a>
+          <a href='/about' class='about'>
+            <i class='fa fa-question-circle'>About</i>
+          </a>
+          <a href='/resume' class='resume'>
+            <i class='fa fa-file-text'>Resume</i>
+          </a>
+          <div class='clear'></div>
         </nav>
       </div>
       <div class='branding'>
-        <div class='logo'>
           <a href='http://glucasroe.com'>
             <img alt='G. Lucas Roe' src='{{asset '/img/seal.svg'}}'>
+            <h1>G. Lucas Roe</h1>
           </a>
-        </div>
       </div>
       <div class='clear'></div>
     </div>
-    <div class='animate-in post_body'>
+    <div class='animate-in post-body'>
       {{{body}}}
     </div>
     <footer>
-      <div class='social'>
-        <h3>Me on the Interweb$</h3>
+      <p class="copyright">Unless otherwise noted, content is &copy; 2014 G. Lucas Roe, and shouldn't be used without at least asking nicely. I can't stop you, but some wicked bad karma will come your way.</p>
+      <p class="social">
         <a href='https://plus.google.com/+GLucasRoe/posts'>
           <i class='fa fa-google-plus-square'></i>
         </a>
@@ -81,10 +77,8 @@
         <a href='/rss'>
           <i class='fa fa-rss-square'></i>
         </a>
-      </div>
-      <div class='copyright'>
-        <p>Unless otherwise noted, content is &copy; 2014 G. Lucas Roe, and shouldn't be used without at least asking nicely. I can't stop you, but some wicked bad karma will come your way.</p>
-      </div>
+      </p>
+      <div class="clear"></div>  
     </footer>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <!--<script type="text/javascript">
