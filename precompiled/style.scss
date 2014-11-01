@@ -23,182 +23,473 @@ body{
 	width:100%;
 	font-family:$serif;
 	color:#333;
-	a{
-		color:$red;
-		text-decoration:none;
-		@include transition(color,.5s);
-		&:hover{
-			color: $dark-red;
-			text-shadow: 1px 1px 0px #fff,2px 2px 0px fade-out($dark-red,0.6);
-		}
-	}
-
-	h1{
-		font-size: 3.6rem;
-		color:$cool-grey;
-		font-family: $sans;
-		line-height:1.1;
-		margin: 1.25rem 0 1.25rem;
-		padding:0 1rem;
-	}
-
-	h2,h3,h4,h5{
-		margin:1.25rem auto 1rem;
-		padding:0 1.5rem;
-	}
-
-	h2{
-		font-size: 3rem;
-		color:$cool-grey;
-	}
-
-	h3{
-		font-size: 1.75rem;
-		margin-bottom: 0.75rem;
-		color:$cool-grey;
-	}
-
-	h4{
+	* + *{
+		margin:1em auto 0;
 		font-size: 1rem;
-		color:$red;
-		margin:0 2rem;
-		text-align: left;
-		font-family: $sans;
 	}
+}
 
-	p{
-		font-size: 1.1rem;
-		line-height: 1.8;
-		color:#555;
-		margin-bottom: 1.5rem;
+a{
+	color:$red;
+	text-decoration:none;
+	@include transition(color,.5s);
+	&:hover{
+		color: $dark-red;
+		text-shadow: 1px 1px 0px #fff,2px 2px 0px fade-out($dark-red,0.6);
 	}
+}
 
-	code{
-		font-family: monaco, monospace;
-		color:#777;
-		background-color:#efefef;
-		border-radius:10px;
-		padding: 2px 5px;
-		margin:0 2px;
+h1{
+	font-size: 2.5rem;
+	color:$cool-grey;
+	font-family: $sans;
+	line-height:1.1;
+	//margin: 1.25em 0 1.25em;
+	padding:0 1rem;
+}
+
+h2,h3,h4,h5{
+	//margin:1em auto 0;
+	padding:0 1.5rem;
+}
+
+h2{
+	font-size: 2rem;
+	color:$cool-grey;
+}
+
+h3{
+	font-size: 1.5rem;
+	//margin-bottom: 0.75em;
+	color:$cool-grey;
+}
+
+h4{
+	font-size: 1rem;
+	color:$red;
+	//margin:0 2em;
+	text-align: left;
+	font-family: $sans;
+}
+
+p{
+	font-size: 1.1rem;
+	line-height: 1.8;
+	color:#555;
+	//margin-bottom: 1.5em;
+}
+
+code{
+	font-family: monaco, monospace;
+	color:#777;
+	background-color:#efefef;
+	border-radius:10px;
+	padding: 2px 5px;
+	margin:0 2px;
+}
+pre code{
+	white-space: pre;
+	line-height:1.25;
+	float:right;
+	margin:0 2.5%;
+	width:90%;
+	padding:1.5rem;
+	margin:1.5rem;
+	overflow:auto;
+}
+aside{
+	color:$dark-red;
+	width:60%;
+	margin:0 auto 2rem;
+	font-family: $sans;
+}
+blockquote{
+	display:block;
+	padding:4rem;
+	background-color:$red;
+	color:#fff;
+	font: 1.5rem $serif;
+	margin: 0 0 2rem;
+	&>*{color:#fff;}
+	h4{
+		text-align:left;
+		font-style: italic;
+		color:#bbb;
+		margin-top:1rem;
+		padding-left:1.5rem;
 	}
-	pre code{
-		white-space: pre;
-		line-height:1.25;
-		float:right;
-		margin:0 2.5%;
-		width:90%;
-		padding:1.5rem;
-		margin:1.5rem;
-		overflow:auto;
-	}
-	aside{
-		color:$dark-red;
-		width:60%;
-		margin:0 auto 2rem;
-		font-family: $sans;
-	}
-	blockquote{
-		display:block;
-		padding:4rem;
-		background-color:$red;
-		color:#fff;
-		font: 1.5rem $serif;
-		margin: 0 0 2rem;
-		&>*{color:#fff;}
-		h4{
-			text-align:left;
-			font-style: italic;
-			color:#bbb;
-			margin-top:1rem;
-			padding-left:1.5rem;
+}
+p,pre code{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left:1.5rem;
+	padding-right:1.5rem;
+}
+q{
+	width: 100%;
+	display: block;
+	color:lighten($cool-grey,20%);
+	text-align: center;
+	font-style: italic;
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+ol,ul{
+	padding-left:4rem;
+	list-style-position: outside;
+	margin-bottom: 2rem;
+	font-size:1rem;
+}
+ol{
+	list-style-type: lower-roman;
+}
+ul{
+	list-style-type: none;
+}
+ul li:before{
+	font-family: sans-serif;
+	content: '•';
+	color: $red;
+	position: relative;
+	left:-.5rem;
+}
+ul ul, ol ol, ul ol, ol ul{
+	margin-left: 2rem;
+	padding-left: 0;
+}
+li{
+	margin-bottom: 1rem;
+	line-height:1.2;
+}
+hr{
+	/*border: 1px solid #eee;*/
+	border:none;
+	height:1px;
+	display:block;
+	@include linear-gradient(left, $red, $dark-red);
+}
+strong{
+	font-weight: bold;
+}
+em{
+	font-style: italic;
+}
+figure{
+	position:relative;
+	z-index: 1;
+	figcaption{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding:20px;
+		z-index:2;
+		width:100%;
+		h2{
+			text-transform: uppercase;
+			font-family: $sans;
+			font-weight: 900;
+			color: #fff;
 		}
 	}
-	p,pre code{
-		margin-left: auto;
-		margin-right: auto;
-		padding-left:1.5rem;
-		padding-right:1.5rem;
+}
+::selection{
+	background-color: $red;
+	color:white;
+}
+.fabulous{
+	-webkit-text-fill-color: transparent;
+		background: -webkit-linear-gradient(100deg, $red, $cool-grey);
+		background: -o-linear-gradient(transparent, transparent);
+		-webkit-background-clip: text;
+		/*Lifted directly from this brilliance http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html*/
+}
+.no-margin{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.images-fix{
+	margin:0;
+	width:100%;
+	max-width: 100%;
+	padding:0;
+}
+/*********** CLASSES & ANIMATIONS ***************/
+.clear{
+	clear:both;
+	margin:0;
+}
+
+.animated{
+	@include transition(all .25s);
+	@include animation-fill-mode(both);
+}
+
+.rotated{
+	@include transform(rotate(90deg) );
+}
+
+@include keyframes (animate-in) {
+	0% {
+		opacity: 0;
+		@include transform(translateY(-20px));
 	}
-	q{
-		width: 100%;
-		display: block;
-		color:lighten($cool-grey,20%);
-		text-align: center;
-		font-style: italic;
-		font-size: 2.5rem;
-		margin-bottom: 1.5rem;
+
+	100% {
+		opacity: 1;
+		@include transform(translateY(0));
 	}
-	ol,ul{
-		padding-left:4rem;
-		list-style-position: outside;
-		margin-bottom: 2rem;
-	}
-	ol{
-		list-style-type: lower-roman;
-	}
-	ul{
-		list-style-type: none;
-	}
-	ul li:before{
-		font-family: sans-serif;
-		content: '•';
-		color: $red;
-		position: relative;
-		left:-.5rem;
-	}
-	ul ul, ol ol, ul ol, ol ul{
-		margin-left: 2rem;
-		padding-left: 0;
-	}
-	li{
-		margin-bottom: 1rem;
-		line-height:1.2;
-	}
-	hr{
-		/*border: 1px solid #eee;*/
-		border:none;
-		height:1px;
-		display:block;
-		@include linear-gradient(left, $red, $dark-red);
-	}
-	strong{
-		font-weight: bold;
-	}
-	em{
-		font-style: italic;
-	}
-	figure{
-		position:relative;
-		z-index: 1;
-		figcaption{
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			padding:20px;
-			z-index:2;
+}
+
+.animate-in {
+	@include animation-name(animate-in);
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+/************ SPECIFICS *************/
+.header{
+	width:100%;
+	background-color: $header-color;
+	.nav-wrap{
+		width:100%;
+		.nav-toggle{
 			width:100%;
-			h2{
+			text-align: left;
+			font-size: 1.5rem;
+			color:#999;
+			background-color:$header-color;
+			border-bottom: 1px solid #ddd;
+			@include user-select(none);
+			cursor: pointer;
+			&.no-js{
+				display: none;
+			}
+			i{
+				margin: 0.75rem 1rem;
+				display: inline-block;
+			}
+			p{
+				width:auto;
+				margin-left: 0;
+				display:inline-block;
+				font-size: 1rem;
+				font-family: $sans;
+				color:#999;
+				position:relative;
+				top:-.2rem;
+				padding-left: 0;
+				margin-bottom: 0;
+				line-height: 1;
+			}
+			.search{
+				float:right;
+				width:50%;
+				@media screen and (min-width:900px){
+					width:25%;
+				}
+				form{
+					input.search-field{
+						@include appearance(none);
+						@include transition(all 0.25s);
+						border:none;
+						font-family: $sans;
+						background-color:lighten($light-blue,25%);
+						height:3rem;
+						width:100%;
+						margin:0;
+						padding:0 20px;
+						font-size: 1rem;
+						text-transform: uppercase;
+						@include placeholder{color:#999;}
+						overflow-x:auto;
+						&:focus{
+							outline:none;
+							background-color:lighten($light-blue,20%);
+							@include placeholder{color:#666;};
+							color:#333;
+						}
+					}
+					input.submit-btn{
+						display:none;
+					}
+					.search-icon{
+						position:absolute;
+						top:0;
+						right:0;
+						font-size: 1rem;
+						padding-top:0.25rem;
+					}
+				}
+			}
+		}
+		nav{
+			width:100%;
+			background-color: darken($header-color, 80%);
+			overflow-y:hidden;
+			height:auto;
+			max-height:1000px;/*not sure why this doesn't animate otherwise :(*/
+			margin:0;
+			&.shrink-hider{
+				max-height: 0px;
+			}
+			&.animated{
+			}
+
+			a{
+				width:100%;
+				padding:2rem 0 2rem;
+				margin:0;
+				float:left;
+				text-align: center;
 				text-transform: uppercase;
 				font-family: $sans;
-				font-weight: 900;
-				color: #fff;
+				font-size: 0.7rem;
+				color:#fff;
+				background-color:$red;
+				//border-right:1px solid #fff;
+				&:hover{
+					text-shadow:none;
+					background-color:$dark-red;
+				}
+
+				i{
+					padding:0 0 5px 0;
+					text-align: center;
+					font-size: 1.5rem;
+					font-weight: bold;
+					letter-spacing: 1px;
+					color:#fff;
+					font-family: $sans;
+					&:before{
+						margin-right: 1rem;
+						font-weight: normal;
+						font-family: 'FontAwesome';
+					}
+				}
+			}
+			@media only screen and (min-width:450px){
+				a{width:50%;}
+			}
+			@media only screen and (min-width:1024px){
+				a{
+					width:25%;
+					i{
+						&:before{
+							display:block;
+							font-size: 4rem;
+							text-align: center;
+							margin:0 auto 1rem;
+						}
+					}
+				}
 			}
 		}
 	}
-	::selection{
-		background-color: $red;
-		color:white;
+	.branding{
+		padding:3rem 0 3rem 1.5rem;
+		background-color: $header-color;
+		img{
+			margin:0 auto 1rem;
+			display: inline-block;
+			vertical-align: middle;
+			width:100%;
+			max-width: 6rem;
+			margin:0 auto 0;
+			-webkit-font-smoothing:antialiased;
+
+		}
+
+		h1,h2{
+			text-align: left;
+			font-family: 'Noto Sans', sans-serif;
+			font-weight: bold
+		}
+		h1{
+			display:inline-block;
+			vertical-align: middle;
+			width:auto;
+			color:#aaa;
+			font-size: 2rem;
+			margin-left:0.75rem;
+			margin-top: 0;
+		}
+		h2{
+			font-family: 'Noto Serif', serif;
+			color:#777;
+			font-size: 2rem;
+		}
 	}
-	.fabulous{
-		-webkit-text-fill-color: transparent;
- 		background: -webkit-linear-gradient(100deg, $red, $cool-grey);
- 		background: -o-linear-gradient(transparent, transparent);
- 		-webkit-background-clip: text;
- 		/*Lifted directly from this brilliance http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html*/
+}
+.post-body{
+	.post-meta{
+		padding-left:1.5rem;
+		text-transform: uppercase;
+		font-style: italic;
+		font-size: 0.8rem;
+		color:#bbb;
+		time{
+			color:#777;
+			margin:0 0.5rem;
+		}
+		a{
+			font-size: 0.8rem;
+			&:first-child{
+				padding-left: 0.5rem;
+			}
+		}
 	}
-	.no-margin{
-		margin-top: 0;
-		margin-bottom: 0;
+	.post-title{
+		margin-top: 1rem;
+	}
+	img,video{
+		width:100%;
+		margin:0;
+		@media screen and (min-width:1000px){
+			width:80%;
+			margin-left: 20%;
+			&.gfyVid{
+				width:100%;
+				margin-left: 0;
+			}
+		}
+	}
+	img.featured{
+		width: 100%;
+		margin:0;
+	}
+	p img{
+		width:100%;
+		padding:0;
+		margin-left:0;
+	}
+	p>a{
+		@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,0.8) 50%));
+		background-repeat: repeat-x;
+		background-size:2px 2px;
+		background-position: 0 1.15em;
+		&:hover{
+			@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,1) 50%));
+		}
+	}
+	.unknown{
+		font-family: $sans;
+		font-size: 2rem;
+	}
+	h1,h2,h3,h4,h5,p,img.contain{
+		max-width: 50rem;
+		text-align: left;
+	}
+	/*h4{
+		font-size: 1.1rem;
+		color:#999;
+		margin:1rem 0 2rem;
+		text-align: left;
+		font-family: $sans;
+	}*/
+	p{
+		padding: 0 1.5rem 0;
+	}
+	.top-margin{
+		margin-top: 1rem;
 	}
 	.images-fix{
 		margin:0;
@@ -206,404 +497,118 @@ body{
 		max-width: 100%;
 		padding:0;
 	}
-/*********** CLASSES & ANIMATIONS ***************/
-	.clear{
-		clear:both;
+	/***********GFYCAT FIXES***********/
+	.gfyCtrlPause,.gfyCtrlReverse,.gfyCtrlSlower,.gfyCtrlFaster{
+		width:15px;
+		height:15px;
+	}	
+}
+@media screen and (min-width:600px){	
+	.branding,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,div.gfyitem{
+		width: 90%;
+		margin-left: 5%;
 	}
-
-	.animated{
-		@include transition(all .25s);
-		@include animation-fill-mode(both);
+}	
+@media screen and (min-width:1000px){
+	.branding,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,div.gfyitem{
+		margin-left: 20%;
+		width:70%;
 	}
-
-	.rotated{
-		@include transform(rotate(90deg) );
+	ul ul, ol ol, ul ol, ol ul{
+		margin-left: 2.5rem;
 	}
-
-	@include keyframes (animate-in) {
-		0% {
-			opacity: 0;
-			@include transform(translateY(-20px));
-		}
-
-		100% {
-			opacity: 1;
-			@include transform(translateY(0));
-		}
+	pre code{
+		margin-right: 10%;
+		width:70%;
 	}
-
-	.animate-in {
-		@include animation-name(animate-in);
-		animation-duration: 1s;
-		animation-fill-mode: both;
+	aside{
+		float:left;
+		width:15%;
+		margin:0 2.5%;
+		text-align: right;
+		font-size: 1.1rem;
+		line-height: 1.7;
 	}
-/************ SPECIFICS *************/
-	.header{
-		width:100%;
-		background-color: $header-color;
-		.nav_wrap{
-			width:100%;
-			.nav_toggle{
-				width:100%;
-				text-align: left;
-				font-size: 1.5rem;
-				color:#999;
-				background-color:$header-color;
-				border-bottom: 1px solid #ddd;
-				@include user-select(none);
-				cursor: pointer;
-				&.no-js{
-					display: none;
-				}
-				i{
-					margin: 0.75rem 1rem;
-					display: inline-block;
-				}
-				p{
-					display:inline-block;
-					font-size: 1rem;
-					font-family: $sans;
-					color:#999;
-					position:relative;
-					top:-.2rem;
-					padding-left: 0;
-					margin-bottom: 0;
-					line-height: 1;
-				}
-				.search{
-					float:right;
-					width:50%;
-					@media screen and (min-width:900px){
-						width:25%;
-					}
-					form{
-						input.search_field{
-							@include appearance(none);
-							@include transition(all 0.25s);
-							border:none;
-							font-family: $sans;
-							background-color:lighten($light-blue,25%);
-							height:3rem;
-							width:100%;
-							margin:0;
-							padding:0 20px;
-							font-size: 1rem;
-							text-transform: uppercase;
-							@include placeholder{color:#999;}
-							overflow-x:auto;
-							&:focus{
-								outline:none;
-								background-color:lighten($light-blue,20%);
-								@include placeholder{color:#666;};
-								color:#333;
-							}
-						}
-						input.submit_btn{
-							display:none;
-						}
-						.search_icon{
-							position:absolute;
-							top:0;
-							right:0;
-							font-size: 1rem;
-							padding-top:0.25rem;
-						}
-					}
-				}
-			}
-			nav{
-				width:100%;
-				background-color: darken($header-color, 80%);
-				overflow-y:hidden;
-				height:auto;
-				max-height:1000px;/*not sure why this doesn't animate otherwise :(*/
-				&.shrink_hider{
-					max-height: 0px;
-				}
-				&.animated{
-				}
-
-				.navigation{
-					padding:0;
-					position:relative;
-					a{
-						width:100%;
-						padding:2rem 0 2rem;
-						float:left;
-						text-align: center;
-						text-transform: uppercase;
-						font-family: $sans;
-						font-size: 0.7rem;
-						color:#fff;
-						background-color:$red;
-						//border-right:1px solid #fff;
-						&:hover{
-							text-shadow:none;
-							background-color:$dark-red;
-						}
-						&+a::after{
-							height:80%;
-							width:1px;
-							display:block;
-							position:absolute;
-							top:10%;;
-							content:'';
-							@include linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.3), rgba(255,255,255,0))
-
-						}
-
-						i{
-							padding:0 0 5px 0;
-							text-align: center;
-							font-size: 1.5rem;
-							font-weight: bold;
-							letter-spacing: 1px;
-							color:#fff;
-							font-family: $sans;
-							&:before{
-								margin-right: 1rem;
-								font-weight: normal;
-								font-family: 'FontAwesome';
-							}
-						}
-					}
-					@media only screen and (min-width:450px){
-						a{width:50%;}
-					}
-					@media only screen and (min-width:1024px){
-						a{
-							width:25%;
-							i{
-								&:before{
-									display:block;
-									font-size: 4rem;
-									text-align: center;
-									margin:0 auto 1rem;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		.branding{
-			margin:0 auto 0;
-			padding:3rem 0 3rem;
-			background-color: $header-color;
-			.logo{
-				margin:0 auto 1rem;
-				width:25%;
-				max-width: 7rem;
-				object{
-					width:100%;
-					margin:0 auto 0;
-					-webkit-font-smoothing:antialiased;
-				}
-			}
-
-			h1,h2{
-				text-align: center;
-				font-family: 'Noto Sans', sans-serif;
-				font-weight: bold
-			}
-			h1{
-				color:#999;
-				font-size: 3rem;
-				margin:0 0 0.5rem;
-			}
-			h2{
-				font-family: 'Noto Serif', serif;
-				color:#777;
-				font-size: 2rem;
-			}
-		}
-	}
-	.post_body{
-		.post-meta{
-			padding-left:1.5rem;
-			text-transform: uppercase;
-			font-style: italic;
-			font-size: 0.9rem;
-			color:#bbb;
-			time{
-				color:#bbb;
-			}
-			a{
-
-			}
-		}
-		img,video{
-			width:100%;
-			margin:0;
-			@media screen and (min-width:1000px){
-				width:80%;
-				margin-left: 20%;
-				&.gfyVid{
-					width:100%;
-					margin-left: 0;
-				}
-			}
-		}
-		img.featured{
-			width: 100%;
-			margin:0;
-		}
-		p img{
-			width:100%;
-			padding:0;
-			margin-left:0;
-		}
-		p>a{
-			@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,0.8) 50%));
-			background-repeat: repeat-x;
-			background-size:2px 2px;
-			background-position: 0 1.15em;
-			&:hover{
-				@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,1) 50%));
-			}
-		}
-		.unknown{
-			font-family: $sans;
-			font-size: 2rem;
-		}
-		h1,h2,h3,h4,h5,p,aside,img.contain{
-			max-width: 50rem;
+	blockquote{
+		padding-left:20%;
+		padding-right:20%;
+		padding-bottom:1.5rem;
+		h4{
 			text-align: left;
+			margin-left: 0;
 		}
-		/*h4{
-			font-size: 1.1rem;
-			color:#999;
-			margin:1rem 0 2rem;
-			text-align: left;
-			font-family: $sans;
-		}*/
-		p{
-			margin:0 auto 0;
-			padding: 0 1.5rem 1.5rem;
-		}
-		.top-margin{
-			margin-top: 1rem;
-		}
-		@media screen and (min-width:600px){
-			&{	
-				h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,div.gfyitem{
-					width: 90%;
-					margin-left: 5%;
-				}
-			}
-		}	
-		@media screen and (min-width:1000px){
-			&{	
-				h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,div.gfyitem{
-					margin-left: 20%;
-					width:70%;
-				}
-				ul ul, ol ol, ul ol, ol ul{
-					margin-left: 2.5rem;
-				}
-				pre code{
-					margin-right: 10%;
-					width:70%;
-				}
-				aside{
-					float:left;
-					width:15%;
-					margin:0 2.5%;
-					text-align: right;
-					font-size: 1.1rem;
-					line-height: 1.7;
-				}
-				blockquote{
-					padding-left:20%;
-					padding-right:20%;
-					padding-bottom:1.5rem;
-					h4{
-						text-align: left;
-						margin-left: 0;
-					}
-				}
-			}
-		}
-		.images-fix{
-			margin:0;
-			width:100%;
-			max-width: 100%;
-			padding:0;
-		}
-		/***********GFYCAT FIXES***********/
-		.gfyCtrlPause,.gfyCtrlReverse,.gfyCtrlSlower,.gfyCtrlFaster{
-			width:15px;
-			height:15px;
-		}	
 	}
-	footer{
-		background-color: $red;
-		color:#eee;
-		margin-top: 4rem;
-		text-align: center;
-		a{
+}
+footer{
+	background-color: $red;
+	color:#fff;
+	margin-top: 4rem;
+	text-align: center;
+	padding:2rem 1rem;
+	a{
+		color:#fff;
+		font-size: 2rem;
+		&:hover{
 			color:#fff;
-			&:hover{
-				color:#fff;
-				text-shadow: 1px 1px 0px $red,2px 2px 0px fade-out(#fff,0.6);
-			}
+			text-shadow: 1px 1px 0px $red,2px 2px 0px fade-out(#fff,0.6);
+		}
+	}
+	p{
+		color:#fff;
+		margin: 0 0 0 1rem;
+		font-size: 1rem;
+		padding:0;
+		max-width: 60rem;
+	}
+	@media screen and (min-width:1000px){
+		.copyright{
+			width:70%;
+			text-align: left;
+			float:left;
 		}
 		.social{
-			padding: 2rem;
-			font-size: 2rem;
-			h3{
-				margin-bottom: 1rem;
-				color:#fff;
-			}
-			p{
-				width:100%;
-				a{
-					margin:0 1rem 0;
-				}
-			}
-		}
-		.copyright{
-			padding:1rem;
-			background-color:#333;
-			p{
-				color:#ccc;
-				font-size: 0.8rem;
-				font-family: $sans;
-				text-align: center;
-				line-height: 1.6;
-				margin:0 auto 0;
-			}
+			text-align: right;
+			float:right;
+			width: 20%;
 		}
 	}
+}
 /************ POSTS PAGE ************/
-	article{
-		margin-bottom: 2rem;
-	}
-	nav.pagination{
-		text-align: left;
-		padding-left:1.5rem;
-		a{
-			text-transform: uppercase;
-			margin:0 1rem;
-			i{
-				margin:0 0.5rem;
-			}
-			&.newer-posts{
-				margin-left: 0;
-				i{
-					margin-left: 0;
-				}
-			}			
+article{
+	//margin-bottom: 2rem;
+	font-size:3rem;
+	/*&:nth-child(even){
+		background-color:#000;
+	}*/
+}
+.post-excerpt{
+	font-size: 1rem;
+}
+
+nav.pagination{
+	text-align: left;
+	padding-left:1.5rem;
+	a{
+		text-transform: uppercase;
+		margin:0 1rem;
+		i{
+			margin:0 0.5rem;
 		}
-		@media screen and (min-width:600px){
-			&{	
-				margin-left: 5%;
+		&.newer-posts{
+			margin-left: 0;
+			i{
+				margin-left: 0;
 			}
-		}	
-		@media screen and (min-width:1000px){
-			&{	
-				margin-left: 20%;
-			}
-		}		
+		}			
 	}
+	@media screen and (min-width:600px){
+		&{	
+			margin-left: 5%;
+		}
+	}	
+	@media screen and (min-width:1000px){
+		&{	
+			margin-left: 20%;
+		}
+	}		
 }
