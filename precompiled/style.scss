@@ -208,12 +208,7 @@ figure{
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.images-fix{
-	margin-left:0;
-	width:100%;
-	max-width: 100%;
-	padding:0;
-}
+
 /*********** CLASSES & ANIMATIONS ***************/
 .clear{
 	clear:both;
@@ -489,6 +484,12 @@ figure{
 	/*p{
 		padding: 0 1.5rem 0;
 	}*/
+	.images-fix{
+		margin-left:0;
+		width:100%;
+		max-width: 100%;
+		padding:0;
+	}
 	.top-margin{
 		margin-top: 1rem;
 	}

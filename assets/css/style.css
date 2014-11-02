@@ -227,12 +227,6 @@ figure {
   margin-top: 0;
   margin-bottom: 0; }
 
-.images-fix {
-  margin-left: 0;
-  width: 100%;
-  max-width: 100%;
-  padding: 0; }
-
 /*********** CLASSES & ANIMATIONS ***************/
 .clear {
   clear: both;
@@ -511,6 +505,11 @@ figure {
   .post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body p, .post-body img.contain {
     max-width: 50rem;
     text-align: left; }
+  .post-body .images-fix {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0; }
   .post-body .top-margin {
     margin-top: 1rem; }
   .post-body .gfyCtrlPause, .post-body .gfyCtrlReverse, .post-body .gfyCtrlSlower, .post-body .gfyCtrlFaster {
