@@ -228,7 +228,7 @@ figure {
   margin-bottom: 0; }
 
 .images-fix {
-  margin: 0;
+  margin-left: 0;
   width: 100%;
   max-width: 100%;
   padding: 0; }
@@ -512,11 +512,6 @@ figure {
     padding: 0 1.5rem 0; }
   .post-body .top-margin {
     margin-top: 1rem; }
-  .post-body .images-fix {
-    margin: 0;
-    width: 100%;
-    max-width: 100%;
-    padding: 0; }
   .post-body .gfyCtrlPause, .post-body .gfyCtrlReverse, .post-body .gfyCtrlSlower, .post-body .gfyCtrlFaster {
     width: 15px;
     height: 15px; }
