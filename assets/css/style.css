@@ -460,6 +460,9 @@ figure {
   	text-align: left;
   	font-family: $sans;
   }*/
+  /*p{
+  	padding: 0 1.5rem 0;
+  }*/
   /***********GFYCAT FIXES***********/ }
   .post-body .post-meta {
     padding-left: 1.5rem;
@@ -508,8 +511,6 @@ figure {
   .post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body p, .post-body img.contain {
     max-width: 50rem;
     text-align: left; }
-  .post-body p {
-    padding: 0 1.5rem 0; }
   .post-body .top-margin {
     margin-top: 1rem; }
   .post-body .gfyCtrlPause, .post-body .gfyCtrlReverse, .post-body .gfyCtrlSlower, .post-body .gfyCtrlFaster {
