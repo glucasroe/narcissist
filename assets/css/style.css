@@ -438,7 +438,7 @@ figure {
       vertical-align: middle;
       width: auto;
       color: #aaa;
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-left: 0.75rem;
       margin-top: 0; }
     .header .branding h2 {
@@ -519,7 +519,10 @@ figure {
 @media screen and (min-width: 600px) {
   .branding, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem {
     width: 90%;
-    margin-left: 5%; } }
+    margin-left: 5%; }
+
+  .branding h1 {
+    font-size: 2rem; } }
 @media screen and (min-width: 1000px) {
   .branding, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem {
     margin-left: 20%;
