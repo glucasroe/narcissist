@@ -203,7 +203,7 @@ figure {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 20px;
+    padding: 20px 0;
     z-index: 2;
     width: 100%; }
     figure figcaption h2 {
@@ -521,7 +521,7 @@ header {
     width: 90%;
     margin-left: 5%; }
 
-  .branding h1 {
+  header .branding h1 {
     font-size: 2rem; } }
 @media screen and (min-width: 1000px) {
   .branding, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem {
