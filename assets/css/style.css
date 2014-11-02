@@ -284,12 +284,12 @@ figure {
   animation-fill-mode: both; }
 
 /************ SPECIFICS *************/
-.header {
+header {
   width: 100%;
   background-color: #fff; }
-  .header .nav-wrap {
+  header .nav-wrap {
     width: 100%; }
-    .header .nav-wrap .nav-toggle {
+    header .nav-wrap .nav-toggle {
       width: 100%;
       text-align: left;
       font-size: 1.5rem;
@@ -301,12 +301,12 @@ figure {
       -ms-user-select: none;
       user-select: none;
       cursor: pointer; }
-      .header .nav-wrap .nav-toggle.no-js {
+      header .nav-wrap .nav-toggle.no-js {
         display: none; }
-      .header .nav-wrap .nav-toggle i {
+      header .nav-wrap .nav-toggle i {
         margin: 0.75rem 1rem;
         display: inline-block; }
-      .header .nav-wrap .nav-toggle p {
+      header .nav-wrap .nav-toggle p {
         width: auto;
         margin-left: 0;
         display: inline-block;
@@ -318,13 +318,13 @@ figure {
         padding-left: 0;
         margin-bottom: 0;
         line-height: 1; }
-      .header .nav-wrap .nav-toggle .search {
+      header .nav-wrap .nav-toggle .search {
         float: right;
         width: 50%; }
         @media screen and (min-width: 900px) {
-          .header .nav-wrap .nav-toggle .search {
+          header .nav-wrap .nav-toggle .search {
             width: 25%; } }
-        .header .nav-wrap .nav-toggle .search form input.search-field {
+        header .nav-wrap .nav-toggle .search form input.search-field {
           -webkit-appearance: none;
           -moz-appearance: none;
           -ms-appearance: none;
@@ -343,35 +343,35 @@ figure {
           font-size: 1rem;
           text-transform: uppercase;
           overflow-x: auto; }
-          .header .nav-wrap .nav-toggle .search form input.search-field::-webkit-input-placeholder {
+          header .nav-wrap .nav-toggle .search form input.search-field::-webkit-input-placeholder {
             color: #999; }
-          .header .nav-wrap .nav-toggle .search form input.search-field::-moz-placeholder {
+          header .nav-wrap .nav-toggle .search form input.search-field::-moz-placeholder {
             color: #999; }
-          .header .nav-wrap .nav-toggle .search form input.search-field:-moz-placeholder {
+          header .nav-wrap .nav-toggle .search form input.search-field:-moz-placeholder {
             color: #999; }
-          .header .nav-wrap .nav-toggle .search form input.search-field:-ms-input-placeholder {
+          header .nav-wrap .nav-toggle .search form input.search-field:-ms-input-placeholder {
             color: #999; }
-          .header .nav-wrap .nav-toggle .search form input.search-field:focus {
+          header .nav-wrap .nav-toggle .search form input.search-field:focus {
             outline: none;
             background-color: #d9f3ff;
             color: #333; }
-            .header .nav-wrap .nav-toggle .search form input.search-field:focus::-webkit-input-placeholder {
+            header .nav-wrap .nav-toggle .search form input.search-field:focus::-webkit-input-placeholder {
               color: #666; }
-            .header .nav-wrap .nav-toggle .search form input.search-field:focus::-moz-placeholder {
+            header .nav-wrap .nav-toggle .search form input.search-field:focus::-moz-placeholder {
               color: #666; }
-            .header .nav-wrap .nav-toggle .search form input.search-field:focus:-moz-placeholder {
+            header .nav-wrap .nav-toggle .search form input.search-field:focus:-moz-placeholder {
               color: #666; }
-            .header .nav-wrap .nav-toggle .search form input.search-field:focus:-ms-input-placeholder {
+            header .nav-wrap .nav-toggle .search form input.search-field:focus:-ms-input-placeholder {
               color: #666; }
-        .header .nav-wrap .nav-toggle .search form input.submit-btn {
+        header .nav-wrap .nav-toggle .search form input.submit-btn {
           display: none; }
-        .header .nav-wrap .nav-toggle .search form .search-icon {
+        header .nav-wrap .nav-toggle .search form .search-icon {
           position: absolute;
           top: 0;
           right: 0;
           font-size: 1rem;
           padding-top: 0.25rem; }
-    .header .nav-wrap nav {
+    header .nav-wrap nav {
       width: 100%;
       background-color: #333333;
       overflow-y: hidden;
@@ -379,9 +379,9 @@ figure {
       max-height: 1000px;
       /*not sure why this doesn't animate otherwise :(*/
       margin: 0; }
-      .header .nav-wrap nav.shrink-hider {
+      header .nav-wrap nav.shrink-hider {
         max-height: 0px; }
-      .header .nav-wrap nav a {
+      header .nav-wrap nav a {
         width: 100%;
         padding: 2rem 0 2rem;
         margin: 0;
@@ -392,10 +392,10 @@ figure {
         font-size: 0.7rem;
         color: #fff;
         background-color: #cc6947; }
-        .header .nav-wrap nav a:hover {
+        header .nav-wrap nav a:hover {
           text-shadow: none;
           background-color: #873f26; }
-        .header .nav-wrap nav a i {
+        header .nav-wrap nav a i {
           padding: 0 0 5px 0;
           text-align: center;
           font-size: 1.5rem;
@@ -403,25 +403,25 @@ figure {
           letter-spacing: 1px;
           color: #fff;
           font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
-          .header .nav-wrap nav a i:before {
+          header .nav-wrap nav a i:before {
             margin-right: 1rem;
             font-weight: normal;
             font-family: 'FontAwesome'; }
       @media only screen and (min-width: 450px) {
-        .header .nav-wrap nav a {
+        header .nav-wrap nav a {
           width: 50%; } }
       @media only screen and (min-width: 1024px) {
-        .header .nav-wrap nav a {
+        header .nav-wrap nav a {
           width: 25%; }
-          .header .nav-wrap nav a i:before {
+          header .nav-wrap nav a i:before {
             display: block;
             font-size: 4rem;
             text-align: center;
             margin: 0 auto 1rem; } }
-  .header .branding {
+  header .branding {
     padding: 3rem 0 3rem 1.5rem;
     background-color: #fff; }
-    .header .branding img {
+    header .branding img {
       margin: 0 auto 1rem;
       display: inline-block;
       vertical-align: middle;
@@ -429,11 +429,11 @@ figure {
       max-width: 6rem;
       margin: 0 auto 0;
       -webkit-font-smoothing: antialiased; }
-    .header .branding h1, .header .branding h2 {
+    header .branding h1, header .branding h2 {
       text-align: left;
       font-family: 'Noto Sans', sans-serif;
       font-weight: bold; }
-    .header .branding h1 {
+    header .branding h1 {
       display: inline-block;
       vertical-align: middle;
       width: auto;
@@ -441,7 +441,7 @@ figure {
       font-size: 1.5rem;
       margin-left: 0.75rem;
       margin-top: 0; }
-    .header .branding h2 {
+    header .branding h2 {
       font-family: 'Noto Serif', serif;
       color: #777;
       font-size: 2rem; }
