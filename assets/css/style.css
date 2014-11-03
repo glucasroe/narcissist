@@ -516,7 +516,7 @@ header {
     padding: 0; }
   .post-body .top-margin {
     margin-top: 1rem; }
-  .post-body p .gfyCtrlPause, .post-body p .gfyCtrlReverse, .post-body p .gfyCtrlSlower, .post-body p .gfyCtrlFaster {
+  .post-body p .gfyCtrlPause:not(.contain), .post-body p .gfyCtrlReverse:not(.contain), .post-body p .gfyCtrlSlower:not(.contain), .post-body p .gfyCtrlFaster:not(.contain) {
     width: 15px;
     height: 15px; }
 

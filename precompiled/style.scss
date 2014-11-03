@@ -500,7 +500,7 @@ header{
 		margin-top: 1rem;
 	}
 	/***********GFYCAT FIXES***********/
-	p .gfyCtrlPause,p .gfyCtrlReverse,p .gfyCtrlSlower,p .gfyCtrlFaster{
+	p .gfyCtrlPause:not(.contain),p .gfyCtrlReverse:not(.contain),p .gfyCtrlSlower:not(.contain),p .gfyCtrlFaster:not(.contain){
 		width:15px;
 		height:15px;
 	}	
