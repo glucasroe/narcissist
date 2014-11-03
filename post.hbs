@@ -11,7 +11,9 @@
         {{#post}}
             <h1 class="post-title">{{{title}}}</h1>
             <div class="post-meta">Posted on <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{tags prefix="under " separator=" | "}}</div>
-            <img src="{{image}}" class="contain post-image-header animated"/>
+            <figure class="post-image-header contain animated">
+                <img src="{{image}}"/>
+            </figure>
             <section class="post-content">
                 {{content}}
             </section>
