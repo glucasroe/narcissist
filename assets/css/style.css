@@ -506,7 +506,7 @@ header {
   .post-body .unknown {
     font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
     font-size: 2rem; }
-  .post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body p, .post-body img.contain {
+  .post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body ul, .post-body li, .post-body p, .post-body img.contain {
     max-width: 50rem;
     text-align: left; }
   .post-body .images-fix {
