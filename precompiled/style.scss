@@ -80,7 +80,7 @@ h4{
 	font-family: $sans;
 }
 
-p{
+p,aside{
 	font-size: 1rem;
 	line-height: 1.75;
 	color:#555;
@@ -107,9 +107,6 @@ pre code{
 }
 aside{
 	color:$dark-red;
-	width:60%;
-	margin-left:auto;
-	margin-right:auto;
 	font-family: $sans;
 }
 blockquote{
@@ -537,8 +534,6 @@ header{
 		margin-left: 2.5%;
 		margin-right: 2.5%;
 		text-align: right;
-		font-size: 1.1rem;
-		line-height: 1.7;
 	}
 	blockquote{
 		padding-left:20%;

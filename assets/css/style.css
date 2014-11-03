@@ -100,7 +100,7 @@ h4 {
   text-align: left;
   font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
 
-p {
+p, aside {
   font-size: 1rem;
   line-height: 1.75;
   color: #555; }
@@ -125,9 +125,6 @@ pre code {
 
 aside {
   color: #873f26;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
   font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
 
 blockquote {
@@ -549,9 +546,7 @@ header {
     width: 15%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    text-align: right;
-    font-size: 1.1rem;
-    line-height: 1.7; }
+    text-align: right; }
 
   blockquote {
     padding-left: 20%;
