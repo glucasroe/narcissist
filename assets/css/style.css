@@ -521,7 +521,7 @@ header {
     height: 15px; }
 
 @media screen and (min-width: 600px) {
-  .branding, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem {
+  .branding, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem, aside {
     width: 90%;
     margin-left: 5%; }
 
