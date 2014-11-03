@@ -443,10 +443,30 @@ header{
 	margin-top: 1rem;
 }
 .post-image-header{
-	opacity:0.5;
+	position: relative;
+	cursor: pointer;
+	opacity:0.9;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		background: rgba(204, 105, 71, 0.5);
+		@include transition(all .25s);
+		@include animation-fill-mode(both);
+	}
+	img{
+		@include filter(grayscale(100%));
+		z-index: 1;
+	}
 	&:hover{
-		opacity:1;
+		&:before{background: rgba(204,105,71,0);}
+		img{@include filter(grayscale(0%));}
 	}
 }
 img,video{
@@ -512,7 +532,7 @@ p .gfyCtrlPause:not(.contain),p .gfyCtrlReverse:not(.contain),p .gfyCtrlSlower:n
 	height:15px;
 }	
 @media screen and (min-width:600px){	
-	.branding,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.contain,.post-meta,div.gfyitem,aside{
+	.branding,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.contain,.post-meta,div.gfyitem,aside,figure{
 		width: 90%;
 		margin-left: 5%;
 	}
@@ -521,7 +541,7 @@ p .gfyCtrlPause:not(.contain),p .gfyCtrlReverse:not(.contain),p .gfyCtrlSlower:n
 	}
 }	
 @media screen and (min-width:1000px){
-	.branding,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.contain,.post-meta,div.gfyitem{
+	.branding,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.contain,.post-meta,div.gfyitem,figure{
 		margin-left: 20%;
 		width:70%;
 	}
@@ -555,6 +575,10 @@ p .gfyCtrlPause:not(.contain),p .gfyCtrlReverse:not(.contain),p .gfyCtrlSlower:n
 		float:left;
 		margin-top:-2.5rem;
 	}
+}
+figure img{
+	margin-left:0;
+	width:100%;
 }
 footer{
 	background-color: $red;
