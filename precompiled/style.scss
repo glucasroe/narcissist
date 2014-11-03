@@ -252,143 +252,48 @@ figure{
 header{
 	width:100%;
 	background-color: $header-color;
-	.nav-wrap{
-		width:100%;
-		.nav-toggle{
-			width:100%;
-			text-align: left;
-			font-size: 1.5rem;
-			color:#999;
-			background-color:$header-color;
-			border-bottom: 1px solid #ddd;
-			@include user-select(none);
-			cursor: pointer;
-			&.no-js{
-				display: none;
-			}
-			i{
-				margin: 0.75rem 1rem;
-				display: inline-block;
-			}
-			p{
-				width:auto;
-				margin-left: 0;
-				display:inline-block;
-				font-size: 1rem;
-				font-family: $sans;
-				color:#999;
-				position:relative;
-				top:-.2rem;
-				padding-left: 0;
-				margin-bottom: 0;
-				line-height: 1;
-			}
-			.search{
-				float:right;
-				width:50%;
-				@media screen and (min-width:900px){
-					width:25%;
-				}
-				form{
-					input.search-field{
-						@include appearance(none);
-						@include transition(all 0.25s);
-						border:none;
-						font-family: $sans;
-						background-color:lighten($light-blue,25%);
-						height:3rem;
-						width:100%;
-						margin:0;
-						padding:0 20px;
-						font-size: 1rem;
-						text-transform: uppercase;
-						@include placeholder{color:#999;}
-						overflow-x:auto;
-						&:focus{
-							outline:none;
-							background-color:lighten($light-blue,20%);
-							@include placeholder{color:#666;};
-							color:#333;
-						}
-					}
-					input.submit-btn{
-						display:none;
-					}
-					.search-icon{
-						position:absolute;
-						top:0;
-						right:0;
-						font-size: 1rem;
-						padding-top:0.25rem;
-					}
-				}
-			}
+	.search{
+		float:right;
+		width:50%;
+		@media screen and (min-width:900px){
+			width:25%;
 		}
-		nav{
-			width:100%;
-			background-color: darken($header-color, 80%);
-			overflow-y:hidden;
-			height:auto;
-			max-height:1000px;/*not sure why this doesn't animate otherwise :(*/
-			margin:0;
-			&.shrink-hider{
-				max-height: 0px;
-			}
-			&.animated{
-			}
-
-			a{
-				width:100%;
-				padding:2rem 0 2rem;
-				margin:0;
-				float:left;
-				text-align: center;
-				text-transform: uppercase;
+		form{
+			input.search-field{
+				@include appearance(none);
+				@include transition(all 0.25s);
+				border:none;
 				font-family: $sans;
-				font-size: 0.7rem;
-				color:#fff;
-				background-color:$red;
-				//border-right:1px solid #fff;
-				&:hover{
-					text-shadow:none;
-					background-color:$dark-red;
-				}
-
-				i{
-					padding:0 0 5px 0;
-					text-align: center;
-					font-size: 1.5rem;
-					font-weight: bold;
-					letter-spacing: 1px;
-					color:#fff;
-					font-family: $sans;
-					&:before{
-						margin-right: 1rem;
-						font-weight: normal;
-						font-family: 'FontAwesome';
-					}
+				background-color:lighten($light-blue,25%);
+				height:3rem;
+				width:100%;
+				margin:0;
+				padding:0 20px;
+				font-size: 1rem;
+				text-transform: uppercase;
+				@include placeholder{color:#999;}
+				overflow-x:auto;
+				&:focus{
+					outline:none;
+					background-color:lighten($light-blue,20%);
+					@include placeholder{color:#666;};
+					color:#333;
 				}
 			}
-			@media only screen and (min-width:450px){
-				a{width:50%;}
+			input.submit-btn{
+				display:none;
 			}
-			@media only screen and (min-width:1024px){
-				a{
-					width:25%;
-					i{
-						&:before{
-							display:block;
-							font-size: 4rem;
-							text-align: center;
-							margin:0 auto 1rem;
-						}
-					}
-				}
+			.search-icon{
+				position:absolute;
+				top:0;
+				right:0;
+				font-size: 1rem;
+				padding-top:0.25rem;
 			}
 		}
 	}
 	.branding{
-		padding:2rem 0 2rem 1.5rem;
+		padding:2rem 0 0 1.5rem;
 		background-color: $header-color;
 		img{
 			margin:0 auto 1rem;
@@ -398,9 +303,7 @@ header{
 			max-width: 6rem;
 			margin:0 auto 0;
 			-webkit-font-smoothing:antialiased;
-
 		}
-
 		h1,h2{
 			text-align: left;
 			font-family: 'Noto Sans', sans-serif;
@@ -419,6 +322,34 @@ header{
 			font-family: 'Noto Serif', serif;
 			color:#777;
 			font-size: 2rem;
+		}
+	}
+	nav{
+		border: 1px $red solid;
+		border-radius: 5px;
+		margin-left:1rem;
+		margin-right: 1rem;
+		a{
+			width:33.33333%;
+			margin:0;
+			padding: 10px 0;
+			float:left;
+			font-family: $sans;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 0.9rem;
+			letter-spacing: 1.1;
+			&+a{
+				width: calc(33.33333% - 1px);
+				border-left: 1px solid $dark-red;
+			}
+			&:hover{
+				background-color: $red;
+				color: #fff;
+				text-shadow: none;
+			}
+			&:last-child{
+			}
 		}
 	}
 }

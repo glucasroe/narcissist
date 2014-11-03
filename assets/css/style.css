@@ -292,139 +292,61 @@ figure {
 header {
   width: 100%;
   background-color: #fff; }
-  header .nav-wrap {
-    width: 100%; }
-    header .nav-wrap .nav-toggle {
+  header .search {
+    float: right;
+    width: 50%; }
+    @media screen and (min-width: 900px) {
+      header .search {
+        width: 25%; } }
+    header .search form input.search-field {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      -webkit-transition: all 0.25s;
+      -moz-transition: all 0.25s;
+      transition: all 0.25s;
+      border: none;
+      font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+      background-color: #f3fbff;
+      height: 3rem;
       width: 100%;
-      text-align: left;
-      font-size: 1.5rem;
-      color: #999;
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      cursor: pointer; }
-      header .nav-wrap .nav-toggle.no-js {
-        display: none; }
-      header .nav-wrap .nav-toggle i {
-        margin: 0.75rem 1rem;
-        display: inline-block; }
-      header .nav-wrap .nav-toggle p {
-        width: auto;
-        margin-left: 0;
-        display: inline-block;
-        font-size: 1rem;
-        font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
-        color: #999;
-        position: relative;
-        top: -.2rem;
-        padding-left: 0;
-        margin-bottom: 0;
-        line-height: 1; }
-      header .nav-wrap .nav-toggle .search {
-        float: right;
-        width: 50%; }
-        @media screen and (min-width: 900px) {
-          header .nav-wrap .nav-toggle .search {
-            width: 25%; } }
-        header .nav-wrap .nav-toggle .search form input.search-field {
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          -ms-appearance: none;
-          -o-appearance: none;
-          appearance: none;
-          -webkit-transition: all 0.25s;
-          -moz-transition: all 0.25s;
-          transition: all 0.25s;
-          border: none;
-          font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
-          background-color: #f3fbff;
-          height: 3rem;
-          width: 100%;
-          margin: 0;
-          padding: 0 20px;
-          font-size: 1rem;
-          text-transform: uppercase;
-          overflow-x: auto; }
-          header .nav-wrap .nav-toggle .search form input.search-field::-webkit-input-placeholder {
-            color: #999; }
-          header .nav-wrap .nav-toggle .search form input.search-field::-moz-placeholder {
-            color: #999; }
-          header .nav-wrap .nav-toggle .search form input.search-field:-moz-placeholder {
-            color: #999; }
-          header .nav-wrap .nav-toggle .search form input.search-field:-ms-input-placeholder {
-            color: #999; }
-          header .nav-wrap .nav-toggle .search form input.search-field:focus {
-            outline: none;
-            background-color: #d9f3ff;
-            color: #333; }
-            header .nav-wrap .nav-toggle .search form input.search-field:focus::-webkit-input-placeholder {
-              color: #666; }
-            header .nav-wrap .nav-toggle .search form input.search-field:focus::-moz-placeholder {
-              color: #666; }
-            header .nav-wrap .nav-toggle .search form input.search-field:focus:-moz-placeholder {
-              color: #666; }
-            header .nav-wrap .nav-toggle .search form input.search-field:focus:-ms-input-placeholder {
-              color: #666; }
-        header .nav-wrap .nav-toggle .search form input.submit-btn {
-          display: none; }
-        header .nav-wrap .nav-toggle .search form .search-icon {
-          position: absolute;
-          top: 0;
-          right: 0;
-          font-size: 1rem;
-          padding-top: 0.25rem; }
-    header .nav-wrap nav {
-      width: 100%;
-      background-color: #333333;
-      overflow-y: hidden;
-      height: auto;
-      max-height: 1000px;
-      /*not sure why this doesn't animate otherwise :(*/
-      margin: 0; }
-      header .nav-wrap nav.shrink-hider {
-        max-height: 0px; }
-      header .nav-wrap nav a {
-        width: 100%;
-        padding: 2rem 0 2rem;
-        margin: 0;
-        float: left;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
-        font-size: 0.7rem;
-        color: #fff;
-        background-color: #cc6947; }
-        header .nav-wrap nav a:hover {
-          text-shadow: none;
-          background-color: #873f26; }
-        header .nav-wrap nav a i {
-          padding: 0 0 5px 0;
-          text-align: center;
-          font-size: 1.5rem;
-          font-weight: bold;
-          letter-spacing: 1px;
-          color: #fff;
-          font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
-          header .nav-wrap nav a i:before {
-            margin-right: 1rem;
-            font-weight: normal;
-            font-family: 'FontAwesome'; }
-      @media only screen and (min-width: 450px) {
-        header .nav-wrap nav a {
-          width: 50%; } }
-      @media only screen and (min-width: 1024px) {
-        header .nav-wrap nav a {
-          width: 25%; }
-          header .nav-wrap nav a i:before {
-            display: block;
-            font-size: 4rem;
-            text-align: center;
-            margin: 0 auto 1rem; } }
+      margin: 0;
+      padding: 0 20px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      overflow-x: auto; }
+      header .search form input.search-field::-webkit-input-placeholder {
+        color: #999; }
+      header .search form input.search-field::-moz-placeholder {
+        color: #999; }
+      header .search form input.search-field:-moz-placeholder {
+        color: #999; }
+      header .search form input.search-field:-ms-input-placeholder {
+        color: #999; }
+      header .search form input.search-field:focus {
+        outline: none;
+        background-color: #d9f3ff;
+        color: #333; }
+        header .search form input.search-field:focus::-webkit-input-placeholder {
+          color: #666; }
+        header .search form input.search-field:focus::-moz-placeholder {
+          color: #666; }
+        header .search form input.search-field:focus:-moz-placeholder {
+          color: #666; }
+        header .search form input.search-field:focus:-ms-input-placeholder {
+          color: #666; }
+    header .search form input.submit-btn {
+      display: none; }
+    header .search form .search-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1rem;
+      padding-top: 0.25rem; }
   header .branding {
-    padding: 2rem 0 2rem 1.5rem;
+    padding: 2rem 0 0 1.5rem;
     background-color: #fff; }
     header .branding img {
       margin: 0 auto 1rem;
@@ -450,6 +372,28 @@ header {
       font-family: 'Noto Serif', serif;
       color: #777;
       font-size: 2rem; }
+  header nav {
+    border: 1px #cc6947 solid;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+    header nav a {
+      width: 33.33333%;
+      margin: 0;
+      padding: 10px 0;
+      float: left;
+      font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 0.9rem;
+      letter-spacing: 1.1; }
+      header nav a + a {
+        width: calc(33.33333% - 1px);
+        border-left: 1px solid #873f26; }
+      header nav a:hover {
+        background-color: #cc6947;
+        color: #fff;
+        text-shadow: none; }
 
 .post-meta {
   padding-left: 1.5rem;
