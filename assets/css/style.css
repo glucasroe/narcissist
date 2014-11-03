@@ -95,7 +95,8 @@ h3 {
   color: #7A7F99; }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
   color: #cc6947;
   text-align: left;
   font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
@@ -180,8 +181,8 @@ ul ul, ol ol, ul ol, ol ul {
   padding-left: 0; }
 
 li {
-  margin-bottom: 1rem;
-  line-height: 1.2; }
+  margin-bottom: 0.25em;
+  line-height: 1.6; }
 
 hr {
   /*border: 1px solid #eee;*/
@@ -423,7 +424,7 @@ header {
             text-align: center;
             margin: 0 auto 1rem; } }
   header .branding {
-    padding: 3rem 0 3rem 1.5rem;
+    padding: 2rem 0 2rem 1.5rem;
     background-color: #fff; }
     header .branding img {
       margin: 0 auto 1rem;
@@ -450,75 +451,90 @@ header {
       color: #777;
       font-size: 2rem; }
 
-.post-body {
-  /*h4{
-  	font-size: 1.1rem;
-  	color:#999;
-  	margin:1rem 0 2rem;
-  	text-align: left;
-  	font-family: $sans;
-  }*/
-  /*p{
-  	padding: 0 1.5rem 0;
-  }*/
-  /***********GFYCAT FIXES***********/ }
-  .post-body .post-meta {
-    padding-left: 1.5rem;
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 0.8rem;
-    color: #bbb; }
-    .post-body .post-meta time {
-      color: #777;
-      margin: 0 0.5rem; }
-    .post-body .post-meta a {
-      font-size: 0.8rem; }
-      .post-body .post-meta a:first-child {
-        padding-left: 0.5rem; }
-  .post-body .post-title {
-    margin-top: 1rem; }
-  .post-body img, .post-body video {
-    width: 100%;
-    margin: 0; }
-    @media screen and (min-width: 1000px) {
-      .post-body img, .post-body video {
-        width: 80%;
-        margin-left: 20%; }
-        .post-body img.gfyVid, .post-body video.gfyVid {
-          width: 100%;
-          margin-left: 0; } }
-  .post-body img.featured {
-    width: 100%;
-    margin: 0; }
-  .post-body p img:not(.contain) {
-    width: 100%;
-    padding: 0;
-    margin-left: 0; }
-  .post-body p > a {
-    background-image: -webkit-linear-gradient(top, transparent 50%, rgba(204, 105, 71, 0.2) 50%);
-    background-image: linear-gradient(to bottom, transparent 50%, rgba(204, 105, 71, 0.2) 50%);
-    background-repeat: repeat-x;
-    background-size: 2px 2px;
-    background-position: 0 1.15em; }
-    .post-body p > a:hover {
-      background-image: -webkit-linear-gradient(top, transparent 50%, rgba(204, 105, 71, 0) 50%);
-      background-image: linear-gradient(to bottom, transparent 50%, rgba(204, 105, 71, 0) 50%); }
-  .post-body .unknown {
-    font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
-    font-size: 2rem; }
-  .post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body ul, .post-body li, .post-body p, .post-body img.contain {
-    max-width: 50rem;
-    text-align: left; }
-  .post-body .images-fix {
-    margin-left: 0;
-    width: 100%;
-    max-width: 100%;
-    padding: 0; }
-  .post-body .top-margin {
-    margin-top: 1rem; }
-  .post-body p .gfyCtrlPause:not(.contain), .post-body p .gfyCtrlReverse:not(.contain), .post-body p .gfyCtrlSlower:not(.contain), .post-body p .gfyCtrlFaster:not(.contain) {
-    width: 15px;
-    height: 15px; }
+.post-meta {
+  padding-left: 1.5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #bbb; }
+  .post-meta time {
+    color: #777;
+    margin: 0 0.5rem; }
+  .post-meta a {
+    font-size: 0.8rem; }
+    .post-meta a:first-child {
+      padding-left: 0.5rem; }
+
+.post-title {
+  margin-top: 1rem; }
+
+.post-image-header {
+  opacity: 0.5;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+  .post-image-header:hover {
+    opacity: 1; }
+
+img, video {
+  width: 100%;
+  margin-left: 0; }
+  @media screen and (min-width: 1000px) {
+    img, video {
+      width: 80%;
+      margin-left: 20%; }
+      img.gfyVid, video.gfyVid {
+        width: 100%;
+        margin-left: 0; } }
+
+img.featured {
+  width: 100%;
+  margin-left: 0; }
+
+p img:not(.contain) {
+  width: 100%;
+  padding: 0;
+  margin-left: 0; }
+
+p > a {
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(204, 105, 71, 0.2) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(204, 105, 71, 0.2) 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 1.15em; }
+  p > a:hover {
+    background-image: -webkit-linear-gradient(top, transparent 50%, rgba(204, 105, 71, 0) 50%);
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(204, 105, 71, 0) 50%); }
+
+.unknown {
+  font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-size: 2rem; }
+
+h1, h2, h3, h4, h5, ul, li, p, img.contain {
+  max-width: 50rem;
+  text-align: left; }
+
+/*h4{
+	font-size: 1.1rem;
+	color:#999;
+	margin:1rem 0 2rem;
+	text-align: left;
+	font-family: $sans;
+}*/
+/*p{
+	padding: 0 1.5rem 0;
+}*/
+.images-fix {
+  margin-left: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0; }
+
+.top-margin {
+  margin-top: 1rem; }
+
+/***********GFYCAT FIXES***********/
+p .gfyCtrlPause:not(.contain), p .gfyCtrlReverse:not(.contain), p .gfyCtrlSlower:not(.contain), p .gfyCtrlFaster:not(.contain) {
+  width: 15px;
+  height: 15px; }
 
 @media screen and (min-width: 600px) {
   .branding, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem, aside {
@@ -553,7 +569,13 @@ header {
     padding-bottom: 1.5rem; }
     blockquote h4 {
       text-align: left;
-      margin-left: 0; } }
+      margin-left: 0; }
+
+  .post-featured-image {
+    width: 19%;
+    margin: 0;
+    float: left;
+    margin-top: -2.5rem; } }
 footer {
   background-color: #cc6947;
   color: #fff;
