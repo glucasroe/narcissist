@@ -100,10 +100,14 @@ h4 {
   text-align: left;
   font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
 
-p, aside {
+p, aside, pre code {
   font-size: 1rem;
   line-height: 1.75;
-  color: #555; }
+  color: #555;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
 
 code {
   font-family: monaco, monospace;
@@ -142,12 +146,6 @@ blockquote {
     color: #bbb;
     margin-top: 1rem;
     padding-left: 1.5rem; }
-
-p, pre code {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem; }
 
 q {
   width: 100%;
