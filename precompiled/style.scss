@@ -56,6 +56,15 @@ h2,h3,h4,h5{
 h2{
 	font-size: 2rem;
 	color:$cool-grey;
+	&:after{
+		content:'';
+		display: block;
+		position:relative;
+		top: 4px;
+		width:100%;
+		height: 1px;
+		background-color: #eee;
+	}
 }
 
 h3{
@@ -190,6 +199,9 @@ figure{
 			font-family: $sans;
 			font-weight: 900;
 			color: #fff;
+			&:after{
+				background-color:transparent;
+			}
 		}
 	}
 }
