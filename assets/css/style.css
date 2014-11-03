@@ -471,8 +471,7 @@ header {
 .post-image-header {
   position: relative;
   cursor: pointer;
-  opacity: 0.9;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+  opacity: 0.9; }
   .post-image-header:before {
     content: "";
     display: block;
@@ -492,7 +491,8 @@ header {
   .post-image-header img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    z-index: 1; }
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
   .post-image-header:hover:before {
     background: rgba(204, 105, 71, 0); }
   .post-image-header:hover img {
