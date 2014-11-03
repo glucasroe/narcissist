@@ -73,7 +73,8 @@ h3{
 }
 
 h4{
-	font-size: 1.5rem;
+	font-size: 1.25rem;
+	text-transform:uppercase;
 	color:$red;
 	//margin:0 2em;
 	text-align: left;
@@ -387,7 +388,7 @@ header{
 		}
 	}
 	.branding{
-		padding:3rem 0 3rem 1.5rem;
+		padding:2rem 0 2rem 1.5rem;
 		background-color: $header-color;
 		img{
 			margin:0 auto 1rem;
@@ -442,9 +443,16 @@ header{
 	.post-title{
 		margin-top: 1rem;
 	}
+	.post-header{
+		opacity:0.5;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+		&:hover{
+			opacity:1;
+		}
+	}
 	img,video{
 		width:100%;
-		margin:0;
+		margin-left:0;
 		@media screen and (min-width:1000px){
 			width:80%;
 			margin-left: 20%;
@@ -456,7 +464,7 @@ header{
 	}
 	img.featured{
 		width: 100%;
-		margin:0;
+		margin-left:0;
 	}
 	p img:not(.contain){
 		width:100%;

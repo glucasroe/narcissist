@@ -95,7 +95,8 @@ h3 {
   color: #7A7F99; }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
   color: #cc6947;
   text-align: left;
   font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
@@ -423,7 +424,7 @@ header {
             text-align: center;
             margin: 0 auto 1rem; } }
   header .branding {
-    padding: 3rem 0 3rem 1.5rem;
+    padding: 2rem 0 2rem 1.5rem;
     background-color: #fff; }
     header .branding img {
       margin: 0 auto 1rem;
@@ -477,9 +478,14 @@ header {
         padding-left: 0.5rem; }
   .post-body .post-title {
     margin-top: 1rem; }
+  .post-body .post-header {
+    opacity: 0.5;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+    .post-body .post-header:hover {
+      opacity: 1; }
   .post-body img, .post-body video {
     width: 100%;
-    margin: 0; }
+    margin-left: 0; }
     @media screen and (min-width: 1000px) {
       .post-body img, .post-body video {
         width: 80%;
@@ -489,7 +495,7 @@ header {
           margin-left: 0; } }
   .post-body img.featured {
     width: 100%;
-    margin: 0; }
+    margin-left: 0; }
   .post-body p img:not(.contain) {
     width: 100%;
     padding: 0;
