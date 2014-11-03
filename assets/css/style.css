@@ -86,10 +86,9 @@ h2 {
     content: '';
     display: block;
     position: relative;
-    top: 4px;
+    top: 5px;
     width: 100%;
-    height: 1px;
-    background-color: #eee; }
+    border-bottom: 1px solid #eee; }
 
 h3 {
   font-size: 1.5rem;
@@ -219,6 +218,8 @@ figure {
       font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
       font-weight: 900;
       color: #fff; }
+      figure figcaption h2:after {
+        border-bottom: 0; }
 
 ::selection {
   background-color: #cc6947;
