@@ -140,7 +140,6 @@ q{
 	margin-bottom: 1.5rem;
 }
 ol,ul{
-	padding-left:4rem;
 	list-style-position: outside;
 	margin-bottom: 2rem;
 	font-size:1rem;
@@ -163,6 +162,7 @@ ul ul, ol ol, ul ol, ol ul{
 	padding-left: 0;
 }
 li{
+	margin-left: 3rem;
 	margin-bottom: 0.25em;
 	line-height:1.6;
 }
@@ -337,8 +337,9 @@ header{
 			font-family: $sans;
 			text-transform: uppercase;
 			text-align: center;
+			font-weight: bold;
 			font-size: 0.9rem;
-			letter-spacing: 1.1;
+			letter-spacing: 1px;
 			&+a{
 				width: calc(33.33333% - 1px);
 				border-left: 1px solid $dark-red;
@@ -464,7 +465,7 @@ p .gfyCtrlPause:not(.contain),p .gfyCtrlReverse:not(.contain),p .gfyCtrlSlower:n
 }	
 @media screen and (min-width:600px){	
 	.branding,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.contain,.post-meta,div.gfyitem,aside,figure{
-		width: 90%;
+		width: 85%;
 		margin-left: 5%;
 	}
 	header .branding h1{
