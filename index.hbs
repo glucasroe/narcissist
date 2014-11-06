@@ -12,7 +12,9 @@
         <header class="post-header">
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
         </header>
-        <a href="{{url}}"><img src="{{image}}" class="post-featured-image post-image-header animated"/></a>
+        {{#if image}}
+            <a href="{{url}}"><img src="{{image}}" class="post-featured-image post-image-header animated"/></a>
+        {{/if}}
         <section class="post-excerpt">
             <p>{{excerpt}}&hellip;</p>
         </section>
