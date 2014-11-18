@@ -292,37 +292,32 @@ header{
 			}
 		}
 	}
-	.branding{
-		padding:2rem 0 0 1.5rem;
-		background-color: $header-color;
-		img{
-			margin:0 auto 1rem;
-			display: inline-block;
-			vertical-align: middle;
-			width:100%;
-			max-width: 6rem;
-			margin:0 auto 0;
-			-webkit-font-smoothing:antialiased;
-		}
-		h1,h2{
-			text-align: left;
-			font-family: 'Noto Sans', sans-serif;
-			font-weight: bold
-		}
-		h1{
-			display:inline-block;
-			vertical-align: middle;
-			width:auto;
-			color:#aaa;
-			font-size: 1.5rem;
-			margin-left:0.75rem;
-			margin-top: 0;
-		}
-		h2{
-			font-family: 'Noto Serif', serif;
-			color:#777;
-			font-size: 2rem;
-		}
+	a img{
+		margin:1rem auto 1rem 1rem;
+		display: inline-block;
+		vertical-align: middle;
+		width:100%;
+		max-width: 6rem;
+		-webkit-font-smoothing:antialiased;
+	}
+	h1,h2{
+		text-align: left;
+		font-family: 'Noto Sans', sans-serif;
+		font-weight: bold
+	}
+	h1{
+		display:inline-block;
+		vertical-align: middle;
+		width:auto;
+		color:#aaa;
+		font-size: 1.5rem;
+		margin-left:0.75rem;
+		margin-top: 0;
+	}
+	h2{
+		font-family: 'Noto Serif', serif;
+		color:#777;
+		font-size: 2rem;
 	}
 	nav{
 		border: 1px $red solid;
@@ -349,7 +344,26 @@ header{
 				color: #fff;
 				text-shadow: none;
 			}
-			&:last-child{
+		}
+		@media screen and (min-width:780px){
+			&{
+				border:0;
+				display:inline-block;
+				vertical-align: middle;
+				margin-top: 0;
+				a{
+					width:auto;
+					float:none;
+					&+a{
+						border:0;
+						margin-left: 2rem;
+					}
+					&:hover{
+						background-color: #fff;
+						color: $dark-red;
+						text-shadow: 1px 1px 0px #fff,2px 2px 0px fade-out($dark-red,0.6);
+					}
+				}
 			}
 		}
 	}
@@ -400,6 +414,9 @@ header{
 		&:before{background: rgba(204,105,71,0);}
 		img{@include filter(grayscale(0%));}
 	}
+}
+.post-header h2{
+	margin-left:0;
 }
 img,video{
 	width:100%;
@@ -464,7 +481,7 @@ p .gfyCtrlPause:not(.contain),p .gfyCtrlReverse:not(.contain),p .gfyCtrlSlower:n
 	height:15px;
 }	
 @media screen and (min-width:600px){	
-	.branding,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.contain,.post-meta,div.gfyitem,aside,figure{
+	header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.contain,.post-meta,div.gfyitem,aside,figure{
 		width: 85%;
 		margin-left: 5%;
 	}
@@ -473,7 +490,7 @@ p .gfyCtrlPause:not(.contain),p .gfyCtrlReverse:not(.contain),p .gfyCtrlSlower:n
 	}
 }	
 @media screen and (min-width:1000px){
-	.branding,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.contain,.post-meta,div.gfyitem,figure{
+	header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.contain,.post-meta,div.gfyitem,figure{
 		margin-left: 20%;
 		width:70%;
 	}
