@@ -75,7 +75,7 @@
 		},
 	"\/assets\/js\/functional-ck.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/functional-ck.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/functional-ck-min.js",
@@ -127,9 +127,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/precompiled\/functional.js",
-		"outputAbbreviatedPath": "\/precompiled\/min\/functional-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/functional-ck.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
