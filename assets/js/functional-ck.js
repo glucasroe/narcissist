@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".search-icon").click(function(){$(".search-field").focus()}),$("img.big-image").parent("p").addClass("images-fix")});
+$(document).ready(function(){$(".search-icon").click(function(){$(".search-field").focus()}),$("img.big-image, div.gfyitem").parent("p").addClass("images-fix")});
