@@ -363,6 +363,9 @@ header {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 0; }
+  @media screen and (min-width: 780px) {
+    header h1 {
+      text-align: left; } }
   header h2 {
     font-family: 'Noto Serif', serif;
     color: #777;
@@ -519,20 +522,27 @@ h1, h2, h3, h4, h5, ul, li, p, img.contain {
 .top-margin {
   margin-top: 1rem; }
 
-/***********GFYCAT FIXES***********/
+/***********VENDOR FIXES***********/
 p .gfyCtrlPause:not(.contain), p .gfyCtrlReverse:not(.contain), p .gfyCtrlSlower:not(.contain), p .gfyCtrlFaster:not(.contain) {
   width: 15px;
   height: 15px; }
 
+#disqus_thread {
+  margin-top: 2em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 50rem; }
+
+/*********** MEDIA QUERIES*********/
 @media screen and (min-width: 600px) {
-  header, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem, aside, figure {
+  header, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem, aside, figure, #disqus_thread {
     width: 85%;
     margin-left: 5%; }
 
   header h1 {
     font-size: 2rem; } }
 @media screen and (min-width: 1000px) {
-  header, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem, figure {
+  header, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .contain, .post-meta, div.gfyitem, figure, #disqus_thread {
     margin-left: 20%;
     width: 70%; }
 
