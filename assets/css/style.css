@@ -73,10 +73,9 @@ h1 {
   font-size: 2.75rem;
   color: #7A7F99;
   font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
-  line-height: 1.1;
-  padding: 0 1rem; }
+  line-height: 1.1; }
 
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   padding: 0 1.5rem; }
 
 h2 {
@@ -182,7 +181,6 @@ ul ul, ol ol, ul ol, ol ul {
 li {
   margin-left: 3rem;
   margin-bottom: 0.25em;
-  margin-left: 0;
   line-height: 1.6; }
 
 hr {
