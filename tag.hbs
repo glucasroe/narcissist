@@ -15,16 +15,19 @@
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
 
-    <article class="{{post_class}}">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
-            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-
-        </header>
-        <section class="post-excerpt">
-            <p>{{excerpt}}&hellip;</p>
-        </section>
-    </article>
+        <article class="{{post_class}}">
+            <header class="post-header">
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+            </header>
+            {{#if image}}
+                <a href="{{url}}"><img src="{{image}}" class="post-featured-image post-image-header animated"/></a>
+            {{/if}}
+            <section class="post-excerpt">
+                <p>{{excerpt}}&hellip;</p>
+            </section>
+            <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</div>
+            <div class="clear"></div>
+        </article>
 
     {{/foreach}}
 
