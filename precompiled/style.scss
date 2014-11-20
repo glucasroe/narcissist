@@ -493,7 +493,7 @@ p .gfyCtrlPause,p .gfyCtrlReverse,p .gfyCtrlSlower,p .gfyCtrlFaster{
 
 /*********** MEDIA QUERIES*********/	
 @media screen and (min-width:600px){	
-	header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,div.gfyitem,aside,figure,#disqus_thread{
+	header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,aside,figure,#disqus_thread{
 		width: 85%;
 		margin-left: 5%;
 	}
@@ -502,7 +502,7 @@ p .gfyCtrlPause,p .gfyCtrlReverse,p .gfyCtrlSlower,p .gfyCtrlFaster{
 	}
 }	
 @media screen and (min-width:1000px){
-	header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,div.gfyitem,figure,#disqus_thread{
+	header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,figure,#disqus_thread{
 		margin-left: 20%;
 		width:70%;
 	}
