@@ -491,6 +491,10 @@ p .gfyCtrlPause,p .gfyCtrlReverse,p .gfyCtrlSlower,p .gfyCtrlFaster{
 	max-width:50rem;
 }
 
+div.gfyitem div{
+	width:100% !important;
+	max-width:100% !important;
+}
 /*********** MEDIA QUERIES*********/	
 @media screen and (min-width:600px){	
 	header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,aside,figure,#disqus_thread{
