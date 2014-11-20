@@ -520,9 +520,11 @@ p .gfyCtrlPause, p .gfyCtrlReverse, p .gfyCtrlSlower, p .gfyCtrlFaster {
   padding-right: 1rem;
   max-width: 50rem; }
 
-div.gfyitem div {
-  width: 100% !important;
-  max-width: 100% !important; }
+div.gfyitem {
+  width: 100%; }
+  div.gfyitem div {
+    width: !important;
+    max-width: 100% !important; }
 
 /*********** MEDIA QUERIES*********/
 @media screen and (min-width: 600px) {
