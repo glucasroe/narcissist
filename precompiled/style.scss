@@ -324,6 +324,7 @@ header{
 		border-radius: 5px;
 		margin-left:1rem;
 		margin-right: 1rem;
+		margin-top: 0;
 		a{
 			width:33.33333%;
 			margin:0;
@@ -414,6 +415,9 @@ header{
 		&:before{background: rgba(204,105,71,0);}
 		img{@include filter(grayscale(0%));}
 	}
+}
+.post-header{
+	margin-bottom:0.5em;
 }
 .post-header h2{
 	margin-left:0;

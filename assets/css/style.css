@@ -372,7 +372,8 @@ header {
     border: 1px #cc6947 solid;
     border-radius: 5px;
     margin-left: 1rem;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    margin-top: 0; }
     header nav a {
       width: 33.33333%;
       margin: 0;
@@ -455,6 +456,9 @@ header {
   .post-image-header:hover img {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%); }
+
+.post-header {
+  margin-bottom: 0.5em; }
 
 .post-header h2 {
   margin-left: 0; }
