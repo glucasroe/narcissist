@@ -6,6 +6,6 @@ $(document).ready(function(){
     //	return $(this).text().length == 0;
 	//});	
 	//$eles.has('img').addClass("images-fix");
-	$('img.big-image').parent('p').addClass('images-fix');
+	$('img.big-image, div.gfyitem').parent('p').addClass('images-fix');
 });
 
