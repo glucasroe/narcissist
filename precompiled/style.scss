@@ -426,21 +426,17 @@ header{
 .post-header h2{
 	margin-left:0;
 }
-img,video{
+img,video,.gfyvid{
 	width:100%;
+	margin-left:0;
+}
+img.featured,img.big-image{
+	width: 100%;
 	margin-left:0;
 	@media screen and (min-width:1000px){
 		width:80%;
 		margin-left: 20%;
-		&.gfyVid{
-			width:100%;
-			margin-left: 0;
-		}
 	}
-}
-img.featured{
-	width: 100%;
-	margin-left:0;
 }
 p>a{
 	@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,0.8) 50%));
@@ -479,11 +475,6 @@ h1,h2,h3,h4,h5,ul,li,p,img{
 	margin-top: 1rem;
 }
 /***********VENDOR FIXES***********/
-p .gfyCtrlPause,p .gfyCtrlReverse,p .gfyCtrlSlower,p .gfyCtrlFaster{
-	width:15px;
-	height:15px;
-}
-
 #disqus_thread{
 	margin-top:2em;
 	padding-left:1rem;
@@ -494,9 +485,25 @@ p .gfyCtrlPause,p .gfyCtrlReverse,p .gfyCtrlSlower,p .gfyCtrlFaster{
 
 div.gfyitem {
 	width:100%;
-	div {
-		width: !important;
+	div:not(.gfyCtrlBox):not(.gfyCtrlTabPull){
+		width: 100% !important;
 		max-width:100% !important;
+		height: auto !important;
+		.gfyPreLoadCanvas{
+			display: none;
+		}
+		video{
+			position:relative !important;
+			margin-top: 0;
+		}
+	}
+	.gfyCtrlBox{
+		margin-bottom:10px !important; 
+		.gfyCtrlPause,.gfyCtrlReverse,.gfyCtrlSlower,.gfyCtrlFaster{
+			width:15px;
+			height:15px;
+			margin-top:0;
+		}
 	}
 }
 /*********** MEDIA QUERIES*********/	

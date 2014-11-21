@@ -1,10 +1,21 @@
 @charset "UTF-8";
 @import url(animate.css);
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -13,7 +24,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -25,12 +37,9 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
+blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none; }
 
 table {
@@ -457,20 +466,17 @@ header {
 .post-header h2 {
   margin-left: 0; }
 
-img, video {
+img, video, .gfyvid {
+  width: 100%;
+  margin-left: 0; }
+
+img.featured, img.big-image {
   width: 100%;
   margin-left: 0; }
   @media screen and (min-width: 1000px) {
-    img, video {
+    img.featured, img.big-image {
       width: 80%;
-      margin-left: 20%; }
-      img.gfyVid, video.gfyVid {
-        width: 100%;
-        margin-left: 0; } }
-
-img.featured {
-  width: 100%;
-  margin-left: 0; }
+      margin-left: 20%; } }
 
 p > a {
   background-image: -webkit-linear-gradient(top, transparent 50%, rgba(204, 105, 71, 0.2) 50%);
@@ -510,10 +516,6 @@ h1, h2, h3, h4, h5, ul, li, p, img {
   margin-top: 1rem; }
 
 /***********VENDOR FIXES***********/
-p .gfyCtrlPause, p .gfyCtrlReverse, p .gfyCtrlSlower, p .gfyCtrlFaster {
-  width: 15px;
-  height: 15px; }
-
 #disqus_thread {
   margin-top: 2em;
   padding-left: 1rem;
@@ -522,9 +524,21 @@ p .gfyCtrlPause, p .gfyCtrlReverse, p .gfyCtrlSlower, p .gfyCtrlFaster {
 
 div.gfyitem {
   width: 100%; }
-  div.gfyitem div {
-    width: !important;
-    max-width: 100% !important; }
+  div.gfyitem div:not(.gfyCtrlBox):not(.gfyCtrlTabPull) {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important; }
+    div.gfyitem div:not(.gfyCtrlBox):not(.gfyCtrlTabPull) .gfyPreLoadCanvas {
+      display: none; }
+    div.gfyitem div:not(.gfyCtrlBox):not(.gfyCtrlTabPull) video {
+      position: relative !important;
+      margin-top: 0; }
+  div.gfyitem .gfyCtrlBox {
+    margin-bottom: 10px !important; }
+    div.gfyitem .gfyCtrlBox .gfyCtrlPause, div.gfyitem .gfyCtrlBox .gfyCtrlReverse, div.gfyitem .gfyCtrlBox .gfyCtrlSlower, div.gfyitem .gfyCtrlBox .gfyCtrlFaster {
+      width: 15px;
+      height: 15px;
+      margin-top: 0; }
 
 /*********** MEDIA QUERIES*********/
 @media screen and (min-width: 600px) {
