@@ -466,14 +466,14 @@ header {
 .post-header h2 {
   margin-left: 0; }
 
-img.big-image, video {
+img, video {
   width: 100%;
   margin-left: 0; }
   @media screen and (min-width: 1000px) {
-    img.big-image, video {
+    img, video {
       width: 80%;
       margin-left: 20%; }
-      img.big-image.gfyVid, video.gfyVid {
+      img.gfyVid, video.gfyVid {
         width: 100%;
         margin-left: 0; } }
 
