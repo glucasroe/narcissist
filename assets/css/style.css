@@ -120,11 +120,10 @@ code {
 pre code {
   white-space: pre;
   line-height: 1.25;
-  float: right;
-  margin: 0 2.5%;
+  float: left;
+  margin: 0 2.5% 1em;
   width: 90%;
-  padding: 1.5rem;
-  margin: 1.5rem;
+  padding: 1em 2.5%;
   overflow: auto; }
 
 aside {
@@ -556,10 +555,10 @@ div.gfyitem {
   ul ul, ol ol, ul ol, ol ul {
     margin-left: 2.5rem; }
 
-  pre code {
-    margin-right: 10%;
-    width: 70%; }
-
+  /*pre code{
+  	margin-right: 10%;
+  	width:70%;
+  }*/
   aside {
     float: left;
     width: 15%;
