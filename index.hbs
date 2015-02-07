@@ -8,13 +8,18 @@
 
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
-    <article class="{{post_class}}">
+    <article class="post-preview {{post_class}}">
+        {{#if image}}
+            <a href="{{url}}">
+                <!--"post-featured-image post-image-header animated"-->
+                <div class="post-featured-image post-image-header animated" style="background-image:url('{{image}}');">
+                    <img class="hidden post-featured-image" src="{{image}}" />
+                </div>
+            </a>
+        {{/if}}
         <header class="post-header">
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
         </header>
-        {{#if image}}
-            <a href="{{url}}"><img src="{{image}}" class="post-featured-image post-image-header animated"/></a>
-        {{/if}}
         <section class="post-excerpt">
             <p>{{excerpt}}&hellip;</p>
         </section>
