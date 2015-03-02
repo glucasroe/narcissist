@@ -113,12 +113,21 @@ aside{
 }
 blockquote{
 	display:block;
-	padding:4rem;
 	background-color:$red;
 	color:#fff;
 	font: 1.5rem $serif;
-	margin: 0 0 2rem;
-	&>*{color:#fff;}
+	padding:2rem 0;
+	a{
+		color: white;
+		background-image: linear-gradient(to bottom, transparent 50%, rgba(255,255,255,0.5) 50%);
+		&:hover{
+			text-shadow: 1px 1px 0px $red,2px 2px 0px fade-out(#fff,0.6);
+			background-image:none;
+		}
+	}
+	&>*{
+		color:#fff;
+	}
 	h4{
 		text-align:left;
 		font-style: italic;
@@ -396,7 +405,7 @@ img.featured,img.big-image{
 p>a{
 	@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,0.8) 50%));
 	background-repeat: repeat-x;
-	background-size:2px 2px;
+	background-size:2px 2px;text-shadow: 1px 1px 0px rgba(135,63,38,0.4),2px 2px 0px rgba(255,255,255,0.4);
 	background-position: 0 1.15em;
 	&:hover{
 		@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,1) 50%));
@@ -494,15 +503,12 @@ div.gfyitem {
 		margin-right: 2.5%;
 		text-align: right;
 	}
-	blockquote{
-		padding-left:20%;
-		padding-right:20%;
-		padding-bottom:1.5rem;
+	/*blockquote{
 		h4{
 			text-align: left;
 			margin-left: 0;
 		}
-	}
+	}*/
 	.post-featured-image{
 		background-repeat: no-repeat;
 		margin-top: 0;
