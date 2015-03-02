@@ -383,6 +383,18 @@ header{
 		@include filter(grayscale(0%)contrast(1)brightness(1));
 	}
 }
+
+.fade-into-color {
+    @include animation(color-fade 0s ease-in 5s forwards);
+}
+
+@include keyframes (color-fade) {
+    to {
+    	@include filter(grayscale(0%)contrast(1)brightness(1));
+    	@include animation-iteration-count(1);
+    }
+}
+
 .post-header{
 	margin-bottom:0.5em;
 }
