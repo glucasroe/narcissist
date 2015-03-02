@@ -384,7 +384,7 @@ header{
 	}
 }
 
-.fade-into-color {
+.fade-in-color {
     @include animation(color-fade 0s ease-in 5s forwards);
 }
 
