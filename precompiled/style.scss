@@ -457,7 +457,14 @@ h1,h2,h3,h4,h5,ul,li,p,img{
 	padding-right:1rem;
 	max-width:50rem;
 }
+#dsq-5{
+	margin-top:0;
+}
 
+iframe{
+	//I'm doing this because of Vimeo, but I'm not proud.
+	max-width:100% !important;
+}
 
 div.gfyitem {
 	width:100%;
@@ -470,15 +477,17 @@ div.gfyitem {
 		}
 		video{
 			position:relative !important;
+			height:auto !important;
 			margin-top: 0;
 		}
 	}
 	.gfyCtrlBox{
-		margin-bottom:10px !important; 
+		//margin-bottom:10px !important; 
 		.gfyCtrlPause,.gfyCtrlReverse,.gfyCtrlSlower,.gfyCtrlFaster{
 			width:15px;
 			height:15px;
 			margin-top:0;
+			display:inline;
 		}
 	}
 	.gfyGif{
