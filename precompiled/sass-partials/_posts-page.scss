@@ -1,0 +1,39 @@
+article.post-preview{
+	//margin-bottom: 2rem;
+	font-size:3rem;
+	position: relative;
+	/*&:nth-child(even){
+		background-color:#000;
+	}*/
+}
+.post-excerpt{
+	font-size: 1rem;
+}
+
+nav.pagination{
+	text-align: left;
+	padding-left:1.5rem;
+	a{
+		text-transform: uppercase;
+		margin:0 1rem;
+		i{
+			margin:0 0.5rem;
+		}
+		&.newer-posts{
+			margin-left: 0;
+			i{
+				margin-left: 0;
+			}
+		}			
+	}
+	@media screen and (min-width:600px){
+		&{	
+			margin-left: 5%;
+		}
+	}	
+	@media screen and (min-width:1000px){
+		&{	
+			margin-left: 20%;
+		}
+	}		
+}
