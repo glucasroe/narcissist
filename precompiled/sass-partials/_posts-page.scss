@@ -26,12 +26,12 @@ nav.pagination{
 			}
 		}			
 	}
-	@media screen and (min-width:600px){
+	@media #{$tablet}{
 		&{	
 			margin-left: 5%;
 		}
 	}	
-	@media screen and (min-width:1000px){
+	@media #{$desktop}{
 		&{	
 			margin-left: 20%;
 		}

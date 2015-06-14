@@ -54,7 +54,7 @@
 	visibility:hidden;
 }
 
-p>a{
+a{
 	@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,0.8) 50%));
 	background-repeat: repeat-x;
 	background-size:2px 2px;

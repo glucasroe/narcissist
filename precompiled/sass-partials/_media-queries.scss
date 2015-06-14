@@ -1,4 +1,4 @@
-@media screen and (min-width:600px){	
+@media #{$tablet}{	
 	header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,.tile-wrapper,aside,figure,#disqus_thread{
 		width: 85%;
 		margin-left: 5%;
@@ -7,7 +7,7 @@
 		font-size: 2rem;
 	}
 }	
-@media screen and (min-width:1000px){
+@media #{$desktop}{
 	header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,.tile-wrapper,figure,#disqus_thread{
 		margin-left: 20%;
 		width:70%;
