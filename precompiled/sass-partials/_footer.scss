@@ -5,11 +5,19 @@ footer{
 	text-align: center;
 	padding:2rem 1rem;
 	a{
-		color:#fff;
-		font-size: 2rem;
+		padding:10px;
+		margin: 0 2px;
+		height:1.2rem;
+		width:1.2rem; 
+		border-radius: 5px;
+		float:left;
+		border: 1px solid $red;
+
+		img{
+			width:1.2rem;
+		}
 		&:hover{
-			color:#fff;
-			text-shadow: 1px 1px 0px $red,2px 2px 0px fade-out(#fff,0.6);
+			border: 1px solid $white;
 		}
 	}
 	p{

@@ -373,11 +373,17 @@ footer {
   text-align: center;
   padding: 2rem 1rem; }
   footer a {
-    color: #fff;
-    font-size: 2rem; }
+    padding: 10px;
+    margin: 0 2px;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 5px;
+    float: left;
+    border: 1px solid #cc6947; }
+    footer a img {
+      width: 1.2rem; }
     footer a:hover {
-      color: #fff;
-      text-shadow: 1px 1px 0px #cc6947, 2px 2px 0px rgba(255, 255, 255, 0.4); }
+      border: 1px solid #fff; }
   footer p {
     color: #fff;
     margin: 0 0 0 1rem;
