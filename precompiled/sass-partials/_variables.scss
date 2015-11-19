@@ -2,16 +2,24 @@ $sans:'Noto Sans', 'Myriad Pro', Helvetica, Arial, sans-serif;
 $serif:'Noto Serif', 'Baskerville', 'Palatino Linotype', Georgia, serif;
 $red: rgba(204, 105, 71, 1);
 $dark-red: darken($red,20%);
+$transparent-red-1: fade-out($red, 0.6);
+
 $white: #fff;
+
 $cool-grey:#7A7F99;
+
+$grey-9: lighten($cool-grey,40%);
+$grey-8: lighten($cool-grey,30%);
+$grey-7: lighten($cool-grey,20%);
+$grey-6: lighten($cool-grey,10%);
+$grey-5: $cool-grey;
+$grey-4: darken($cool-grey,10%);
+$grey-3: darken($cool-grey,20%);
+$grey-2: darken($cool-grey,30%);
+$grey-1: darken($cool-grey,40%);
+
+
+
 
 $tablet: "screen and (min-width:600px)";
 $desktop: "screen and (min-width:1000px)";
-
-//Can I delete these yet? Lets grep the directory
-$tan: #FFD1B2;
-$light-blue:#73D3FF;
-$peri-peri:#475DCC;
-$light-green: #cffece;
-$header-color:#fff;
-$link-color:#475DCC;
