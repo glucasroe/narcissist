@@ -1,20 +1,5 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/
- * v2.0 | 20110126
- * License: none (public domain) */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,9 +7,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -36,7 +19,10 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
 q:before, q:after {
   content: "";
   content: none; }
@@ -408,6 +394,38 @@ footer {
       text-align: right;
       float: right;
       width: 20%; } }
+
+#disqus_thread {
+  margin-top: 2em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 50rem; }
+
+#dsq-5 {
+  margin-top: 0; }
+
+iframe {
+  max-width: 100% !important; }
+
+div.gfyitem {
+  width: 100%; }
+  div.gfyitem div:not(.gfyCtrlBox):not(.gfyCtrlTabPull) {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important; }
+    div.gfyitem div:not(.gfyCtrlBox):not(.gfyCtrlTabPull) .gfyPreLoadCanvas {
+      display: none; }
+    div.gfyitem div:not(.gfyCtrlBox):not(.gfyCtrlTabPull) video {
+      position: relative !important;
+      height: auto !important;
+      margin-top: 0; }
+  div.gfyitem .gfyCtrlBox .gfyCtrlPause, div.gfyitem .gfyCtrlBox .gfyCtrlReverse, div.gfyitem .gfyCtrlBox .gfyCtrlSlower, div.gfyitem .gfyCtrlBox .gfyCtrlFaster {
+    width: 15px;
+    height: 15px;
+    margin-top: 0;
+    display: inline; }
+  div.gfyitem .gfyGif {
+    position: relative !important; }
 
 .post-meta {
   padding-left: 1.5rem;
