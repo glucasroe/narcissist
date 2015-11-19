@@ -599,7 +599,8 @@ nav.pagination {
       font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
       font-weight: bold; }
     .tile .title h3 {
-      color: #fff; }
+      color: #fff;
+      width: 100%; }
     .tile .title .button {
       padding: 10px 20px;
       background-color: #fff;
@@ -621,14 +622,16 @@ nav.pagination {
         justify-content: center;
         padding: 0;
         opacity: 0; }
-        .tile .title h3:after {
-          content: "";
-          width: 50%;
-          height: 5px;
-          margin: 10px auto 10px;
-          position: relative;
-          display: block;
-          border-top: 5px double #fff; }
+        .tile .title h3 {
+          padding: 0; }
+          .tile .title h3:after {
+            content: "";
+            width: 50%;
+            height: 5px;
+            margin: 10px auto 10px;
+            position: relative;
+            display: block;
+            border-top: 5px double #fff; }
         .tile .title .button {
           margin-right: 0;
           display: inline-block; }
