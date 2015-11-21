@@ -22,5 +22,5 @@ $grey-1: darken($cool-grey,40%);
 
 
 
-$tablet: "screen and (min-width:600px)";
-$desktop: "screen and (min-width:1000px)";
+$tablet: "screen and (min-width:40em)";
+$desktop: "screen and (min-width:80em)";
