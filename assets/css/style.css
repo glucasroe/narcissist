@@ -59,7 +59,8 @@ body {
 main {
   max-width: 50rem;
   margin: 0 auto 0;
-  position: relative; }
+  position: relative;
+  padding: 0 1.5em; }
 
 a {
   color: #cc6947;
@@ -85,9 +86,6 @@ h1 {
   color: #7A7F99;
   font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
   line-height: 1.1; }
-
-h1, h2, h3, h4, h5 {
-  padding: 0 1.5rem; }
 
 h2 {
   font-size: 2.5rem;
@@ -116,9 +114,7 @@ p, aside, pre code {
   line-height: 1.75;
   color: #555;
   margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem; }
+  margin-right: auto; }
 
 code {
   font-family: monaco, monospace;
@@ -159,8 +155,7 @@ blockquote {
     text-align: left;
     font-style: italic;
     color: #bbb;
-    margin-top: 1rem;
-    padding-left: 1.5rem; }
+    margin-top: 1rem; }
 
 q {
   width: 100%;
@@ -219,7 +214,7 @@ figure {
   figure figcaption {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 1.5em;
     padding: 20px 0;
     z-index: 2;
     width: 100%; }
@@ -558,17 +553,30 @@ h1, h2, h3, h4, h5, ul, li, p, img, .tile {
 
 article.post-preview {
   font-size: 3rem;
-  position: relative;
-  /*&:nth-child(even){
-  	background-color:#000;
-  }*/ }
+  position: relative; }
 
 .post-excerpt {
   font-size: 1rem; }
 
 nav.pagination {
   text-align: left;
-  padding-left: 1.5rem; }
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+  background-color: #353845;
+  color: #fff;
+  padding: 2rem 0;
+  position: relative; }
+  nav.pagination:before {
+    width: 10000px;
+    left: -5000px;
+    height: 5rem;
+    top: 0;
+    margin-top: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #353845;
+    z-index: -1; }
   nav.pagination a {
     text-transform: uppercase;
     margin: 0 1rem; }
@@ -578,12 +586,6 @@ nav.pagination {
       margin-left: 0; }
       nav.pagination a.newer-posts i {
         margin-left: 0; }
-  @media screen and (min-width: 40em) {
-    nav.pagination {
-      margin-left: 5%; } }
-  @media screen and (min-width: 80em) {
-    nav.pagination {
-      margin-left: 20%; } }
 
 .tile {
   border-radius: 5px;
@@ -695,6 +697,9 @@ nav.pagination {
   	margin-right: 10%;
   	width:70%;
   }*/
+  main {
+    left: 5em; }
+
   aside {
     float: left;
     position: absolute;

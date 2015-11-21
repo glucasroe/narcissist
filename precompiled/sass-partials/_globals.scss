@@ -15,6 +15,7 @@ main{
 	max-width: 50rem;
 	margin: 0 auto 0;
 	position:relative;
+	padding: 0 1.5em;
 }
 a{
 	color:$red;
@@ -40,12 +41,8 @@ h1{
 	color:$cool-grey;
 	font-family: $serif;
 	line-height:1.1;
-	//margin: 1.25em 0 1.25em;
 }
-h1,h2,h3,h4,h5{
-	//margin:1em auto 0;
-	padding:0 1.5rem;
-}
+
 
 h2{
 	font-size: 2.5rem;
@@ -62,7 +59,6 @@ h2{
 
 h3{
 	font-size: 2rem;
-	//margin-bottom: 0.75em;
 	color:$cool-grey;
 }
 
@@ -70,7 +66,6 @@ h4{
 	font-size: 1.25rem;
 	text-transform:uppercase;
 	color:$red;
-	//margin:0 2em;
 	text-align: left;
 	font-family: $serif;
 }
@@ -79,11 +74,8 @@ p,aside,pre code{
 	font-size: 1rem;
 	line-height: 1.75;
 	color:#555;
-	//margin-bottom: 1.5em;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left:1.5rem;
-	padding-right:1.5rem
 }
 
 code{
@@ -129,7 +121,6 @@ blockquote{
 		font-style: italic;
 		color:#bbb;
 		margin-top:1rem;
-		padding-left:1.5rem;
 	}
 }
 q{
@@ -187,7 +178,7 @@ figure{
 	figcaption{
 		position: absolute;
 		bottom: 0;
-		left: 0;
+		left: 1.5em;
 		padding:20px 0;
 		z-index:2;
 		width:100%;
