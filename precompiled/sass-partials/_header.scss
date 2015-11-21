@@ -1,5 +1,7 @@
 header{
 	width:100%;
+	max-width:50rem;
+	margin: 0 auto 0;
 	background-color: $white;
 	a img{
 		margin:1rem 0 1rem 1rem;
@@ -11,7 +13,7 @@ header{
 	}
 	h1,h2{
 		text-align: left;
-		font-family: 'Noto Sans', sans-serif;
+		font-family: $serif;
 		font-weight: bold
 	}
 	h1{
@@ -30,7 +32,7 @@ header{
 		}
 	}
 	h2{
-		font-family: 'Noto Serif', serif;
+		font-family: $serif;
 		color:#777;
 		font-size: 2rem;
 	}
@@ -45,7 +47,7 @@ header{
 			margin:0;
 			padding: 10px 0;
 			float:left;
-			font-family: $sans;
+			font-family: $serif;
 			text-transform: uppercase;
 			text-align: center;
 			font-weight: bold;
@@ -67,6 +69,7 @@ header{
 				display:inline-block;
 				vertical-align: middle;
 				margin-top: 0;
+				margin-left: 5rem;
 				a{
 					width:auto;
 					float:none;

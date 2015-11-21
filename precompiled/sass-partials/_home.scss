@@ -1,0 +1,11 @@
+.site-intro{
+	@extend %clearfix;
+	h1{
+		font-family: $light;
+		font-style: italic;
+		text-align: center;
+		font-size: 2.6em;
+		line-height: 1.4;
+		width: 16em;
+	}
+}

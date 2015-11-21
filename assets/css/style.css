@@ -50,11 +50,15 @@ html {
 
 body {
   width: 100%;
-  font-family: "Noto Serif", "Baskerville", "Palatino Linotype", Georgia, serif;
+  font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
   color: #333; }
   body * + * {
     margin: 1em auto 0;
     font-size: 1rem; }
+
+main {
+  max-width: 50rem;
+  margin: 0 auto 0; }
 
 a {
   color: #cc6947;
@@ -78,7 +82,7 @@ a {
 h1 {
   font-size: 2.75rem;
   color: #7A7F99;
-  font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
   line-height: 1.1; }
 
 h1, h2, h3, h4, h5 {
@@ -104,7 +108,7 @@ h4 {
   text-transform: uppercase;
   color: #cc6947;
   text-align: left;
-  font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
+  font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif; }
 
 p, aside, pre code {
   font-size: 1rem;
@@ -134,13 +138,13 @@ pre code {
 
 aside {
   color: #873f26;
-  font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif; }
+  font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif; }
 
 blockquote {
   display: block;
   background-color: #cc6947;
   color: #fff;
-  font: 1.5rem "Noto Serif", "Baskerville", "Palatino Linotype", Georgia, serif;
+  font: 1.5rem "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
   padding: 2rem 0; }
   blockquote a {
     color: white;
@@ -220,7 +224,7 @@ figure {
     width: 100%; }
     figure figcaption h2 {
       text-transform: uppercase;
-      font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+      font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
       font-weight: 900;
       color: #fff; }
       figure figcaption h2:after {
@@ -234,7 +238,7 @@ figure {
   clear: both;
   margin: 0; }
 
-.tile-wrapper:after, .tile:after {
+.site-intro:after, .tile-wrapper:after, .tile:after {
   content: "";
   display: table;
   clear: both; }
@@ -306,6 +310,8 @@ figure {
 
 header {
   width: 100%;
+  max-width: 50rem;
+  margin: 0 auto 0;
   background-color: #fff; }
   header a img {
     margin: 1rem 0 1rem 1rem;
@@ -316,7 +322,7 @@ header {
     -webkit-font-smoothing: antialiased; }
   header h1, header h2 {
     text-align: left;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
     font-weight: bold; }
   header h1 {
     display: inline-block;
@@ -331,7 +337,7 @@ header {
       text-align: left;
       margin-left: 1rem; } }
   header h2 {
-    font-family: 'Noto Serif', serif;
+    font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
     color: #777;
     font-size: 2rem; }
   header nav {
@@ -345,7 +351,7 @@ header {
       margin: 0;
       padding: 10px 0;
       float: left;
-      font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+      font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
       text-transform: uppercase;
       text-align: center;
       font-weight: bold;
@@ -363,7 +369,8 @@ header {
         border: 0;
         display: inline-block;
         vertical-align: middle;
-        margin-top: 0; }
+        margin-top: 0;
+        margin-left: 5rem; }
         header nav a {
           width: auto;
           float: none; }
@@ -408,6 +415,46 @@ footer {
       text-align: right;
       float: right;
       width: 20%; } }
+
+#disqus_thread {
+  margin-top: 2em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 50rem; }
+
+#dsq-5 {
+  margin-top: 0; }
+
+iframe {
+  max-width: 100% !important; }
+
+div.gfyitem {
+  width: 100%; }
+  div.gfyitem div:not(.gfyCtrlBox):not(.gfyCtrlTabPull) {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important; }
+    div.gfyitem div:not(.gfyCtrlBox):not(.gfyCtrlTabPull) .gfyPreLoadCanvas {
+      display: none; }
+    div.gfyitem div:not(.gfyCtrlBox):not(.gfyCtrlTabPull) video {
+      position: relative !important;
+      height: auto !important;
+      margin-top: 0; }
+  div.gfyitem .gfyCtrlBox .gfyCtrlPause, div.gfyitem .gfyCtrlBox .gfyCtrlReverse, div.gfyitem .gfyCtrlBox .gfyCtrlSlower, div.gfyitem .gfyCtrlBox .gfyCtrlFaster {
+    width: 15px;
+    height: 15px;
+    margin-top: 0;
+    display: inline; }
+  div.gfyitem .gfyGif {
+    position: relative !important; }
+
+.site-intro h1 {
+  font-family: "Merriweather Light", "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 2.6em;
+  line-height: 1.4;
+  width: 16em; }
 
 .post-meta {
   padding-left: 1.5rem;
@@ -480,7 +527,7 @@ img.featured, img.big-image {
       margin-left: 20%; } }
 
 .unknown {
-  font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
   font-size: 2rem; }
 
 h1, h2, h3, h4, h5, ul, li, p, img, .tile {
@@ -578,7 +625,7 @@ nav.pagination {
       margin: 0;
       text-align: center;
       text-transform: uppercase;
-      font-family: "Noto Sans", "Myriad Pro", Helvetica, Arial, sans-serif;
+      font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
       font-weight: bold; }
     .tile .title h3 {
       color: #fff; }
@@ -627,17 +674,17 @@ nav.pagination {
         transition: transform 5s ease-in-out; } }
 
 @media screen and (min-width: 600px) {
-  header, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .post-meta, .tile-wrapper, aside, figure, #disqus_thread {
-    width: 85%;
-    margin-left: 5%; }
-
+  /*header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,.tile-wrapper,aside,figure,#disqus_thread{
+  	width: 85%;
+  	margin-left: 5%;
+  }*/
   header h1 {
     font-size: 2rem; } }
 @media screen and (min-width: 1000px) {
-  header, h1, h2, h3, h4, h5, h6, p, pre code, ul, ol, .post-meta, .tile-wrapper, figure, #disqus_thread {
-    margin-left: 20%;
-    width: 70%; }
-
+  /*header,h1,h2,h3,h4,h5,h6,p,pre code,ul,ol,.post-meta,.tile-wrapper,figure,#disqus_thread{
+  	margin-left: 20%;
+  	width:70%;
+  }*/
   ul ul, ol ol, ul ol, ol ul {
     margin-left: 2.5rem; }
 
@@ -659,19 +706,21 @@ nav.pagination {
   		margin-left: 0;
   	}
   }*/
-  .post-featured-image {
-    background-repeat: no-repeat;
-    margin-top: 0;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    min-height: 100%;
-    width: 19%;
-    margin: 0;
-    float: left; }
-    .post-featured-image .hidden {
-      visibility: hidden; } }
+  /*.post-featured-image{
+  	background-repeat: no-repeat;
+  	margin-top: 0;
+  	position:absolute;
+  	background-size:cover;
+  	background-position: center;
+  	height:100%;
+  	min-height: 100%;
+  	width:19%;
+  	margin:0;
+  	float:left;
+  	.hidden{
+  		visibility: hidden;
+  	}
+  }*/ }
 figure img {
   margin-left: 0;
   width: 100%;
