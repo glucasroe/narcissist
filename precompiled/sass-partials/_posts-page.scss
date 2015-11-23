@@ -13,8 +13,9 @@ nav.pagination{
 	margin-bottom: -4rem;
 	background-color: $grey-2;
 	color: $white;
-	padding: 2rem 0;
+	padding: 0;
 	position:relative;
+	@extend %clearfix;
 	&:before{
 		width:10000px;
 		left: -5000px;
@@ -29,15 +30,20 @@ nav.pagination{
 	}
 	a{
 		text-transform: uppercase;
-		margin:0 1rem;
-		i{
-			margin:0 0.5rem;
-		}
-		&.newer-posts{
-			margin-left: 0;
-			i{
-				margin-left: 0;
-			}
-		}			
+		&:hover{
+			background-color:$grey-9;
+		}	
+	}
+	.paginator, .page-number{
+		margin: 0;
+		text-align: center;
+		width: 33%;
+		padding: 2rem 0;
+		display: block;
+		float:left;
+	}
+	.page-number{
+		border-left: 1px solid $grey-4;
+		border-right: 1px solid $grey-4;
 	}
 }

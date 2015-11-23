@@ -234,7 +234,7 @@ figure {
   clear: both;
   margin: 0; }
 
-.site-intro:after, .tile-wrapper:after, .tile:after {
+.site-intro:after, nav.pagination:after, .tile-wrapper:after, .tile:after {
   content: "";
   display: table;
   clear: both; }
@@ -564,7 +564,7 @@ nav.pagination {
   margin-bottom: -4rem;
   background-color: #353845;
   color: #fff;
-  padding: 2rem 0;
+  padding: 0;
   position: relative; }
   nav.pagination:before {
     width: 10000px;
@@ -578,14 +578,19 @@ nav.pagination {
     background-color: #353845;
     z-index: -1; }
   nav.pagination a {
-    text-transform: uppercase;
-    margin: 0 1rem; }
-    nav.pagination a i {
-      margin: 0 0.5rem; }
-    nav.pagination a.newer-posts {
-      margin-left: 0; }
-      nav.pagination a.newer-posts i {
-        margin-left: 0; }
+    text-transform: uppercase; }
+    nav.pagination a:hover {
+      background-color: #edeef2; }
+  nav.pagination .paginator, nav.pagination .page-number {
+    margin: 0;
+    text-align: center;
+    width: 33%;
+    padding: 2rem 0;
+    display: block;
+    float: left; }
+  nav.pagination .page-number {
+    border-left: 1px solid #61667f;
+    border-right: 1px solid #61667f; }
 
 .tile {
   border-radius: 5px;
