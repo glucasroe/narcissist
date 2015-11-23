@@ -1,11 +1,10 @@
 .post-meta{
-	padding-left:1.5rem;
 	text-transform: uppercase;
 	font-style: italic;
 	font-size: 0.8rem;
-	color:#bbb;
+	color:$grey-6;
 	time{
-		color:#777;
+		color:$grey-7;
 		//margin:0 0.5rem;
 	}
 	a{
@@ -67,10 +66,6 @@ img.featured,img.big-image{
 	}
 }
 
-.unknown{
-	font-family: $serif;
-	font-size: 2rem;
-}
 h1,h2,h3,h4,h5,ul,li,p,img, .tile{
 	max-width: 50rem;
 	text-align: left;
