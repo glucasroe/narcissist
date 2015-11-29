@@ -1,14 +1,12 @@
 .post-meta{
-	text-transform: uppercase;
 	font-style: italic;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	color:$grey-6;
 	time{
 		color:$grey-7;
 		//margin:0 0.5rem;
 	}
 	a{
-		font-size: 0.8rem;
 		&:first-child{
 			padding-left: 0.5rem;
 		}
@@ -47,7 +45,7 @@
 }
 
 .post-header{
-	margin-bottom:0.5em;
+	margin-bottom:1em;
 }
 .post-header h2{
 	margin-left:0;

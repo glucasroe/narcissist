@@ -90,13 +90,6 @@ h1 {
 h2 {
   font-size: 2.5rem;
   color: #7A7F99; }
-  h2:after {
-    content: '';
-    display: block;
-    position: relative;
-    top: 5px;
-    width: 100%;
-    border-bottom: 1px solid #eee; }
 
 h3 {
   font-size: 2rem;
@@ -403,7 +396,7 @@ footer {
     font-size: 1rem;
     padding: 0;
     max-width: 60rem; }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 80em) {
     footer .copyright {
       width: 70%;
       text-align: left;
@@ -455,16 +448,13 @@ div.gfyitem {
   margin: 1em auto 1.5em; }
 
 .post-meta {
-  text-transform: uppercase;
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #979baf; }
   .post-meta time {
     color: #b4b7c5; }
-  .post-meta a {
-    font-size: 0.8rem; }
-    .post-meta a:first-child {
-      padding-left: 0.5rem; }
+  .post-meta a:first-child {
+    padding-left: 0.5rem; }
 
 .post-title {
   margin-top: 1rem; }
@@ -505,7 +495,7 @@ div.gfyitem {
     -moz-animation-iteration-count: 1;
     animation-iteration-count: 1; } }
 .post-header {
-  margin-bottom: 0.5em; }
+  margin-bottom: 1em; }
 
 .post-header h2 {
   margin-left: 0; }
@@ -579,8 +569,7 @@ nav.pagination {
   nav.pagination .paginator, nav.pagination .page-number {
     margin: 0;
     text-align: center;
-    width: 33%;
-    padding: 2rem 0;
+    padding: 2rem;
     display: block;
     float: left; }
   nav.pagination .page-number {

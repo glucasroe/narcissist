@@ -1,5 +1,6 @@
 html{
 	font-size: 100%;
+	//overflow:hidden;
 }
 body{
 	width:100%;
@@ -47,14 +48,6 @@ h1{
 h2{
 	font-size: 2.5rem;
 	color:$cool-grey;
-	&:after{
-		content:'';
-		display: block;
-		position:relative;
-		top: 5px;
-		width:100%;
-		border-bottom: 1px solid #eee;
-	}
 }
 
 h3{
