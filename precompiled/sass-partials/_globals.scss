@@ -126,20 +126,34 @@ ol,ul{
 	list-style-position: outside;
 	margin-bottom: 2rem;
 	font-size:1rem;
+	position:relative;
 }
 ol{
-	list-style-type: lower-roman;
+	list-style-type: none;
+	li{
+	    counter-increment: count-me;
+		&:before{
+			content: counter(count-me) ". ";
+    		display: block;
+    		position: absolute;
+    		color: $red;
+    		left: 1.5rem;
+    		text-align:right;
+		}
+	}
 }
+
 ul{
 	list-style-type: none;
+	li:before{
+		font-family: sans-serif;
+		content: '•';
+		color: $red;
+		position: absolute;
+		left:2rem;
+	}
 }
-ul li:before{
-	font-family: sans-serif;
-	content: '•';
-	color: $red;
-	position: relative;
-	left:-.5rem;
-}
+
 ul ul, ol ol, ul ol, ol ul{
 	margin-left: 2rem;
 	padding-left: 0;
@@ -150,7 +164,6 @@ li{
 	line-height:1.6;
 }
 hr{
-	/*border: 1px solid #eee;*/
 	border:none;
 	height:1px;
 	display:block;

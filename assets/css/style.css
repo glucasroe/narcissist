@@ -156,20 +156,29 @@ q {
 ol, ul {
   list-style-position: outside;
   margin-bottom: 2rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  position: relative; }
 
 ol {
-  list-style-type: lower-roman; }
+  list-style-type: none; }
+  ol li {
+    counter-increment: count-me; }
+    ol li:before {
+      content: counter(count-me) ". ";
+      display: block;
+      position: absolute;
+      color: #cc6947;
+      left: 1.5rem;
+      text-align: right; }
 
 ul {
   list-style-type: none; }
-
-ul li:before {
-  font-family: sans-serif;
-  content: '•';
-  color: #cc6947;
-  position: relative;
-  left: -.5rem; }
+  ul li:before {
+    font-family: sans-serif;
+    content: '•';
+    color: #cc6947;
+    position: absolute;
+    left: 2rem; }
 
 ul ul, ol ol, ul ol, ol ul {
   margin-left: 2rem;
@@ -181,7 +190,6 @@ li {
   line-height: 1.6; }
 
 hr {
-  /*border: 1px solid #eee;*/
   border: none;
   height: 1px;
   display: block;

@@ -1,33 +1,35 @@
 {{!< default}}
-<section class="error-content error-404 js-error-container">
-    <section class="error-details">
-      <h1>OH NOES YOU BROKE IT</h1>
-        <p>Sorry, this page doesn't exist. I can think of a few reasons why this might be so.</p>
-        <ol>
-            <li>You're dumb and did something wrong (Improbable)</li>
-            <li>I'm dumb and did something wrong (Probable)</li>
-            <li>Computers are dumb and did something wrong (... Maybe)</li>
-            <li>The universe is cold and unfeeling and doesn't care about broken links (Definite, but probably not the reason)</li>
-        </ol>
-        <p>By way of a solution, you can go <a href="http://glucasroe.com">home</a> or you can tweet at me grumpily <a href="https://www.twitter.com/glucasroe">@glucasroe</a>.</p>
+<main class="content" role="main">
+    <section class="error-content error-404 js-error-container">
+        <section class="error-details">
+          <h1>OH NOES YOU BROKE IT</h1>
+            <p>Sorry, this page doesn't exist. I can think of a few reasons why this might be so.</p>
+            <ol>
+                <li>You're dumb and did something wrong (Improbable)</li>
+                <li>I'm dumb and did something wrong (Probable)</li>
+                <li>Computers are dumb and did something wrong (... Maybe)</li>
+                <li>The universe is cold and unfeeling and doesn't care about broken links (Definite, but probably not the reason)</li>
+            </ol>
+            <p>By way of a solution, you can go <a href="http://glucasroe.com">home</a> or you can tweet at me grumpily <a href="https://www.twitter.com/glucasroe">@glucasroe</a>.</p>
+        </section>
+        <video autoplay poster="'{{asset '/img/404d.png'}}'" id="404vid">
+            <source src='{{asset '/video/404d.webm'}}' type='video.webm'>
+            <source src='{{asset '/video/404d.mp4'}}' type='video.mp4'>
+        </video>
     </section>
-    <video autoplay poster="'{{asset '/img/404d.png'}}'" id="404vid">
-        <source src='{{asset '/video/404d.webm'}}' type='video.webm'>
-        <source src='{{asset '/video/404d.mp4'}}' type='video.mp4'>
-    </video>
-</section>
-{{#if stack}}
-    <section class="error-stack">
-        <h3>Stack Trace</h3>
-        <p><strong>{{message}}</strong></p>
-        <ul class="error-stack-list">
-            {{#foreach stack}}
-                <li>
-                    at
-                    {{#if function}}<em class="error-stack-function">{{function}}</em>{{/if}}
-                    <span class="error-stack-file">({{at}})</span>
-                </li>
-            {{/foreach}}
-        </ul>
-    </section>
-{{/if}}
+    {{#if stack}}
+        <section class="error-stack">
+            <h3>Stack Trace</h3>
+            <p><strong>{{message}}</strong></p>
+            <ul class="error-stack-list">
+                {{#foreach stack}}
+                    <li>
+                        at
+                        {{#if function}}<em class="error-stack-function">{{function}}</em>{{/if}}
+                        <span class="error-stack-file">({{at}})</span>
+                    </li>
+                {{/foreach}}
+            </ul>
+        </section>
+    {{/if}}
+</main>
