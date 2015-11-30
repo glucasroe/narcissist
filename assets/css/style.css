@@ -307,26 +307,16 @@ main, .site-header, nav.pagination .pagination-links {
     width: 100%;
     max-width: 6rem;
     -webkit-font-smoothing: antialiased; }
-  .site-header h1, .site-header h2 {
+  .site-header h1 {
     text-align: left;
     font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
-    font-weight: bold; }
-  .site-header h1 {
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 0;
+    font-size: 1.5rem;
     display: inline-block;
     vertical-align: middle;
-    width: auto;
-    color: #aaa;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 0; }
-  @media screen and (min-width: 780px) {
-    .site-header h1 {
-      text-align: left;
-      margin-left: 1rem; } }
-  .site-header h2 {
-    font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
-    color: #777;
-    font-size: 2rem; }
+    color: #b4b7c5; }
   .site-header nav {
     border: 1px #cc6947 solid;
     border-radius: 5px;

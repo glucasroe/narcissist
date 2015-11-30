@@ -10,31 +10,19 @@
 		max-width: 6rem;
 		-webkit-font-smoothing:antialiased;
 	}
-	h1,h2{
+	h1{
 		text-align: left;
 		font-family: $serif;
-		font-weight: bold
-	}
-	h1{
+		font-weight: bold;
+		margin-left: 1rem;
+		margin-top: 0;
+		font-size: 1.5rem;
 		display:inline-block;
 		vertical-align: middle;
-		width:auto;
-		color:#aaa;
-		font-size: 1.5rem;
-		text-align: center;
-		margin-top: 0;
+		color: $grey-7;
+
 	}
-	@media screen and (min-width:780px){
-		h1{
-			text-align: left;
-			margin-left:1rem;
-		}
-	}
-	h2{
-		font-family: $serif;
-		color:#777;
-		font-size: 2rem;
-	}
+
 	nav{
 		border: 1px $red solid;
 		border-radius: 5px;
