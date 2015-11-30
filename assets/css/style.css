@@ -473,9 +473,9 @@ div.gfyitem {
     filter: grayscale(0%) contrast(1) brightness(1); }
 
 .fade-in-color {
-  -webkit-animation: color-fade 3s ease-in 0s forwards;
-  -moz-animation: color-fade 3s ease-in 0s forwards;
-  animation: color-fade 3s ease-in 0s forwards; }
+  -webkit-animation: color-fade 1s ease-in 0s forwards;
+  -moz-animation: color-fade 1s ease-in 0s forwards;
+  animation: color-fade 1s ease-in 0s forwards; }
 
 @-webkit-keyframes color-fade {
   to {
@@ -540,29 +540,24 @@ article.post-preview {
 .post-excerpt {
   font-size: 1rem; }
 
-.post-separator:before {
-  content: "\00a7";
-  position: relative;
-  display: block;
-  width: 100%;
-  color: #cc6947;
-  box-shadow: #fff 0px 3px 0px, #fff 0px -3px 0px;
-  /*text-shadow: $white 0px 1px 0px, 
-  			$white 0px -1px 0px,
-  			$white 0px 2px 0px,
-  			$white 0px -2px 0px,
-  			$white 0px 3px 0px,
-  			$white 0px -3px 0px;
-  */
-  font-size: 1rem;
-  top: -0.5rem;
-  margin: 0 auto 0;
-  text-align: center;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
+.post-separator {
+  margin-top: 2.5rem; }
+  .post-separator:before {
+    content: "\00a7";
+    position: relative;
+    display: block;
+    width: 1rem;
+    color: #cc6947;
+    text-shadow: #fff 0px 1px 0px, #fff 0px -1px 0px, #fff 0px 2px 0px, #fff 0px -2px 0px;
+    font-size: 1rem;
+    top: -0.5rem;
+    margin: 0 auto 0;
+    text-align: center;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
 
 nav.pagination {
   text-align: left;

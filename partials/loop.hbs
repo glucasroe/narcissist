@@ -17,7 +17,6 @@
         <section class="post-excerpt">
             <p>{{excerpt}}&hellip;</p>
         </section>
+        {{#if @last}}{{else}}<hr class="post-separator" />{{/if}}
     </article>
-    <hr class="post-separator" />
-
 {{/foreach}}

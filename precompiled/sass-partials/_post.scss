@@ -34,7 +34,7 @@
 }
 
 .fade-in-color {
-    @include animation(color-fade 3s ease-in 0s forwards);
+    @include animation(color-fade 1s ease-in 0s forwards);
 }
 
 @include keyframes (color-fade) {
