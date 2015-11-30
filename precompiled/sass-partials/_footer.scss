@@ -4,6 +4,7 @@ footer{
 	margin-top: 4rem;
 	text-align: center;
 	padding:2rem 1rem;
+	@extend %clearfix;
 	a{
 		padding:10px;
 		margin: 0 2px;

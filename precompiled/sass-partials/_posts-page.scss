@@ -15,18 +15,9 @@ nav.pagination{
 	color: $white;
 	padding: 0;
 	position:relative;
-	@extend %clearfix;
-	&:before{
-		width:10000px;
-		left: -5000px;
-		height: 5rem;
-		top:0;
-		margin-top:0;
-		content:"";
-		position:absolute;
-		display:block;
-		background-color: $grey-2;
-		z-index: -1;
+	.pagination-links{
+		@extend %site-width;
+		@extend %clearfix;
 	}
 	a{
 		text-transform: uppercase;
@@ -35,15 +26,36 @@ nav.pagination{
 		}	
 	}
 	.paginator, .page-number{
+		box-sizing: border-box;
 		margin: 0;
 		text-align: center;
-		//width: 33%;
+		width: 100%;
 		padding: 2rem;
 		display: block;
 		float:left;
 	}
+	
 	.page-number{
-		border-left: 1px solid $grey-4;
-		border-right: 1px solid $grey-4;
+		border-bottom: 1px solid $grey-4;
+		border-top: 1px solid $grey-4;
+	}
+
+	@media #{$tablet}{
+		.paginator, .page-number{
+			width: 33%;
+		}
+
+		.page-number{
+			border-bottom: 0;
+			border-top: 0;			
+		}
+
+		.page-number,.newer-posts{
+			border-left: 1px solid $grey-4;
+		}
+		
+		.page-number,.older-posts{
+			border-right: 1px solid $grey-4;
+		}
 	}
 }

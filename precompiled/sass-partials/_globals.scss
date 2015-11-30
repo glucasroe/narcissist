@@ -13,10 +13,7 @@ body{
 }
 
 main{
-	max-width: 50rem;
-	margin: 0 auto 0;
-	position:relative;
-	padding: 0 1.5em;
+	@extend %site-width;
 }
 a{
 	color:$red;

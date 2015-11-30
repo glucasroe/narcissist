@@ -1,7 +1,6 @@
-header{
-	width:100%;
-	max-width:50rem;
-	margin: 0 auto 0;
+.site-header{
+	@extend %site-width;
+	@extend %clearfix;
 	background-color: $white;
 	position:relative;
 	a img{
