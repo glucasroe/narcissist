@@ -542,11 +542,11 @@ h1, h2, h3, h4, h5, ul, li, p, img, .tile {
   margin-top: 1rem; }
 
 .anchor-links {
-  background-color: #cc6947;
   margin-bottom: 0;
   max-width: 100%;
   border-radius: 3px;
-  overflow: hidden;
+  position: relative;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -570,21 +570,29 @@ h1, h2, h3, h4, h5, ul, li, p, img, .tile {
     box-sizing: border-box;
     border-radius: 3px;
     padding: 1rem 2rem;
-    color: #fff;
-    background-color: #cc6947;
+    color: #4b4f62;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
     font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
     font-weight: bold;
+    background-color: #edeef2;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
     transition: background-color 0.5s; }
     .anchor-links a:hover {
-      background-color: #873f26;
-      text-shadow: 1px 1px 0px #873f26, 2px 2px 0px rgba(255, 255, 255, 0.4); }
+      background-color: #d1d2db; }
     .anchor-links a:before {
       content: ''; }
+  .anchor-links:before {
+    content: "On this page:";
+    /*display:block;
+    position: absolute;
+    top: -1.5rem;
+    left: 0;*/
+    font-weight: bold;
+    color: #b4b7c5;
+    padding: 1rem 2rem; }
 
 article.post-preview {
   font-size: 3rem;
