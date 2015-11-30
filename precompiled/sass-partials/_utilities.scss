@@ -23,6 +23,13 @@
 	@include animation-fill-mode(both);
 }
 
+.button{
+	padding:10px 20px;
+	background-color:$white;
+	border-radius:5px;
+	color: $red;
+}
+
 .rotated{
 	@include transform(rotate(90deg) );
 }

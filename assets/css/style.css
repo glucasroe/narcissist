@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900,700italic);
 /* http://meyerweb.com/eric/tools/css/reset/
  * v2.0 | 20110126
  * License: none (public domain) */
@@ -76,9 +77,9 @@ a {
       background-image: linear-gradient(to bottom, transparent 50%, rgba(204, 105, 71, 0) 50%); }
 
 h1 {
-  font-size: 2.75rem;
-  color: #7A7F99;
-  font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
+  font-size: 3rem;
+  color: #353845;
+  font-family: "Merriweather Light", "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
   line-height: 1.1; }
 
 h2 {
@@ -247,6 +248,12 @@ main, .site-header, nav.pagination .pagination-links {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   animation-fill-mode: both; }
+
+.button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #cc6947; }
 
 .rotated {
   -webkit-transform: rotate(90deg);
@@ -461,13 +468,24 @@ div.gfyitem {
     position: relative !important; }
 
 .site-intro h1 {
-  font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
+  font-family: "Merriweather Light", "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
   font-style: italic;
   text-align: center;
   font-size: 2.6em;
   line-height: 1.4;
-  width: 16em;
+  max-width: 16em;
   margin: 1em auto 1.5em; }
+.site-intro .button {
+  background-color: #cc6947;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 0;
+  display: block; }
+  .site-intro .button:hover {
+    background-color: #873f26; }
+  @media screen and (min-width: 40em) {
+    .site-intro .button {
+      max-width: 30%; } }
 
 .post-header {
   margin-bottom: 1rem; }
@@ -705,10 +723,6 @@ nav.pagination {
         .tile .title a h3:hover {
           text-shadow: none; }
     .tile .title .button {
-      padding: 10px 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      color: #cc6947;
       margin-right: 1.5rem;
       display: none; }
   @media screen and (min-width: 80em) {
