@@ -53,14 +53,6 @@ img,video,.gfyvid{
 	width:100%;
 	margin-left:0;
 }
-img.featured,img.big-image{
-	width: 100%;
-	margin-left:0;
-	@media screen and (min-width:1000px){
-		width:80%;
-		margin-left: 20%;
-	}
-}
 
 h1,h2,h3,h4,h5,ul,li,p,img, .tile{
 	max-width: 50rem;
@@ -84,8 +76,8 @@ h1,h2,h3,h4,h5,ul,li,p,img, .tile{
 	border-radius: 3px;
 	overflow: hidden;
 	@include display(flex);
-	flex-flow: row wrap;
-	justify-content: center;
+	@include flex-flow(row wrap);
+	@include justify-content(center);
 	a{
 		box-sizing: border-box;
 		border-radius: 3px;

@@ -1,6 +1,5 @@
 .site-header{
 	@extend %site-width;
-	@extend %clearfix;
 	background-color: $white;
 	position:relative;
 	a img{
@@ -64,7 +63,7 @@
 				text-shadow: none;
 			}
 		}
-		@media screen and (min-width:780px){
+		@media #{$tablet}{
 			&{
 				border:0;
 				display:inline-block;
@@ -86,5 +85,10 @@
 				}
 			}
 		}
+	}
+	@media #{$tablet}{
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(space-between);
 	}
 }
