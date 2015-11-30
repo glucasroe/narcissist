@@ -41,3 +41,16 @@ div.gfyitem {
 		position:relative !important;
 	}
 }
+
+//Google Search
+#___gcse_0{
+	@extend %site-width;
+	margin-top: 0;
+	form{
+		td{
+			input[type="text"]{
+				background-image: none !important;
+			}
+		}
+	}
+}

@@ -28,6 +28,21 @@
     {{ghost_head}}
   </head>
   <body class='animating-in'>
+      <script>
+      (function() {
+        var cx = '014570999481983148165:nbtxxlfl6eo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <div class="search-wrapper">
+      <gcse:search></gcse:search>
+    </div>
     <header class="site-header">
         <a href='/'>
           <img alt='G. Lucas Roe' src='{{asset '/img/seal.svg'}}'>
@@ -35,6 +50,7 @@
         </a>
         {{navigation}}
     </header>
+
     <div class='animate-in post-body'>
       {{{body}}}
     </div>

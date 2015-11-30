@@ -235,7 +235,7 @@ figure {
   display: table;
   clear: both; }
 
-main, .site-header, nav.pagination .pagination-links {
+main, .site-header, #___gcse_0, nav.pagination .pagination-links {
   max-width: 50rem;
   margin: 0 auto 0;
   position: relative;
@@ -466,6 +466,11 @@ div.gfyitem {
     display: inline; }
   div.gfyitem .gfyGif {
     position: relative !important; }
+
+#___gcse_0 {
+  margin-top: 0; }
+  #___gcse_0 form td input[type="text"] {
+    background-image: none !important; }
 
 .site-intro h1 {
   font-family: "Merriweather Light", "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
@@ -771,7 +776,7 @@ nav.pagination {
   ul ul, ol ol, ul ol, ol ul {
     margin-left: 2.5rem; }
 
-  main, .site-header, nav.pagination .pagination-links {
+  main, .site-header, #___gcse_0, nav.pagination .pagination-links {
     left: 5em; }
 
   aside {
