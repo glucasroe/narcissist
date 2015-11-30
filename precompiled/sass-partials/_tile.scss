@@ -26,22 +26,31 @@
 		left:0;
 		right:0;
 		margin:0;
+		box-sizing: border-box;
 		@include display(flex);
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: row;
 		text-align: center;
-		padding: 1rem 0;
+		padding: 1rem;
 		@include transition(opacity 0.25s ease-in-out);
 		h3,.button{
 			margin:0;
-			text-align: center;
-			text-transform: uppercase;
 			font-family: $serif;
 			font-weight: bold;
 		}
-		h3{
-			color: $white;
+		a{
+			width: 100%;
+			display:block;
+			&:hover{
+				text-shadow:none;
+			}
+			h3{
+				color: $white;
+				&:hover{
+					text-shadow:none;
+				}
+			}
 		}
 		.button{
 			padding:10px 20px;
@@ -74,6 +83,9 @@
 				position: relative;
 				display:block;
 				border-top: 5px double $white;
+			}
+			h3,.button{
+				text-align: center;
 			}
 			.button{
 				margin-right: 0;

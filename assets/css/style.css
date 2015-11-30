@@ -561,7 +561,7 @@ h1, h2, h3, h4, h5, ul, li, p, img, .tile {
     box-sizing: border-box;
     border-radius: 3px;
     padding: 1rem 2rem;
-    color: #4b4f62;
+    color: #cc6947;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
@@ -667,6 +667,7 @@ nav.pagination {
     left: 0;
     right: 0;
     margin: 0;
+    box-sizing: border-box;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -678,18 +679,23 @@ nav.pagination {
     justify-content: space-between;
     flex-direction: row;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
     -webkit-transition: opacity 0.25s ease-in-out;
     -moz-transition: opacity 0.25s ease-in-out;
     transition: opacity 0.25s ease-in-out; }
     .tile .title h3, .tile .title .button {
       margin: 0;
-      text-align: center;
-      text-transform: uppercase;
       font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
       font-weight: bold; }
-    .tile .title h3 {
-      color: #fff; }
+    .tile .title a {
+      width: 100%;
+      display: block; }
+      .tile .title a:hover {
+        text-shadow: none; }
+      .tile .title a h3 {
+        color: #fff; }
+        .tile .title a h3:hover {
+          text-shadow: none; }
     .tile .title .button {
       padding: 10px 20px;
       background-color: #fff;
@@ -719,6 +725,8 @@ nav.pagination {
           position: relative;
           display: block;
           border-top: 5px double #fff; }
+        .tile .title h3, .tile .title .button {
+          text-align: center; }
         .tile .title .button {
           margin-right: 0;
           display: inline-block; }

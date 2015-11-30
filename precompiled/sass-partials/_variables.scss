@@ -8,6 +8,7 @@ $white: #fff;
 
 $cool-grey:#7A7F99;
 
+$grey-10: lighten($cool-grey,50%);
 $grey-9: lighten($cool-grey,40%);
 $grey-8: lighten($cool-grey,30%);
 $grey-7: lighten($cool-grey,20%);
@@ -17,9 +18,7 @@ $grey-4: darken($cool-grey,10%);
 $grey-3: darken($cool-grey,20%);
 $grey-2: darken($cool-grey,30%);
 $grey-1: darken($cool-grey,40%);
-
-
-
+$grey-0: darken($cool-grey,50%);
 
 $tablet: "screen and (min-width:40em)";
 $desktop: "screen and (min-width:80em)";
