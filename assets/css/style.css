@@ -526,6 +526,8 @@ h1, h2, h3, h4, h5, ul, li, p, img, .tile {
   background-color: #cc6947;
   margin-bottom: 0;
   max-width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -537,6 +539,7 @@ h1, h2, h3, h4, h5, ul, li, p, img, .tile {
   justify-content: center; }
   .anchor-links a {
     box-sizing: border-box;
+    border-radius: 3px;
     padding: 1rem 2rem;
     color: #fff;
     background-color: #cc6947;

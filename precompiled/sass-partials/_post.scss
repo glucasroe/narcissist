@@ -81,11 +81,14 @@ h1,h2,h3,h4,h5,ul,li,p,img, .tile{
 	background-color: $red;
 	margin-bottom: 0;
 	max-width: 100%;
+	border-radius: 3px;
+	overflow: hidden;
 	@include display(flex);
 	flex-flow: row wrap;
 	justify-content: center;
 	a{
 		box-sizing: border-box;
+		border-radius: 3px;
 		padding: 1rem 2rem;
 		color: $white;
 		background-color:$red;
