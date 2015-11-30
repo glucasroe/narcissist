@@ -7,6 +7,29 @@ article.post-preview{
 	font-size: 1rem;
 }
 
+.post-separator{
+	&:before{
+		content: "\00a7";
+		position: relative;
+		display:block;
+		width: 100%;
+		color: $red;
+		box-shadow: $white 0px 3px 0px, $white 0px -3px 0px;
+		/*text-shadow: $white 0px 1px 0px, 
+					$white 0px -1px 0px,
+					$white 0px 2px 0px,
+					$white 0px -2px 0px,
+					$white 0px 3px 0px,
+					$white 0px -3px 0px;
+		*/
+		font-size: 1rem;
+		top: -0.5rem;
+		margin: 0 auto 0;
+		text-align: center;
+		@include transform(rotate(-90deg));
+	}
+}
+
 nav.pagination{
 	text-align: left;
 	margin-top:4rem;
@@ -53,7 +76,7 @@ nav.pagination{
 		.page-number,.newer-posts{
 			border-left: 1px solid $grey-4;
 		}
-		
+
 		.page-number,.older-posts{
 			border-right: 1px solid $grey-4;
 		}
