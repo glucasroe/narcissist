@@ -542,11 +542,12 @@ h1, h2, h3, h4, h5, ul, li, p, img, .tile {
   margin-top: 1rem; }
 
 .anchor-links {
+  background-color: #edeef2;
   margin-bottom: 0;
   max-width: 100%;
   border-radius: 3px;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -576,7 +577,6 @@ h1, h2, h3, h4, h5, ul, li, p, img, .tile {
     text-transform: uppercase;
     font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
     font-weight: bold;
-    background-color: #edeef2;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
     transition: background-color 0.5s; }
@@ -586,13 +586,12 @@ h1, h2, h3, h4, h5, ul, li, p, img, .tile {
       content: ''; }
   .anchor-links:before {
     content: "On this page:";
-    /*display:block;
+    display: block;
     position: absolute;
     top: -1.5rem;
-    left: 0;*/
+    left: 0;
     font-weight: bold;
-    color: #b4b7c5;
-    padding: 1rem 2rem; }
+    color: #b4b7c5; }
 
 article.post-preview {
   font-size: 3rem;

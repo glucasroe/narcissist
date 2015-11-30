@@ -70,12 +70,12 @@ h1,h2,h3,h4,h5,ul,li,p,img, .tile{
 }
 
 .anchor-links{
-	//background-color: $grey-9;
+	background-color: $grey-9;
 	margin-bottom: 0;
 	max-width: 100%;
 	border-radius: 3px;
 	position: relative;
-	margin-top: 2rem;
+	margin-top: 2.5rem;
 	@include display(flex);
 	@include flex-flow(row wrap);
 	@include justify-content(center);
@@ -89,7 +89,6 @@ h1,h2,h3,h4,h5,ul,li,p,img, .tile{
 		text-transform: uppercase;
 		font-family: $serif;
 		font-weight: bold;
-		background-color: $grey-9;
 		@include transition(background-color 0.5s);
 		&:hover{
 			background-color:$grey-8;		
@@ -100,12 +99,11 @@ h1,h2,h3,h4,h5,ul,li,p,img, .tile{
 	}
 	&:before{
 		content: "On this page:";
-		/*display:block;
+		display:block;
 		position: absolute;
 		top: -1.5rem;
-		left: 0;*/
+		left: 0;
 		font-weight: bold;
 		color: $grey-7;
-		padding: 1rem 2rem;
 	}
 }
