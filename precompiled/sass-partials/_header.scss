@@ -42,8 +42,10 @@
 		margin-left:1rem;
 		margin-right: 1rem;
 		margin-top: 0;
+		@extend %clearfix;
 		a{
-			width:33.33333%;
+			box-sizing: border-box;
+			width:33%;
 			margin:0;
 			padding: 10px 0;
 			float:left;
@@ -54,7 +56,6 @@
 			font-size: 0.9rem;
 			letter-spacing: 1px;
 			&+a{
-				width: calc(33.33333% - 1px);
 				border-left: 1px solid $dark-red;
 			}
 			&:hover{
