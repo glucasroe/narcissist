@@ -447,11 +447,11 @@ div.gfyitem {
 .post-meta {
   font-style: italic;
   font-size: 1rem;
-  color: #979baf; }
+  color: #7A7F99; }
   .post-meta time {
+    color: #d1d2db; }
+  .post-meta .tags {
     color: #b4b7c5; }
-  .post-meta a:first-child {
-    padding-left: 0.5rem; }
 
 .post-title {
   margin-top: 1rem; }

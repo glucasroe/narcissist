@@ -8,38 +8,11 @@
 {{! The main content area on the homepage }}
 <main class="content" role="main">
 
-        <header class="tag-header">
-            <h1>{{tag.name}}</h1>
-        </header>
-        {{#if image}}    
-            <figure class="post-image-header contain animated">
-                <img src="{{image}}"/>
-            </figure>
-        {{/if}}
-    {{! Each post will be output using this markup }}
-    {{#foreach posts}}
-        <article class="post-preview {{post_class}}">
-            {{#if image}}
-                <a href="{{url}}">
-                    <!--"post-featured-image post-image-header animated"-->
-                    <div class="post-featured-image post-image-header animated" style="background-image:url('{{image}}');">
-                        <img class="hidden post-featured-image" src="{{image}}" />
-                    </div>
-                </a>
-            {{/if}}
-            <header class="post-header">
-                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-            </header>
-            <section class="post-excerpt">
-                <p>{{excerpt}}&hellip;</p>
-            </section>
-            <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</div>
-            <div class="clear"></div>
-        </article>
+    <h1 class="post-title">Tag: {{tag.name}}</h1>
 
-    {{/foreach}}
+    {{> "loop"}}
 
-    {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}}
 
 </main>
+
+{{pagination}}

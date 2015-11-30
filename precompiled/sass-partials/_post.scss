@@ -1,15 +1,12 @@
 .post-meta{
 	font-style: italic;
 	font-size: 1rem;
-	color:$grey-6;
+	color:$grey-5;
 	time{
-		color:$grey-7;
-		//margin:0 0.5rem;
+		color:$grey-8;
 	}
-	a{
-		&:first-child{
-			padding-left: 0.5rem;
-		}
+	.tags{
+		color: $grey-7;
 	}
 }
 .post-title{
