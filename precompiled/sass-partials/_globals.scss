@@ -14,6 +14,7 @@ body{
 
 main{
 	@extend %site-width;
+	min-height: calc(100vh - 25rem);
 }
 a{
 	color:$red;
@@ -24,7 +25,7 @@ a{
 		text-shadow: 1px 1px 0px #fff,2px 2px 0px fade-out($dark-red,0.6);
 	}
 	p > &{
-		@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,0.8) 50%));
+		@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red, 0.8) 50%));
 		background-repeat: repeat-x;
 		background-size:2px 2px;
 		background-position: 0 1.15em;
@@ -90,27 +91,36 @@ aside{
 	font-family: $serif;
 }
 blockquote{
-	display:block;
-	background-color:$red;
-	color:#fff;
-	font: 1.5rem $serif;
-	padding:2rem 0;
-	a{
-		color: white;
-		background-image: linear-gradient(to bottom, transparent 50%, rgba(255,255,255,0.5) 50%);
-		&:hover{
-			text-shadow: 1px 1px 0px $red,2px 2px 0px fade-out(#fff,0.6);
-			background-image:none;
-		}
+	margin: 2rem 0;
+	position:relative;
+	&:before{
+		font-family: $light;
+		content:'\201C';
+		font-style: normal;
+		font-size: 4rem;
+		position: absolute;
+		left:-3rem;
+		margin-left: 0;
+		color: $transparent-red-4;
 	}
-	&>*{
-		color:#fff;
+	&:after{
+		content:"";
+		height: 100%;
+		display: block;
+		position: absolute;
+		margin-left: 0;
+		left:0rem;
+		top: 0;
+		width: 0.5rem;
+		background-color: $transparent-red-4;
 	}
-	h4{
-		text-align:left;
+	h1,h2,h3,h4,h5,h6,p{
+		margin-left:2rem;
 		font-style: italic;
-		color:#bbb;
-		margin-top:1rem;
+		color: $grey-6;
+	}
+	p{
+		font-size: 1.7rem;
 	}
 }
 q{

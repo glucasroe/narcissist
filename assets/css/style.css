@@ -57,6 +57,9 @@ body {
     margin: 1em auto 0;
     font-size: 1rem; }
 
+main {
+  min-height: calc(100vh - 25rem); }
+
 a {
   color: #cc6947;
   text-decoration: none;
@@ -126,24 +129,33 @@ aside {
   font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif; }
 
 blockquote {
-  display: block;
-  background-color: #cc6947;
-  color: #fff;
-  font: 1.5rem "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
-  padding: 2rem 0; }
-  blockquote a {
-    color: white;
-    background-image: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.5) 50%); }
-    blockquote a:hover {
-      text-shadow: 1px 1px 0px #cc6947, 2px 2px 0px rgba(255, 255, 255, 0.4);
-      background-image: none; }
-  blockquote > * {
-    color: #fff; }
-  blockquote h4 {
-    text-align: left;
+  margin: 2rem 0;
+  position: relative; }
+  blockquote:before {
+    font-family: "Merriweather Light", "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
+    content: '\201C';
+    font-style: normal;
+    font-size: 4rem;
+    position: absolute;
+    left: -3rem;
+    margin-left: 0;
+    color: rgba(204, 105, 71, 0.2); }
+  blockquote:after {
+    content: "";
+    height: 100%;
+    display: block;
+    position: absolute;
+    margin-left: 0;
+    left: 0rem;
+    top: 0;
+    width: 0.5rem;
+    background-color: rgba(204, 105, 71, 0.2); }
+  blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p {
+    margin-left: 2rem;
     font-style: italic;
-    color: #bbb;
-    margin-top: 1rem; }
+    color: #979baf; }
+  blockquote p {
+    font-size: 1.7rem; }
 
 q {
   width: 100%;
@@ -467,25 +479,28 @@ div.gfyitem {
   div.gfyitem .gfyGif {
     position: relative !important; }
 
-.site-intro h1 {
-  font-family: "Merriweather Light", "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
-  font-style: italic;
-  text-align: center;
-  font-size: 2.6em;
-  line-height: 1.4;
-  max-width: 16em;
-  margin: 1em auto 1.5em; }
-.site-intro .button {
-  background-color: #cc6947;
-  color: #fff;
-  text-align: center;
-  margin: 0 auto 0;
-  display: block; }
-  .site-intro .button:hover {
-    background-color: #873f26; }
-  @media screen and (min-width: 40em) {
-    .site-intro .button {
-      max-width: 30%; } }
+.site-intro {
+  margin-bottom: 10rem; }
+  .site-intro h1 {
+    font-family: "Merriweather Light", "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 2.6em;
+    line-height: 1.4;
+    max-width: 16em;
+    margin: 1em auto 1em; }
+  .site-intro .button {
+    background-color: rgba(204, 105, 71, 0.4);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 0;
+    display: block; }
+    .site-intro .button:hover {
+      background-color: #cc6947;
+      text-shadow: none; }
+    @media screen and (min-width: 40em) {
+      .site-intro .button {
+        max-width: 30%; } }
 
 .post-header {
   margin-bottom: 1rem; }
