@@ -109,14 +109,15 @@ p, aside, pre code {
 
 code {
   font-family: monaco, monospace;
-  color: #777;
-  background-color: #efefef;
+  color: #61667f;
+  background-color: #edeef2;
   border-radius: 10px;
   padding: 2px 5px;
   margin: 0 2px; }
 
 pre code {
   white-space: pre;
+  background-color: #272822;
   line-height: 1.25;
   float: left;
   margin: 0 2.5% 1em;

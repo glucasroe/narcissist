@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".search-icon").click(function(){$(".search-field").focus()}),$("img.big-image").parent().addClass("images-fix")});
