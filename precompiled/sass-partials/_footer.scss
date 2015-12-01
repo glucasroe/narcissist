@@ -4,6 +4,7 @@ footer{
 	margin-top: 4rem;
 	text-align: center;
 	padding:2rem 1rem;
+	@extend %clearfix;
 	a{
 		padding:10px;
 		margin: 0 2px;
@@ -27,7 +28,7 @@ footer{
 		padding:0;
 		max-width: 60rem;
 	}
-	@media screen and (min-width:1000px){
+	@media #{$desktop}{
 		.copyright{
 			width:70%;
 			text-align: left;
