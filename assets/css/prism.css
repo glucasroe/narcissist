@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+ruby+haml+handlebars+scss&plugins=line-highlight+line-numbers+autolinker+remove-initial-line-feed+keep-markup */
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+bash+git+handlebars+scss&plugins=line-highlight+line-numbers+highlight-keywords+remove-initial-line-feed */
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -208,6 +208,3 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
-.token a {
-	color: inherit;
-}
