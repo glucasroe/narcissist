@@ -21,8 +21,8 @@ a{
 	text-decoration:none;
 	@include transition(color,.5s);
 	&:hover{
-		color: $dark-red;
-		text-shadow: 1px 1px 0px #fff,2px 2px 0px fade-out($dark-red,0.6);
+		color: $red-3;
+		text-shadow: 1px 1px 0px #fff,2px 2px 0px fade-out($red-3,0.6);
 	}
 	p > &{
 		@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red, 0.8) 50%));
@@ -64,9 +64,7 @@ h4{
 p,aside,pre code{
 	font-size: 1rem;
 	line-height: 1.75;
-	color:#555;
-	margin-left: auto;
-	margin-right: auto;
+	color:$grey-3;
 }
 
 code{
@@ -77,18 +75,21 @@ code{
 	padding: 2px 5px;
 	margin:0 2px;
 }
-pre code{
-	white-space: pre;
-	background-color: #272822; //From the colorizer presets.
-	line-height:1.25;
-	float:left;
-	margin:0 2.5% 1em;
-	width:90%;
-	padding:1em 2.5%;
-	overflow:auto;
+pre{ 
+	@extend %clearfix;
+	code{
+		color: $grey-7;
+		white-space: pre;
+		background-color: #272822; //From the colorizer presets.
+		line-height:1.25;
+		float:left;
+		width:90%;
+		padding:1em 2.5%;
+		overflow: auto;
+	}
 }
 aside{
-	color:$dark-red;
+	color:$red-3;
 	font-family: $serif;
 }
 blockquote{
@@ -127,7 +128,7 @@ blockquote{
 q{
 	width: 100%;
 	display: block;
-	color:lighten($cool-grey,20%);
+	color: $grey-7;
 	text-align: center;
 	font-style: italic;
 	font-size: 2.5rem;
@@ -178,7 +179,7 @@ hr{
 	border:none;
 	height:1px;
 	display:block;
-	@include linear-gradient(left, $red, $dark-red);
+	@include linear-gradient(left, $red, $red-3);
 }
 strong{
 	font-weight: bold;
@@ -209,5 +210,5 @@ figure{
 }
 ::selection{
 	background-color: $red;
-	color:white;
+	color:$white;
 }

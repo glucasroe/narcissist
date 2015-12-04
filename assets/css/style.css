@@ -103,9 +103,7 @@ h4 {
 p, aside, pre code {
   font-size: 1rem;
   line-height: 1.75;
-  color: #555;
-  margin-left: auto;
-  margin-right: auto; }
+  color: #4b4f62; }
 
 code {
   font-family: monaco, monospace;
@@ -116,11 +114,11 @@ code {
   margin: 0 2px; }
 
 pre code {
+  color: #b4b7c5;
   white-space: pre;
   background-color: #272822;
   line-height: 1.25;
   float: left;
-  margin: 0 2.5% 1em;
   width: 90%;
   padding: 1em 2.5%;
   overflow: auto; }
@@ -237,13 +235,13 @@ figure {
 
 ::selection {
   background-color: #cc6947;
-  color: white; }
+  color: #fff; }
 
 .clear {
   clear: both;
   margin: 0; }
 
-.site-header nav:after, footer:after, .site-intro:after, nav.pagination .pagination-links:after, .tile-wrapper:after, .tile:after {
+pre:after, .site-header nav:after, footer:after, .site-intro:after, nav.pagination .pagination-links:after, .tile-wrapper:after, .tile:after {
   content: "";
   display: table;
   clear: both; }
@@ -364,7 +362,7 @@ main, .site-header, nav.pagination .pagination-links {
       font-size: 0.9rem;
       letter-spacing: 1px; }
       .site-header nav a + a {
-        border-left: 1px solid #873f26; }
+        border-left: 1px solid #af5131; }
       .site-header nav a:hover {
         background-color: #cc6947;
         color: #fff;
@@ -384,8 +382,8 @@ main, .site-header, nav.pagination .pagination-links {
             margin-left: 2rem; }
           .site-header nav a:hover {
             background-color: #fff;
-            color: #873f26;
-            text-shadow: 1px 1px 0px #fff, 2px 2px 0px rgba(135, 63, 38, 0.4); } }
+            color: #af5131;
+            text-shadow: 1px 1px 0px #fff, 2px 2px 0px rgba(204, 105, 71, 0.4); } }
   @media screen and (min-width: 40em) {
     .site-header {
       display: -webkit-box;
@@ -804,3 +802,5 @@ figure img {
   margin-left: 0;
   width: 100%;
   max-width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

@@ -43,7 +43,7 @@
 			font-size: 0.9rem;
 			letter-spacing: 1px;
 			&+a{
-				border-left: 1px solid $dark-red;
+				border-left: 1px solid $red-4;
 			}
 			&:hover{
 				background-color: $red;
@@ -67,8 +67,8 @@
 					}
 					&:hover{
 						background-color: #fff;
-						color: $dark-red;
-						text-shadow: 1px 1px 0px #fff,2px 2px 0px fade-out($dark-red,0.6);
+						color: $red-4;
+						text-shadow: 1px 1px 0px #fff,2px 2px 0px $transparent-red-3;
 					}
 				}
 			}
