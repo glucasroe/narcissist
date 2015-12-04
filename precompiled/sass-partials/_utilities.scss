@@ -11,9 +11,23 @@
   }
 }
 
+%site-width{
+	max-width: 50rem;
+	margin: 0 auto 0;
+	position:relative;
+	padding: 0 1.5em;
+}
+
 .animated{
 	@include transition(all .25s);
 	@include animation-fill-mode(both);
+}
+
+.button{
+	padding:10px 20px;
+	background-color:$white;
+	border-radius:5px;
+	color: $red;
 }
 
 .rotated{

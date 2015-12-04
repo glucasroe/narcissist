@@ -1,0 +1,22 @@
+{{#foreach posts}}
+    <article class="post-preview {{post_class}}">
+        {{#if image}}
+            <a href="{{url}}">
+                <img class="post-featured-image post-image-header animated" src="{{image}}" />
+                
+                <!--"post-featured-image post-image-header animated"-->
+                <!--<div class="post-featured-image post-image-header animated" style="background-image:url('{{image}}');">
+                    <img class="hidden post-featured-image" src="{{image}}" />
+                </div>-->
+            </a>
+        {{/if}}
+        <header class="post-header">
+            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+        </header>
+         <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="in "}}</div>
+        <section class="post-excerpt">
+            <p>{{excerpt}}&hellip;</p>
+        </section>
+        {{#if @last}}{{else}}<hr class="post-separator" />{{/if}}
+    </article>
+{{/foreach}}

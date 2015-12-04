@@ -3,16 +3,14 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-{{! The big featured header on the homepage, with the site logo and description }}
-
 {{! The main content area on the homepage }}
 <main class="content" role="main">
-
-    <h1 class="post-title"><strong>Tag</strong>: {{tag.name}}</h1>
-
+    <div class="site-intro">
+        <h1>{{meta_description}}</h1>
+        <a class="button" href="/about">More about Lucas</a>
+    </div>
+    <h1>Blog posts:</h1>
     {{> "loop"}}
 
-
 </main>
-
 {{pagination}}
