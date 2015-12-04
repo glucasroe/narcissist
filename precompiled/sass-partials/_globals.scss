@@ -22,15 +22,15 @@ a{
 	@include transition(color,.5s);
 	&:hover{
 		color: $red-3;
-		text-shadow: 1px 1px 0px #fff,2px 2px 0px fade-out($red-3,0.6);
+		text-shadow: 1px 1px 0px #fff,2px 2px 0px $transparent-red-3;
 	}
 	p > &{
-		@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red, 0.8) 50%));
+		@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, $transparent-red-4 50%));
 		background-repeat: repeat-x;
 		background-size:2px 2px;
 		background-position: 0 1.15em;
 		&:hover{
-			@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, fade-out($red,1) 50%));
+			@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, $transparent-red-5 50%));
 		}
 	}
 }

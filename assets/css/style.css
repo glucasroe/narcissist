@@ -68,7 +68,7 @@ a {
   transition: color, 0.5s; }
   a:hover {
     color: #873f26;
-    text-shadow: 1px 1px 0px #fff, 2px 2px 0px rgba(135, 63, 38, 0.4); }
+    text-shadow: 1px 1px 0px #fff, 2px 2px 0px rgba(204, 105, 71, 0.4); }
   p > a {
     background-image: -webkit-linear-gradient(top, transparent 50%, rgba(204, 105, 71, 0.2) 50%);
     background-image: linear-gradient(to bottom, transparent 50%, rgba(204, 105, 71, 0.2) 50%);
