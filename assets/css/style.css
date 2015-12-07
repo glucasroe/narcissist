@@ -100,7 +100,7 @@ h4 {
   text-align: left;
   font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif; }
 
-p, aside, pre code {
+p, aside, pre code, li {
   font-size: 1rem;
   line-height: 1.75;
   color: #4b4f62; }
