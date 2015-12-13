@@ -65,6 +65,7 @@ p,aside,pre code,li{
 	font-size: 1rem;
 	line-height: 1.75;
 	color:$grey-3;
+
 }
 
 code{
@@ -90,6 +91,15 @@ pre{
 aside{
 	color:$red-3;
 	font-family: $serif;
+	@media #{$desktop}{
+		float:left;
+		position:absolute;
+		width:12em;
+		padding:0;
+		left:-15em;
+		margin-left: 2.5%;
+		text-align: right;
+	}
 }
 blockquote{
 	margin: 2rem 0;
@@ -210,4 +220,16 @@ figure{
 ::selection{
 	background-color: $red;
 	color:$white;
+}
+
+//// LEGACY?
+figure img{
+	margin-left:0;
+	width:100%;
+	max-width:100%;
+}
+@media #{$tablet}{	
+	header h1{
+		font-size: 2rem;
+	}
 }

@@ -125,6 +125,15 @@ pre code {
 aside {
   color: #873f26;
   font-family: "Merriweather", "Baskerville", "Palatino Linotype", Georgia, serif; }
+  @media screen and (min-width: 80em) {
+    aside {
+      float: left;
+      position: absolute;
+      width: 12em;
+      padding: 0;
+      left: -15em;
+      margin-left: 2.5%;
+      text-align: right; } }
 
 blockquote {
   margin: 2rem 0;
@@ -236,6 +245,14 @@ figure {
   background-color: #cc6947;
   color: #fff; }
 
+figure img {
+  margin-left: 0;
+  width: 100%;
+  max-width: 100%; }
+
+@media screen and (min-width: 40em) {
+  header h1 {
+    font-size: 2rem; } }
 .clear {
   clear: both;
   margin: 0; }
@@ -250,6 +267,9 @@ main, .site-header, nav.pagination .pagination-links {
   margin: 0 auto 0;
   position: relative;
   padding: 0 1.5em; }
+  @media screen and (min-width: 80em) {
+    main main, .site-header main, nav.pagination .pagination-links main, main .site-header, .site-header .site-header, nav.pagination .pagination-links .site-header, main nav.pagination .pagination-links, nav.pagination main .pagination-links, .site-header nav.pagination .pagination-links, nav.pagination .site-header .pagination-links, nav.pagination .pagination-links .pagination-links {
+      left: 5em; } }
 
 .animated {
   -webkit-transition: all 0.25s;
@@ -797,20 +817,21 @@ nav.pagination {
   header h1 {
     font-size: 2rem; } }
 @media screen and (min-width: 80em) {
-  ul ul, ol ol, ul ol, ol ul {
-    margin-left: 2.5rem; }
-
-  main, .site-header, nav.pagination .pagination-links {
-    left: 5em; }
-
-  aside {
-    float: left;
-    position: absolute;
-    width: 12em;
-    padding: 0;
-    left: -15em;
-    margin-left: 2.5%;
-    text-align: right; } }
+  /*ul ul, ol ol, ul ol, ol ul{
+  	margin-left: 2.5rem;
+  }
+  %site-width{
+  	left: 5em;
+  }
+  aside{
+  	float:left;
+  	position:absolute;
+  	width:12em;
+  	padding:0;
+  	left:-15em;
+  	margin-left: 2.5%;
+  	text-align: right;
+  }*/ }
 figure img {
   margin-left: 0;
   width: 100%;
