@@ -49,6 +49,27 @@
     </footer>
     <!-- Code Colorizer -->
     <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+    
+    <!-- Smooth Scroller -->
+    <script type="text/javascript" src="{{asset "js/smooth-scroll.min.js"}}"></script>
+    <script>
+      smoothScroll.init({
+        selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutQuint', // Easing pattern to use
+        updateURL: true, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+        offset: 16, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+      //Pulled from https://github.com/cferdinandi/smooth-scroll/issues/54 Just in case
+      document.addEventListener('DOMContentLoaded', function() {
+        if ( window.location.hash ) {
+          smoothScroll.animateScroll(  null, window.location.hash  );
+        }
+      });
+    </script>
+    <script>
+      
+    </script>
     {{ghost_foot}}
  </body>
 </html>
