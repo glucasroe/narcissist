@@ -813,28 +813,4 @@ nav.pagination {
         -moz-transition: -moz-transform 5s ease-in-out;
         transition: transform 5s ease-in-out; } }
 
-@media screen and (min-width: 40em) {
-  header h1 {
-    font-size: 2rem; } }
-@media screen and (min-width: 80em) {
-  /*ul ul, ol ol, ul ol, ol ul{
-  	margin-left: 2.5rem;
-  }
-  %site-width{
-  	left: 5em;
-  }
-  aside{
-  	float:left;
-  	position:absolute;
-  	width:12em;
-  	padding:0;
-  	left:-15em;
-  	margin-left: 2.5%;
-  	text-align: right;
-  }*/ }
-figure img {
-  margin-left: 0;
-  width: 100%;
-  max-width: 100%; }
-
 /*# sourceMappingURL=style.css.map */
