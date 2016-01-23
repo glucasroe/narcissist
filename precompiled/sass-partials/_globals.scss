@@ -79,20 +79,26 @@ code{
 	color:$grey-4;
 	background-color:$grey-9;
 	border-radius:10px;
-	padding: 2px 5px;
+	padding: 0.15em 0.5em;
 	margin:0 2px;
 }
 pre{
 	@extend %clearfix;
+	background-color: #272822; //From the colorizer presets.
+	border-radius:3px;
+	padding:1em;
 	code{
 		color: $grey-7;
 		white-space: pre;
-		background-color: #272822; //From the colorizer presets.
 		line-height:1.25;
+		background-color: #272822; //From the colorizer presets.
 		float:left;
-		width:90%;
 		overflow: auto;
+		padding:0em;
 	}
+}
+code[class*="language-"], pre[class*="language-"]{
+	padding:0;
 }
 aside{
 	color:$red-3;

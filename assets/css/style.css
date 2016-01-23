@@ -116,17 +116,24 @@ code {
   color: #61667f;
   background-color: #edeef2;
   border-radius: 10px;
-  padding: 2px 5px;
+  padding: 0.15em 0.5em;
   margin: 0 2px; }
 
-pre code {
-  color: #b4b7c5;
-  white-space: pre;
+pre {
   background-color: #272822;
-  line-height: 1.25;
-  float: left;
-  width: 90%;
-  overflow: auto; }
+  border-radius: 3px;
+  padding: 1em; }
+  pre code {
+    color: #b4b7c5;
+    white-space: pre;
+    line-height: 1.25;
+    background-color: #272822;
+    float: left;
+    overflow: auto;
+    padding: 0em; }
+
+code[class*="language-"], pre[class*="language-"] {
+  padding: 0; }
 
 aside {
   color: #873f26;
