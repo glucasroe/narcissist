@@ -147,13 +147,25 @@ blockquote{
 	}
 }
 q{
-	width: 100%;
-	display: block;
-	color: $grey-7;
-	text-align: center;
+	color: $red-2;
+	//background-color: $grey-9;
+	border-radius:3px;
+	padding: 0.15em 0.3em;
 	font-style: italic;
-	font-size: 2.5rem;
-	margin-bottom: 1.5rem;
+	&:before{
+		//font-family: $light;
+		content:'\201C';
+		font-style: normal;
+		color:$grey-7;
+		margin-right:0.1em;
+	}
+	&:after{
+		//font-family: $light;
+		content:'\201d';
+		font-style: normal;
+		color:$grey-7;
+		margin-left: 0.1em;
+	}
 }
 ol,ul{
 	list-style-position: outside;

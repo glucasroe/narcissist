@@ -178,13 +178,20 @@ blockquote {
     font-size: 1.7rem; }
 
 q {
-  width: 100%;
-  display: block;
-  color: #b4b7c5;
-  text-align: center;
-  font-style: italic;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem; }
+  color: #602c1a;
+  border-radius: 3px;
+  padding: 0.15em 0.3em;
+  font-style: italic; }
+  q:before {
+    content: '\201C';
+    font-style: normal;
+    color: #b4b7c5;
+    margin-right: 0.1em; }
+  q:after {
+    content: '\201d';
+    font-style: normal;
+    color: #b4b7c5;
+    margin-left: 0.1em; }
 
 ol, ul {
   list-style-position: outside;
