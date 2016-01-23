@@ -19,22 +19,12 @@
 .post-title{
 	margin-top: 1rem;
 }
-.post-featured-image{
-	.hidden{
-		visibility: visible;
-		display:block;
-		width:100%;
-		max-width: 100%;
-	}
-}
+
 .post-image-header{
 	position: relative;
 	opacity:0.9;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 	@include filter(grayscale(100%)contrast(0.4)brightness(1.25));
-	&:hover{
-		@include filter(grayscale(0%)contrast(1)brightness(1));
-	}
 }
 
 .fade-in-color {
@@ -46,6 +36,12 @@
     	@include filter(grayscale(0%)contrast(1)brightness(1));
     	@include animation-iteration-count(1);
     }
+}
+
+.post-featured-image{
+	&:hover{
+		@include filter(grayscale(0%)contrast(1)brightness(1));
+	}
 }
 
 img,video,.gfyvid{
@@ -91,7 +87,7 @@ h1,h2,h3,h4,h5,ul,li,p,img, .tile{
 		font-weight: bold;
 		@include transition(background-color 0.5s);
 		&:hover{
-			background-color:$grey-8;		
+			background-color:$grey-8;
 		}
 		&:before{
 			content: '';

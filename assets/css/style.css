@@ -567,21 +567,12 @@ div.gfyitem {
 .post-title {
   margin-top: 1rem; }
 
-.post-featured-image .hidden {
-  visibility: visible;
-  display: block;
-  width: 100%;
-  max-width: 100%; }
-
 .post-image-header {
   position: relative;
   opacity: 0.9;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   -webkit-filter: grayscale(100%) contrast(0.4) brightness(1.25);
   filter: grayscale(100%) contrast(0.4) brightness(1.25); }
-  .post-image-header:hover {
-    -webkit-filter: grayscale(0%) contrast(1) brightness(1);
-    filter: grayscale(0%) contrast(1) brightness(1); }
 
 .fade-in-color {
   -webkit-animation: color-fade 1s ease-in 0s forwards;
@@ -602,6 +593,10 @@ div.gfyitem {
     -webkit-animation-iteration-count: 1;
     -moz-animation-iteration-count: 1;
     animation-iteration-count: 1; } }
+.post-featured-image:hover {
+  -webkit-filter: grayscale(0%) contrast(1) brightness(1);
+  filter: grayscale(0%) contrast(1) brightness(1); }
+
 img, video, .gfyvid {
   display: block;
   width: 100%;
