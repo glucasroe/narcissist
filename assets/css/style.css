@@ -60,7 +60,7 @@ body {
         margin-top: 1.1em; } }
 
 main {
-  min-height: calc(100vh - 25rem); }
+  min-height: calc(100vh - 325px); }
 
 a {
   color: #cc6947;
@@ -179,17 +179,14 @@ blockquote {
 
 q {
   color: #602c1a;
-  border-radius: 3px;
   padding: 0.15em 0.3em;
   font-style: italic; }
   q:before {
     content: '\201C';
-    font-style: normal;
     color: #b4b7c5;
     margin-right: 0.1em; }
   q:after {
     content: '\201d';
-    font-style: normal;
     color: #b4b7c5;
     margin-left: 0.1em; }
 

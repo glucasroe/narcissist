@@ -16,7 +16,7 @@ body{
 
 main{
 	@extend %site-width;
-	min-height: calc(100vh - 25rem);
+	min-height: calc(100vh - 325px);
 }
 
 a{
@@ -148,21 +148,15 @@ blockquote{
 }
 q{
 	color: $red-2;
-	//background-color: $grey-9;
-	border-radius:3px;
 	padding: 0.15em 0.3em;
 	font-style: italic;
 	&:before{
-		//font-family: $light;
 		content:'\201C';
-		font-style: normal;
 		color:$grey-7;
 		margin-right:0.1em;
 	}
 	&:after{
-		//font-family: $light;
 		content:'\201d';
-		font-style: normal;
 		color:$grey-7;
 		margin-left: 0.1em;
 	}
