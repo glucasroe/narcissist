@@ -8,7 +8,9 @@ body{
 	color:#333;
 	* + *{
 		margin:1em auto 0;
-		font-size: 1rem;
+		@media #{$desktop}{
+			margin-top: 1.1em;
+		}
 	}
 }
 
@@ -16,6 +18,7 @@ main{
 	@extend %site-width;
 	min-height: calc(100vh - 25rem);
 }
+
 a{
 	color:$red;
 	text-decoration:none;
@@ -24,7 +27,8 @@ a{
 		color: $red-3;
 		text-shadow: 1px 1px 0px #fff,2px 2px 0px $transparent-red-3;
 	}
-	p > &{
+	p > &,
+	nav > &{
 		@include background-image(linear-gradient(top, rgba(0,0,0,0) 50%, $transparent-red-4 50%));
 		background-repeat: repeat-x;
 		background-size:2px 2px;
@@ -41,7 +45,6 @@ h1{
 	font-family: $light;
 	line-height:1.1;
 }
-
 
 h2{
 	font-size: 2.5rem;
@@ -65,7 +68,10 @@ p,aside,pre code,li{
 	font-size: 1rem;
 	line-height: 1.75;
 	color:$grey-3;
-
+	@media #{$desktop}{
+		font-size: 1.35rem;
+		line-height: 1.85;
+	}
 }
 
 code{
@@ -76,7 +82,7 @@ code{
 	padding: 2px 5px;
 	margin:0 2px;
 }
-pre{ 
+pre{
 	@extend %clearfix;
 	code{
 		color: $grey-7;
@@ -176,7 +182,7 @@ ul{
 }
 
 ul ul, ol ol, ul ol, ol ul{
-	margin-left: 2rem;
+	margin: 1em 0;
 	padding-left: 0;
 }
 li{
@@ -228,7 +234,7 @@ figure img{
 	width:100%;
 	max-width:100%;
 }
-@media #{$tablet}{	
+@media #{$tablet}{
 	header h1{
 		font-size: 2rem;
 	}

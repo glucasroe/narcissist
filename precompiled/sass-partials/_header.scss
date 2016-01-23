@@ -32,16 +32,14 @@
 		@extend %clearfix;
 		a{
 			box-sizing: border-box;
-			width:33%;
+			width:33.33333%;
 			margin:0;
 			padding: 10px 0;
 			float:left;
 			font-family: $serif;
-			text-transform: uppercase;
 			text-align: center;
-			font-weight: bold;
-			font-size: 0.9rem;
-			letter-spacing: 1px;
+			background-position: 0 1.7em;
+			background-size:0;
 			&+a{
 				border-left: 1px solid $red-4;
 			}
@@ -61,6 +59,7 @@
 				a{
 					width:auto;
 					float:none;
+					background-size:2px 2px;
 					&+a{
 						border:0;
 						margin-left: 2rem;
