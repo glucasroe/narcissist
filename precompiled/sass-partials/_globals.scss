@@ -6,6 +6,7 @@ body{
 	width:100%;
 	font-family:$serif;
 	color:#333;
+	@include transition(background-color 0.25s);
 	* + *{
 		margin:1em auto 0;
 		@media #{$desktop}{
@@ -65,6 +66,7 @@ h4{
 }
 
 p,aside,pre code,li{
+	@include transition(background-color 0.25s);
 	font-size: 1rem;
 	line-height: 1.75;
 	color:$grey-3;

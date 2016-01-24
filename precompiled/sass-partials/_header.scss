@@ -1,7 +1,6 @@
 .site-header{
 	@extend %site-width;
-	background-color: $white;
-	position:relative;
+	//position:relative;
 	a img{
 		margin:1rem 0 1rem 1rem;
 		display: inline-block;
@@ -20,7 +19,17 @@
 		display:inline-block;
 		vertical-align: middle;
 		color: $grey-7;
+	}
 
+	.view-toggle{
+		position:absolute;
+		right:0;
+		top:0;
+		cursor:pointer;
+		//prototype stuff
+		width: 30px;
+		height: 30px;
+		background-color: $red;
 	}
 
 	nav{
@@ -65,9 +74,7 @@
 						margin-left: 2rem;
 					}
 					&:hover{
-						background-color: #fff;
-						color: $red-4;
-						text-shadow: 1px 1px 0px #fff,2px 2px 0px $transparent-red-3;
+						background-color: transparent;
 					}
 				}
 			}

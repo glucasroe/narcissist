@@ -15,7 +15,7 @@ article.post-preview{
 		display:block;
 		width: 1rem;
 		color: $red;
-		text-shadow: $white 0px 1px 0px, 
+		text-shadow: $white 0px 1px 0px,
 					$white 0px -1px 0px,
 					$white 0px 2px 0px,
 					$white 0px -2px 0px;
@@ -24,6 +24,7 @@ article.post-preview{
 		margin: 0 auto 0;
 		text-align: center;
 		@include transform(rotate(-90deg));
+		@include transition(text-shadow 0.25s);
 	}
 }
 
@@ -43,7 +44,7 @@ nav.pagination{
 		text-transform: uppercase;
 		&:hover{
 			background-color:$grey-9;
-		}	
+		}
 	}
 	.paginator, .page-number{
 		box-sizing: border-box;
@@ -54,7 +55,7 @@ nav.pagination{
 		display: block;
 		float:left;
 	}
-	
+
 	.page-number{
 		border-bottom: 1px solid $grey-4;
 		border-top: 1px solid $grey-4;
@@ -67,7 +68,7 @@ nav.pagination{
 
 		.page-number{
 			border-bottom: 0;
-			border-top: 0;			
+			border-top: 0;
 		}
 
 		.page-number,.newer-posts{

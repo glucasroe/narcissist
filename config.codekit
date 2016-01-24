@@ -64,23 +64,12 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/js\/prism.js": {
+	"\/assets\/js\/scripts-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/prism.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/prism-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/smooth-scroll.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/smooth-scroll.min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/smooth-scroll.min-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/scripts-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/scripts-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -97,16 +86,21 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/precompiled\/functional.js": {
-		"fileType": 64,
-		"ignore": 0,
+	"\/precompiled\/sass-partials\/_dark-mode.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/precompiled\/functional.js",
-		"outputAbbreviatedPath": "\/assets\/js\/functional-ck.js",
+		"inputAbbreviatedPath": "\/precompiled\/sass-partials\/_dark-mode.scss",
+		"outputAbbreviatedPath": "\/precompiled\/css\/_dark-mode.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/precompiled\/sass-partials\/_footer.scss": {
 		"createSourceMap": 0,
@@ -268,6 +262,50 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/precompiled\/script-partials\/prism.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/precompiled\/script-partials\/prism.js",
+		"outputAbbreviatedPath": "\/precompiled\/script-partials\/min\/prism-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/precompiled\/script-partials\/smooth-scroll.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/precompiled\/script-partials\/smooth-scroll.min.js",
+		"outputAbbreviatedPath": "\/precompiled\/script-partials\/min\/smooth-scroll.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/precompiled\/script-partials\/store.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/precompiled\/script-partials\/store.min.js",
+		"outputAbbreviatedPath": "\/precompiled\/script-partials\/min\/store.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/precompiled\/scripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/precompiled\/scripts.js",
+		"outputAbbreviatedPath": "\/assets\/js\/scripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/precompiled\/style.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -310,6 +348,26 @@
 	],
 "lastSavedByUser": "quilford",
 "manualImportLinks": {
+	"\/precompiled\/scripts.js": [
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/precompiled\/script-partials\/prism.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/precompiled\/script-partials\/smooth-scroll.min.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/precompiled\/script-partials\/store.min.js",
+			"position": 2,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",

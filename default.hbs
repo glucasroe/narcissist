@@ -47,11 +47,13 @@
         </a>
       </p>
     </footer>
+    <div class="view-toggle" id="view-toggle"></div>
+    <script type="text/javascript" src="{{asset "js/scripts-min.js"}}"></script>
     <!-- Code Colorizer -->
-    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+    <!--<script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
 
     <!-- Smooth Scroller -->
-    <script type="text/javascript" src="{{asset "js/smooth-scroll.min.js"}}"></script>
+    <!--<script type="text/javascript" src="{{asset "js/smooth-scroll.min.js"}}"></script>-->
     <script>
       smoothScroll.init({
         selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
@@ -66,9 +68,6 @@
           smoothScroll.animateScroll(  null, window.location.hash  );
         }
       });
-    </script>
-    <script>
-
     </script>
     {{ghost_foot}}
  </body>
