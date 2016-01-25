@@ -1,5 +1,6 @@
 .view-toggle{
   position:absolute;
+  display:none;
   right:1em;
   top:1em;
   cursor:pointer;
@@ -14,10 +15,13 @@
   &:hover{
     opacity: 1;
   }
+  &.visible{
+    display:block;
+  }
 }
 
 body,h1,h2,h3,h4,h5,h6,p,li,q,aside,code{
-@include transition(background-color 0.25s, color 0.25s);
+//@include transition(background-color 0.25s, color 0.25s);
 }
 
 .dark-mode{

@@ -17,9 +17,7 @@
 	position:relative;
 	padding: 0 1.5em;
 	@media #{$desktop}{
-		%site-width{
-			left: 5em;
-		}
+		left: 7em;
 	}
 }
 
