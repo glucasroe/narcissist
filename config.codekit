@@ -286,7 +286,7 @@
 		},
 	"\/precompiled\/script-partials\/store.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/precompiled\/script-partials\/store.min.js",
 		"outputAbbreviatedPath": "\/precompiled\/script-partials\/min\/store.min-min.js",
@@ -359,12 +359,6 @@
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/precompiled\/script-partials\/smooth-scroll.min.js",
 			"position": 1,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/precompiled\/script-partials\/store.min.js",
-			"position": 2,
 			"type": 0
 			}
 		]
