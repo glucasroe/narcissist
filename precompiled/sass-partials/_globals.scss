@@ -104,11 +104,12 @@ aside{
 	color:$red-3;
 	font-family: $serif;
 	@media #{$desktop}{
+		font-size: 1rem;
 		float:left;
 		position:absolute;
-		width:12em;
+		width:12rem;
 		padding:0;
-		left:-14em;
+		left:-14rem;
 		margin-left: 2.5%;
 		text-align: right;
 	}

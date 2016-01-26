@@ -17,6 +17,7 @@
     <script type="text/javascript">
     //Stops the white flash when dark mode is on
       if(store.get('dark-mode') === 'true'){
+        store.set('inline-style', 'true');
         console.log('conditional')
         var sheet = (function() {
   	        var style = document.createElement("style");
@@ -25,6 +26,7 @@
             return style.sheet;
         })();
         sheet.insertRule("body { background-color:#1f2028}", 0);
+        sheet.insertRule(".site-header>a{opacity: 0.4;}",1);
       }
     </script>
     {{ghost_head}}
@@ -80,9 +82,12 @@
         //console.log(sheet);
         if (store.get('dark-mode') === 'true'){
           document.body.classList.remove('dark-mode');
-          localStorage.setItem('dark-mode', 'false')
-          //store.set('dark-mode', 'false');
-          sheet.deleteRule(0);
+          store.set('dark-mode', 'false')
+          if(store.get('inline-style') === 'true'){
+            sheet.deleteRule(0);
+            sheet.deleteRule(1);
+          }
+
         }else{
           document.body.classList.add('dark-mode');
           store.set('dark-mode', 'true');
