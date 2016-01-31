@@ -377,14 +377,6 @@ main, .site-header, nav.pagination .pagination-links {
   display: inline-block;
   vertical-align: middle;
   color: #b4b7c5; }
-.site-header .view-toggle {
-  position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  background-color: #cc6947; }
 .site-header nav {
   border: 1px #cc6947 solid;
   border-radius: 5px;
@@ -422,7 +414,8 @@ main, .site-header, nav.pagination .pagination-links {
           border: 0;
           margin-left: 2rem; }
         .site-header nav a:hover {
-          background-color: transparent; } }
+          background-color: transparent;
+          color: #602c1a; } }
 @media screen and (min-width: 40em) {
   .site-header {
     display: -webkit-box;
@@ -839,7 +832,6 @@ nav.pagination {
   cursor: pointer;
   background-image: url("/assets/img/sprite.svg");
   background-repeat: no-repeat;
-  background-position: -25px 0;
   opacity: 0.4;
   width: 25px;
   height: 25px;
