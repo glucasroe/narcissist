@@ -1,6 +1,6 @@
 //Type
-$serif:'Merriweather', 'Baskerville', 'Palatino Linotype', Georgia, serif;
-$light: 'Merriweather Light', 'Merriweather', 'Baskerville', 'Palatino Linotype', Georgia, serif; 
+$serif:'Merriweather',  'Palatino', 'Palatino Linotype', Georgia, serif;
+$light: 'Merriweather Light', 'Merriweather', 'Palatino', 'Palatino Linotype' Georgia, serif;
 
 
 //Colors
@@ -21,15 +21,15 @@ $grey-1: darken($cool-grey,40%); //#1f2028
 $grey-0: darken($cool-grey,50%); //#09090b
 
 $red-10: lighten($red,50%);
-$red-9: lighten($red,40%); 
-$red-8: lighten($red,30%); 
-$red-7: lighten($red,20%); 
-$red-6: lighten($red,10%); 
+$red-9: lighten($red,40%);
+$red-8: lighten($red,30%);
+$red-7: lighten($red,20%);
+$red-6: lighten($red,10%);
 $red-5: $red;
-$red-4: darken($red,10%); 
-$red-3: darken($red,20%); 
-$red-2: darken($red,30%); 
-$red-1: darken($red,40%); 
+$red-4: darken($red,10%);
+$red-3: darken($red,20%);
+$red-2: darken($red,30%);
+$red-1: darken($red,40%);
 $red-0: darken($red,50%);
 
 $transparent-red-1: fade-out($red, 0.2);
