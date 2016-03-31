@@ -70,7 +70,7 @@ a {
 h1 {
   font-size: 3rem;
   color: #353845;
-  font-family: "Merriweather Light", "Merriweather", "Palatino", "Palatino Linotype" Georgia, serif;
+  font-family: "Merriweather Light", "Merriweather", "Palatino", "Palatino Linotype", Georgia, serif;
   line-height: 1.1; }
 
 h2 {
@@ -139,7 +139,7 @@ blockquote {
   margin: 2rem 0;
   position: relative; }
   blockquote:before {
-    font-family: "Merriweather Light", "Merriweather", "Palatino", "Palatino Linotype" Georgia, serif;
+    font-family: "Merriweather Light", "Merriweather", "Palatino", "Palatino Linotype", Georgia, serif;
     content: '\201C';
     font-style: normal;
     font-size: 4rem;
@@ -499,7 +499,7 @@ div.gfyitem {
 .site-intro {
   margin-bottom: 10rem; }
   .site-intro h1 {
-    font-family: "Merriweather Light", "Merriweather", "Palatino", "Palatino Linotype" Georgia, serif;
+    font-family: "Merriweather Light", "Merriweather", "Palatino", "Palatino Linotype", Georgia, serif;
     font-style: italic;
     text-align: center;
     font-size: 2.6em;
@@ -845,7 +845,7 @@ body, h1, h2, h3, h4, h5, h6, p, li, q, aside, code {
   .dark-mode h1 {
     color: #d1d2db; }
   .dark-mode p, .dark-mode li {
-    font-family: "Merriweather Light", "Merriweather", "Palatino", "Palatino Linotype" Georgia, serif;
+    font-family: "Merriweather Light", "Merriweather", "Palatino", "Palatino Linotype", Georgia, serif;
     color: #edeef2;
     letter-spacing: 0.155px; }
   .dark-mode q {
